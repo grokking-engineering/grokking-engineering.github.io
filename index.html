@@ -23,6 +23,15 @@
   </style>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
   <header>
     <img src="img/grokking-engineering.png" alt="Grokking Engineering"/>
   </header>
@@ -97,62 +106,69 @@
     Minh City and Singapore:
     </p>
 
-    <p>
-    <b>The absolute minimum every software developer needs to know about database
-      indexes</b><br>
-    by <b>Cedric Chin</b> (Floating Cube Studios, Ho Chi Minh City)
-    </p>
-    <p>
-    Language: English
-    </p>
+    <ol>
+      <li>
+        <p>
+          <b>The absolute minimum every software developer needs to know about database
+          indexes</b><br>
+          by <b>Cedric Chin</b> (Floating Cube Studios, Ho Chi Minh City)
+        </p>
+        <p><em>Language:</em> English</p>
+        <em>Talk synopsis</em>
+        <p>
+        If you’re a software developer, it’s nearly guaranteed that you’ve worked
+        with a database before. But what happens when you find your queries running
+        slowly? How do you debug bad database performance? The truth is, most of us
+        don’t know much about RDMS internals: we just insert and retrieve data and
+        pray that our queries run quickly enough.
+        </p>
+        <p>
+        The good news? It turns out that the only thing a developer really needs to
+        understand about relational databases is how their indexes work. Most of the
+        performance characteristics of modern RDMSes may be explained through the
+        database index. This talk introduces the data structures these indexes use,
+        how these structures determine query performance, how to read a query plan,
+        and what to think about when designing indexes for your database schema.
+        </p>
+        <p><em>Speaker bio:</em> Cedric Chin is a project manager at Floating Cube Studios, a mobile development agency located in District 7, Saigon. He likes Python, Go, green tea and cats. In a previous life, he interned at Viki and Kicksend and ran the NUS Hackers.</p>
+      </li>
+      <li>
+        <p>
+          <b>How we built our data-warehouse and analytics infrastructure at Viki</b><br>
+          by <b>Huy Nguyen</b> (Viki, Singapore)
+        </p>
+        <p><em>Language:</em> English / Vietnamese</p>
+        <em>Talk synopsis</em>
+        <p>
+        At Viki we collect and analyze over 60M user-generated data points everyday.
+        This talk goes into deep technical and architecture design to share about
+        the infrastructure, the different tools and processes we’ve built with our
+        analytics system. Specifically we’ll talk about how we collect, process data
+        and present data in both real-time and batch-processing manners.
+        </p>
 
-    <p>
-    If you’re a software developer, it’s nearly guaranteed that you’ve worked
-    with a database before. But what happens when you find your queries running
-    slowly? How do you debug bad database performance? The truth is, most of us
-    don’t know much about RDMS internals: we just insert and retrieve data and
-    pray that our queries run quickly enough. 
-    </p>
+        <p>
+        The current system is capable of supporting a variety of business and
+        product needs: automated business reporting, A/B testing, cohort analysis,
+        funnel analysis, recommendation engine, etc.
+        </p>
 
-    <p>
-    The good news? It turns out that the only thing a developer really needs to
-    understand about relational databases is how their indexes work. Most of the
-    performance characteristics of modern RDMSes may be explained through the
-    database index. This talk introduces the data structures these indexes use,
-    how these structures determine query performance, how to read a query plan,
-    and what to think about when designing indexes for your database schema.
-    </p>
-
-    <p>
-    <b>How we built our data-warehouse and analytics infrastructure at Viki</b><br>
-    by <b>Huy Nguyen</b> (Viki, Singapore)
-    </p>
-    <p>
-    Language: English / Vietnamese
-    </p>
-
-    <p>
-    At Viki we collect and analyze over 60M user-generated data points everyday.
-    This talk goes into deep technical and architecture design to share about
-    the infrastructure, the different tools and processes we’ve built with our
-    analytics system. Specifically we’ll talk about how we collect, process data
-    and present data in both real-time and batch-processing manners.
-    </p>
-
-    <p>
-    The current system is capable of supporting a variety of business and
-    product needs: automated business reporting, A/B testing, cohort analysis,
-    funnel analysis, recommendation engine, etc.
-    </p>
-
-    <p>
-    Technology stack: Ruby, Python, R, NodeJS, Golang, PostgreSQL, Java, Storm,
-    Hadoop with Apache Hive.
-    </p>
+        <p>
+        Technology stack: Ruby, Python, R, NodeJS, Golang, PostgreSQL, Java, Storm,
+        Hadoop with Apache Hive.
+        </p>
+        <p><em>Speaker bio:</em> As a software engineer, Huy helps build data warehousing infrastructure for internal analytics reporting system at Viki Inc., a global video streaming site. With over 2 billion videos viewed and over 400 million words translated, Viki brings global entertainment to nearly 25 million users worldwide. Previously, Huy interned with Facebook HQ, working on their Growth and Engagement team to help retain users. Before that he spent 1 year writing medical simulation in Sweden. Huy's proudest achievement is 281 scores on Flappy Bird.</p>
+      </li>
+    </ol>
   </div>
   <hr>
   <footer>
     <em>Copyright © 2014 Grokking Engineering, All rights reserved.</em>
+    <div id="buttons" style="margin-top: 10px">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <div class="fb-share-button" data-href="http://grokkingengineering.org" data-width="28px" data-layout="button_count"></div>
+    </div>
   </footer>
 </body>
 </html>
