@@ -33,9 +33,12 @@
 
         <div class="container {{ page.style }}">
           {% if page.highlight %}
-          <img src="{{page.highlight}}" alt="section icon" class="highlight-image"/>
+            <img src="{{page.highlight}}" alt="section icon" class="highlight-image"/>
           {% endif %}
           {{ page.content }}
+          {% if page.button %}
+            <img src="{{page.button}}" alt="action button" class="action-button"/>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
