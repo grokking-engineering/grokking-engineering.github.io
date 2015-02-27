@@ -300,6 +300,19 @@ nav ul li:hover, nav ul li.active {
 }
 
 /* -- custom: section next-event -- */
+.next-event .event-info {
+  padding: 0 5%;
+}
+
+.next-event .event-info .event-map {
+  float: left;
+  max-height: 500px;
+  margin-right: 50px;
+}
+
+.next-event .event-info ul li {
+  font-size: 1.2em;
+}
 
 /* ----- fork on github banner ----- */
 #forkongithub a {

@@ -41,11 +41,14 @@
           {% endif %}
           {% if page.style == 'talks next-event' %}
           <h2> Time and location </h2>
-          <img src="{{page.event-map}}"/>
-          <ul>
-            <li>Time: {{page.event-time}}</li>
-            <li>Location: {{page.event-location}}</li>
-          </ul>
+          <div class="event-info">
+            <img src="{{page.event-map}}" class="event-map"/>
+            <ul>
+              <li>Time: {{page.event-time}}</li>
+              <li>Location: {{page.event-location}}</li>
+              <img src="{{page.event-registration}}"/>
+            </ul>
+          </div>
           {% endif %}
         </div>
       </div>
