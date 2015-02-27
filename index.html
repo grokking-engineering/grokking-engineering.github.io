@@ -33,11 +33,19 @@
 
         <div class="container {{ page.style }}">
           {% if page.highlight %}
-            <img src="{{page.highlight}}" alt="section icon" class="highlight-image"/>
+          <img src="{{page.highlight}}" alt="section icon" class="highlight-image"/>
           {% endif %}
           {{ page.content }}
           {% if page.button %}
-            <img src="{{page.button}}" alt="action button" class="action-button"/>
+          <img src="{{page.button}}" alt="action button" class="action-button"/>
+          {% endif %}
+          {% if page.style == 'talks next-event' %}
+          <h2> Time and location </h2>
+          <img src="{{page.event-map}}"/>
+          <ul>
+            <li>Time: {{page.event-time}}</li>
+            <li>Location: {{page.event-location}}</li>
+          </ul>
           {% endif %}
         </div>
       </div>

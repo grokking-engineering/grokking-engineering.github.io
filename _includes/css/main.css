@@ -271,14 +271,35 @@ nav ul li:hover, nav ul li.active {
 .longlist li { margin-bottom: 3px; }
 
 
-/* -- custom sections -- */
+/* -- custom: intro section -- */
 #pageintro {
-  background-image:url(img/typing.jpg);
+  background-image:url(img/background-matrix.jpg);
   background-size: cover;
   min-height: 800px;
   background-position-y: -100px;
 }
 
+/* -- custom: section listing talks -- */
+.talks p img {
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+  float: left;
+}
+
+.talks h3, .talks h4 {
+  text-align: left;
+}
+
+.talks h2, .talks blockquote, .talks p img {
+  clear: both;
+}
+
+.talks blockquote {
+  margin-bottom: 50px;
+}
+
+/* -- custom: section next-event -- */
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
