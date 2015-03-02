@@ -23,7 +23,7 @@
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
       {% endfor %}
-      <li class="p-links p-facebook"><a class="no-scroll" href="{{site.links.facebook}}">FB GRoup</a></li>
+      <li class="p-links p-facebook"><a class="external" href="{{site.links.facebook}}">FB GRoup</a></li>
     </ul></nav>
 
 

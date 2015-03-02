@@ -28,6 +28,12 @@ $.extend($.easing,
         //attatch click listeners
     	navItems.on('click', function(event){
     		event.preventDefault();
+            if ($(this).hasClass('external')) {
+              var externalURL = $(this).attr("href");
+              var newWin = window.open(externalURL, '_blank');
+              newWin.focus();
+              return;
+            }
             var navID = $(this).attr("href").substring(1);
             disableScrollFn = true;
             activateNav(navID);
@@ -57,10 +63,10 @@ $.extend($.easing,
 
     function populateDestinations() {
         navItems.each(function(){
-            if ($(this).hasClass('no-scroll')) {
-              return;
-            }
             var scrollID = $(this).attr('href').substring(1);
+            if ($(this).hasClass('external')) {
+               return;
+            }
             navs[scrollID] = (settings.activateParentNode)? this.parentNode : this;
             sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
         });
