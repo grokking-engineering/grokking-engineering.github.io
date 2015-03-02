@@ -13,7 +13,7 @@ categories:
 
 ### The absolute minimum every software developer needs to know about database indexes
 
-#### Cedric Chin, (Floating Cubes Studios)
+#### Cedric Chin - Floating Cubes Studios
 
 If you’re a software developer, it’s nearly guaranteed that you’ve worked with a database before. But what happens when you find your queries running slowly? How do you debug bad database performance? The truth is, most of us don’t know much about RDMS internals: we just insert and retrieve data and pray that our queries run quickly enough.
 
@@ -27,7 +27,7 @@ Cedric Chin is a project manager at Floating Cube Studios, a mobile development 
 
 ### Viki Warehousing and Analytics Infrastructure
 
-#### Huy Nguyen, Viki
+#### Huy Nguyen - Viki
 
 At Viki we collect and analyze over 60M user-generated data points everyday. This talk goes into deep technical and architecture design to share about the infrastructure, the different tools and processes we’ve built with our analytics system. Specifically we’ll talk about how we collect, process data and present data in both real-time and batch-processing manners.
 
