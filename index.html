@@ -40,13 +40,13 @@
           <img src="{{page.button}}" alt="action button" class="action-button"/>
           {% endif %}
           {% if page.style == 'talks next-event' %}
-          <h2> Time and location </h2>
+          <h1> Time and location </h1>
           <div class="event-info">
             <img src="{{page.event-map}}" class="event-map"/>
             <ul>
-              <li>Time: {{page.event-time}}</li>
-              <li>Location: {{page.event-location}}</li>
-              <img src="{{page.event-registration}}"/>
+              <li><span class="time">{{page.event-time}}</span></li>
+              <li><span class="location">{{page.event-location}}</location></li>
+                <img class="register" src="{{page.event-registration}}"/>
             </ul>
           </div>
           {% endif %}

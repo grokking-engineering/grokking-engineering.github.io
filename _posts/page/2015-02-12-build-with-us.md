@@ -2,6 +2,7 @@
 title: "Contribute"
 bg: white
 color: black
+style: contribute
 categories:
 - page
 ---
@@ -10,14 +11,14 @@ Grokking Engineering aims to build a community of good developers in VietNam wit
 
 Specifically, we are looking for:
 
-## Sponsors
+# Sponsors
 
-If your company/organization would like to support us in term of venue, food and drink or via other means, please drop us an email.
+If your company/organization would like to support us in term of venue, food and drink or via other means, we would really appreciate it.
 
-## Speakers
+# Speakers
 
-We are also looking for speakers for our talks (once every two months in 2015). If you want to speak or know someone who can, drop us an email, too.
+We are also looking for speakers for our talks (once every two months in 2015). If you want to speak or know someone who can, tell us.
 
-### Contact
+## Contact
 
-> Email: admin@grokkingengineering.org
+Email: admin@grokkingengineering.org
