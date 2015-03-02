@@ -1,0 +1,48 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: /:categories/:title ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+highlighter: pygments
+
+
+### content configuration ###
+title:       "Grokking Engineering"
+keywords:    "Grokking Engineering, Grokking, Software Engineering, Viet Nam"
+description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
+source_link: "www.grokkingengineering.org"
+favicon:     "img/favicon.ico"
+touch_icon:  "img/apple-touch-icon.png"
+google_analytics_key: UA-56559086-1
+
+
+### template colors, used site-wide via css ###
+# colors:
+#   black:     '#111111'
+#   white:     '#f8f8f8'
+#   blue:      '#49a7e9'
+#   green:     '#9bcf2f'
+#   purple:    '#c869bf'
+#   orange:    '#fab125'
+#   turquoise: '#0fbfcf'
+colors:
+  black:     '#333333'
+  # black:     '#111111'
+  white:     '#ffffff'
+  grey:      '#f8f8f8'
+  blue:      '#f8f8f8'
+  green:     '#f8f8f8'
+  purple:    '#f8f8f8'
+  orange:    '#f8f8f8'
+  turquoise: '#f8f8f8'
+
+links:
+  facebook: https://www.facebook.com/groups/grokkingengineering/
