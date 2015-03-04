@@ -270,6 +270,7 @@ nav ul li:hover, nav ul li.active {
 /* -- custom: intro section -- */
 #pageintro {
   background-image:url(img/background-matrix.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
   background-position-y: -100px;
