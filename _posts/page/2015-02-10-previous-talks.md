@@ -7,7 +7,7 @@ categories:
 - page
 ---
 
-## Previous talks
+## Kick-off (Dec 2014)
 
 ![logo](img/talk-c.jpg)
 
