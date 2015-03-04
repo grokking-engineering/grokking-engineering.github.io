@@ -273,7 +273,6 @@ nav ul li:hover, nav ul li.active {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
-  background-position-y: -100px;
 }
 
 #pageintro .highlight-image {
