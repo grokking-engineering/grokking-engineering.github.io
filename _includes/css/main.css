@@ -268,6 +268,18 @@ nav ul li:hover, nav ul li.active {
 
 
 /* -- custom: intro section -- */
+#pageintro .action-button {
+  display: block;
+  width: 300px;
+  height: 73px;
+  background: transparent url('img/learn-more.png') center top no-repeat;
+  margin: 0 auto;
+}
+
+#pageintro .action-button:hover {
+  background: transparent url('img/learn-more-hover.png') center top no-repeat;
+}
+
 #pageintro {
   background-image:url(img/background-matrix.jpg);
   background-repeat: no-repeat;

@@ -36,8 +36,9 @@
           <img src="{{page.highlight}}" alt="section icon" class="highlight-image"/>
           {% endif %}
           {{ page.content }}
-          {% if page.button %}
-          <img src="{{page.button}}" alt="action button" class="action-button"/>
+          {% if page.button-url %}
+          <a href="{{page.button-url}}" class="action-button" title="learn more"></a>
+          <!--<img src="{{page.button}}" alt="action button" class="action-button"/>-->
           {% endif %}
           {% if page.style == 'talks next-event' %}
           <h1> Time and location </h1>
