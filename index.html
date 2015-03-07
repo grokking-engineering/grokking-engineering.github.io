@@ -43,11 +43,11 @@
           {% if page.style == 'talks next-event' %}
           <h1> Time and location </h1>
           <div class="event-info">
-            <img src="{{page.event-map}}" class="event-map"/>
+            <iframe class="event-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.203268268786!2d106.67851103478301!3d10.795738145890754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x946c1afcd4213781!2sC%C3%B4ng+Ty+Tnhh+Officience+-+Cn!5e0!3m2!1sen!2ssg!4v1425750000588" width="400" height="300" frameborder="0" style="border:0"></iframe>
             <ul>
               <li><span class="time">{{page.event-time}}</span></li>
-              <li><span class="location">{{page.event-location}}</location></li>
-                <img class="register" src="{{page.event-registration}}"/>
+              <li><span class="location">117B Nguyen Dinh Chinh</br>Phu Nhuan District</li>
+                <a href="{{page.event-registration-link}}" class="register-button" title="Register"></a>
             </ul>
           </div>
           {% endif %}

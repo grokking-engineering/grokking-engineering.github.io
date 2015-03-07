@@ -335,28 +335,46 @@ nav ul li:hover, nav ul li.active {
 }
 
 /* -- custom: section next-event -- */
+.next-event .event-info .event-map {
+  float: left;
+  max-height: 500px;
+}
+
 .next-event .event-info {
   padding: 0 5%;
 }
 
-.next-event .event-info .event-map {
-  float: left;
-  max-height: 500px;
-  margin-right: 50px;
+.next-event .event-map, .next-event .event-info ul {
+  width: 50%;
 }
 
 .next-event .event-info ul {
   list-style: none;
+  float: left;
 }
 
 .next-event .event-info ul li {
   font-size: 1.5em;
   margin-bottom: 1em;
   text-align: center;
+  line-height: 1.2em;
 }
 
 .next-event .event-info ul li:first-child {
-  padding-top: 100px;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+
+.next-event .register-button {
+  display: block;
+  width: 300px;
+  height: 73px;
+  background: transparent url('img/register-now.png') center top no-repeat;
+  margin: 0 auto;
+}
+
+.next-event .register-button:hover {
+  background: transparent url('img/register-now-hover.png') center top no-repeat;
 }
 
 .next-event .event-info .register {
