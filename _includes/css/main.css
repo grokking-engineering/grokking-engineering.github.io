@@ -298,6 +298,14 @@ nav ul li:hover, nav ul li.active {
   border: none;
 }
 
+#pageintro blockquote p {
+  color: {{site.colors.white}}
+}
+
+#pageintro p {
+  color: #777777;
+}
+
 
 
 /* -- custom: section listing talks -- */
