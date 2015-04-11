@@ -6,7 +6,7 @@ $anchor-text-color: #CE534D;
 $background-color: #F1EED9;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Patrick Hand', serif;
 	color: $text-color;
 	background-color: $background-color;
 }
@@ -141,6 +141,10 @@ footer {
 	.tagline-container p {
 		text-align: right;
 	}
+
+  .author-container img {
+    height: 100px;
+  }
 
 	main {
 		width: 46%;
