@@ -1,7 +1,11 @@
 {% for page in site.posts %}
-<p>{{% page.url%}</p>
 {% if page.style == 'homepage' %}
-<h2>Hi bạn ,</h2>
+  <p> {{ page.content }} </p> 
+{% else %}
+{% endif %}
+{% endfor %}
+
+<!--<h2>Hi bạn ,</h2>
 <p>Grokking Engineering is community of developers who want to get much much better at programming, regardless of job or years of experience</p>
 <h2>What's in it for you</h2>
 <ul>
@@ -21,9 +25,4 @@
     <span class="fa fa-user fa-lg main-list-item-icon"></span>
     <a href="http://excentris.net">Contact us</a>
   </li>
-</ul>
-{% else %}
-<p>{{% page.url %}}</p>
-{% endif %}
-
-{% endfor %}
+</ul>-->
