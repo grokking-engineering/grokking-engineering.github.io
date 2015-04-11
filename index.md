@@ -3,12 +3,6 @@ layout: default
 style: homepage
 ---
 
-<div class="nav">
-  <a href="#">Home</a> | 
-  <a href="#">Events</a> | 
-  <a href="#">Community</a>
-</div>
-
 Grokking Engineering is a community of software engineers who aim to be 10x better. We work to improve CS knowledge and engineering skills and productivity through tech talks, programming challenge and so on.
 
 
