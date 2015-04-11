@@ -1,7 +1,7 @@
 # Site settings
-title: Solo, a Jekyll Theme
-tag_text: Solo
-description: Solo is a Jekyll theme that supports single-page websites only, but supports them well. Yes, it’s responsive.
+title: Grokking Engineering
+tag_text: Grokking Engineering
+description: Grokking Engineering is a community of strong developers in HCMC.
 
 # Build settings
 markdown: kramdown

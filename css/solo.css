@@ -1,8 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:700);
 @import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=Cousine&subset=latin,vietnamese);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 html {
-  font: 16px/1.5 Inconsolata, sans-serif;
+  font: 16px/1.5 Cousine, sans-serif;
 }
 
 @media (min-width: 30rem) {
@@ -42,13 +44,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 30rem) {
   h1 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 h1 a {
@@ -147,7 +155,13 @@ pre > code {
 }
 
 .container {
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.contact > .channel {
+  float: left;
+  width: 33%;
+  text-align: center;
 }
