@@ -1,27 +1,9 @@
-# general configuration
-url: http://localhost:4000
-baseurl: ''
+# Site settings
+title: Solo, a Jekyll Theme
+tag_text: Solo
+description: Solo is a Jekyll theme that supports single-page websites only, but supports them well. Yes, it’s responsive.
 
-# compass configuration
-compass:
-  # an avatar or logo (optional)
-  logo: "/images/grokking.png"
-  # author will appear under the avatar (optional)
-  author: "Compass"
-  # tagline will appear under the title (optional)
-  tagline: "playground for T-shaped programmers"
-  # if include_content is true, the contents of the content.html include will be
-  # added right above the generated item list, if present
-  include_content: true
-  # if include_analytics is true, the content of the analytics.html include will
-  # be added at the end of the <head> section. You can add your Google Analytics
-  # Tracking Code to that file.
-  include_analytics: false
-
-# Dependencies
+# Build settings
 markdown: kramdown
-highlighter: pygments
 
-# Permalinks
-permalink: pretty
-relative_permalinks: true
+exclude: ["README.md"]
