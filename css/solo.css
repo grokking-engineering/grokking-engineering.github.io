@@ -63,6 +63,10 @@ h1 a {
   color: inherit;
 }
 
+.fa {
+  color: #0074d9;
+}
+
 h2 {
   margin-top: 2rem;
   font-size: 1.25rem;

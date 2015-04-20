@@ -22,8 +22,8 @@
 
     {% for page in site.posts %}
       {% if page.style != 'archive' %}
-        <a href="{{ page.url }}"><h1 class"post-title">{{ page.title }}</h2></a>
-        {{page.content}}
+      <h2 class"post-title"><i class="fa fa-arrow-circle-right"></i> <a href="{{ page.url }}">{{ page.title }}</a></h2>
+        <p> {{page.excerpt | truncatewords: 100}}</p>
       {% endif %}
     {% endfor %}
 
