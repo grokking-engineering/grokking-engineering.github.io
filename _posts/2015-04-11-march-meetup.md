@@ -2,64 +2,12 @@
 layout: post
 ---
 
-The Go compiler was originally written in C because 1) Go didn’t exist, 2) Go was unstable, and 3) Go was originally intended for writing network/systems code and not for compilers. But now 1) Go exists, 2) Go is stable as of Go 1.x, and 3) Go has turned out to be a nice general purpose language and the compiler won’t be an outsize influence on the language design.
+On March, we had one talk from Binh (Anduin Transactions) about implementing service-oriented architecture and Steven on building an artificial Neural Network. These examples came straight out from their companies, and while hard to grasp at first, provided interesting references to how other people are creating software.
 
-They’re deciding to automatically convert the Go compiler written in C to Go, because writing from scratch would be too much hassle. To understand the challenges of automatically converting from C to Go, we must first look at the history of C and some of its idiosyncrasies.
+## Building a service oriented architecture with Akka and Scala
 
-## A History of C
+We learn how Anduin Transactions created the infrastructure (programming language, framework, deployment, monitoring tools, etc) to enable their startup to move fast while dealing with strict constraint of the financial world. The talk aslo offer some glimpse on working with Actor model
 
-Writen in 1972 at Bell Labs
-“Quirky, flawed, and an enormous success” – Dennis Ritchie
-The C Data Model
+## Creating artificial neural network
 
-Original target hardware had 24KB memory
-programmer in charge of memory(assembly)
-type are there to help bu tnot enforced
-dynamic storage is provided by library and mem management is burden on programmer
-C conflates pointers with array types
-C Control Flow
-
-Similar to Go control flow primitives (e.g., do, while, for, switch)
-C goto is similar to Go goto, but with some caveats.
-C Program Model
-
-Per-file compilation
-Separate headers vs code
-#define, #include
-Challenges in converting C to Go
-
-The goal is to convert *their* C code (not all C code). They want generated code to be human-readable and maintainable. They want automatic conversion to handle 99+% of code.
-
-Unions
-
-A Union is like a struct, but you’re only supposed to use one value (they all occupy the same space in memory). It’s up to the programmer to know which variable to use
-
-There’s a joke in some of the original C code:
-       #define struct union /* Great space saver */
-This inspired a solution:
-       #define union struct /* keeps code correct, just wastes some space */
-
-#define
-
-Can’t just expand during parsing. But in practice, there aren’t many #define’s in the Go compiler. So the solution is to extend the converter parser to handle special cases. Annotate some and rewrite others in existing code.
-
-Comments
-
-The converter records precise source locations and attaches comments to syntax immediately following the comment.
-
-C Goto
-
-In C, goto can’t jump beyond function boundaries. In Go, goto has more restrictions than C goto. In Go, a goto cannot jump over a variable definition (otherwise, you could see uninitialized memory). This has an easy automatic fix. In Go, you can’t jump into a new scope (curly-brace {} block). This is harder to fix.
-
-There are currently 1032 goto statements in the Go compiler jumping to 241 labels. Russ breaks them down case by case. Turns out there are only a handful that require a manual rewrite. The others fall into more general categories to which auto-rewrite rules can be applied.
-
-Note: There’s a book written about converting goto code to code without goto in general, but this is a sledgehammer and not necessary here.
-
-Types and Type Mapping
-
-In C, you can do implicit conversion between int, long, char, bool etc.
-C pointers translate to Go pointers AND arrays. So the problem is converting C types that could map to multiple Go types.
-
-The solution is to build a graph of “assigned” value flow, extract clusters of expressions around variables that should have the same type, and infer the correct variable type. This is like doing type inference applied to the special case of disambiguating between potentially ambiguous types in C (like pointer vs. array, int vs bool). For instance, if a function returns int and control flow analysis shows that the return value is always 0 or 1, you can infer that the type is actually bool.
-
-State of the project
+Steven went hands on with us on how they use neural network to extract contents from websites, instead of doing plain-old HTML parsing. It was an interesting notion, since machine learning might enable them to extract important content from any website without elaborate crawling and parsing
