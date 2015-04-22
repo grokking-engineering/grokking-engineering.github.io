@@ -3,7 +3,7 @@ layout: default
 style: homepage
 ---
 
-Grokking Engineering is a community of software engineers who aim to be 10x better. We work to improve CS knowledge and engineering skills and productivity through tech talks, programming challenge and so on.
+Grokking Engineering is a community of software engineers who aim to be 10x better. We work to improve CS knowledge, engineering skills and productivity through tech talks, programming challenge and so on.
 
 
 ## Typical activities
