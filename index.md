@@ -8,8 +8,8 @@ Grokking Engineering is a community of software engineers who aim to be 10x bett
 
 ## Typical activities
 
-- Learn about problems like scaling backend infrascture, buliding data pipelines, etc
-- Meet strong developers in HCMC, Singapore and around the world
+- Learn about problems like scaling backend infrastructure, building data pipelines, ...etc
+- Meet strong developers in HCMC, Singapore and around the world.
 - and hey, you might find your next job at one of our events!
 
 ## Get in touch
