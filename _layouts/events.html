@@ -20,12 +20,9 @@
       <a href="{{ site.url }}/community">Community</a>
     </div>
 
-    {% for page in site.posts %}
-      {% if page.style != 'archive' %}
-      <h2 class"post-title"><i class="fa fa-arrow-circle-right"></i> <a href="{{ page.url }}">{{ page.title }}</a></h2>
-        <p> {{page.excerpt | truncatewords: 100}}</p>
-      {% endif %}
-    {% endfor %}
+    <div class="events-summary">
+      {{ content }}
+    </div>
 
   </div>
 {% include scripts.html %}

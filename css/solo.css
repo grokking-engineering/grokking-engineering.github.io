@@ -73,6 +73,10 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
+.events-summary h3 {
+  margin-left: 2rem;
+}
+
 @media (min-width: 30rem) {
   h2 {
     margin-top: 2.5rem;
