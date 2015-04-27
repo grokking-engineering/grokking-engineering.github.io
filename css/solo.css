@@ -73,8 +73,26 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
-.events-summary h3 {
-  margin-left: 2rem;
+/* talks */
+.events-summary {
+}
+
+.events-summary .speaker {
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.events-summary .speaker .speaker-thumb {
+  height: 20px;
+  display: box;
+  float: left;
+}
+
+.events-summary .speaker .speaker-info {
+  font-style: italic;
+  font-size: 0.8rem;
+  padding-left: 30px;
+  margin: 0 auto;
 }
 
 @media (min-width: 30rem) {
