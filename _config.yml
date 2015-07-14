@@ -1,13 +1,3 @@
-# Site settings
-title: Grokking Engineering
-tag_text: Grokking Engineering
-description: Grokking Engineering is a community of strong developers in HCMC.
-url: http://www.grokkingengineering.org
-
-# Build settings
-markdown: kramdown
-
-# Permanent link
-permalink: /:title
-
-exclude: ["README.md"]
+name: Flex
+markdown: redcarpet
+pygments: true
