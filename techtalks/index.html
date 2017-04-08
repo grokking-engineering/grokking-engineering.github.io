@@ -6,13 +6,13 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Use the title from a page's frontmatter if it has one -->
-  <title><%= current_page.data.title || "Home" %> - Grokking Vietnam</title>
+  <title>Tech Talks - Grokking Vietnam</title>
 
-  <%= stylesheet_link_tag "bootstrap.min" %>
-  <%= stylesheet_link_tag "application" %>
-  <%= javascript_include_tag "jquery.min" %>
-  <%= javascript_include_tag "bootstrap.min" %>
-  <%= javascript_include_tag "application" %>
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+  <link href="/stylesheets/application.css" rel="stylesheet" />
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/application.js"></script>
 
   <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
   <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
@@ -56,7 +56,64 @@
   </div>
 </header>
 
-<%= yield %>
+<div class="techtalks-page">
+
+
+    <div class="techtalk">
+      <h1> TechTalk #17: Financial Technologies </h1>
+
+        <img src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup17.jpg">
+
+      <ul>
+          <li>
+            <strong>
+              Introduction to Blockchain
+            </strong> -
+            Do The Luan (CARDADO labo)
+          </li>
+          <li>
+            <strong>
+              Interbank Transfer Systems in Vietnam & Some Improvement Ideas
+            </strong> -
+            Truong Bui (Former CTO, Timo Digital Bank, timo.vn)
+          </li>
+      </ul>
+    </div>
+
+    <div class="techtalk">
+      <h1> TechTalk #16: Front-end Technologies </h1>
+
+        <img src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup16.jpg">
+
+      <ul>
+          <li>
+            <strong>
+              Isomorphic Web Application @ Lozi.vn
+            </strong> -
+            Thinh Nguyen (Web Developer - lozi.vn)
+          </li>
+          <li>
+            <strong>
+              Maybe functor in Javascript
+            </strong> -
+            Lam Huynh (Senior FrontEnd Developer - 8Bit Rockstars Co. Ltd)
+          </li>
+          <li>
+            <strong>
+              HtmlJs and Three way binding
+            </strong> -
+            Nhan Nguyen (Software Architect - FPT IS)
+          </li>
+          <li>
+            <strong>
+              Anduin Component Library
+            </strong> -
+            Cong Pham (Product Designer - Anduin Transactions)
+          </li>
+      </ul>
+    </div>
+</div>
+
 
 <footer class="footer">
   <div class="container text-center">
