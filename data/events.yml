@@ -1,0 +1,29 @@
+techtalks:
+
+- number: 17
+  title: Financial Technologies
+  event_href: https://www.facebook.com/events/202575453561443/
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup17.jpg
+
+  sessions:
+  - title: Introduction to Blockchain
+    speaker: Do The Luan (CARDADO labo)
+    slide_href:
+  - title: Interbank Transfer Systems in Vietnam & Some Improvement Ideas
+    speaker: Truong Bui (Former CTO, Timo Digital Bank, timo.vn)
+    slide_href:
+
+- number: 16
+  title: Front-end Technologies
+  event_href: https://www.facebook.com/events/745385925637047/
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup16.jpg
+
+  sessions:
+  - title: Isomorphic Web Application @ Lozi.vn
+    speaker: Thinh Nguyen (Web Developer - lozi.vn)
+  - title: Maybe functor in Javascript
+    speaker: Lam Huynh (Senior FrontEnd Developer - 8Bit Rockstars Co. Ltd)
+  - title: HtmlJs and Three way binding
+    speaker: Nhan Nguyen (Software Architect - FPT IS)
+  - title: Anduin Component Library
+    speaker: Cong Pham (Product Designer - Anduin Transactions)
