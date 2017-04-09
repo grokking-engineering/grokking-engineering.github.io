@@ -1,29 +1,284 @@
 techtalks:
 
 - number: 17
+  date: April 8, 2017
   title: Financial Technologies
+  venue: Shinhan Future's Lab
+  sponsor:
   event_href: https://www.facebook.com/events/202575453561443/
+  photo_href: https://www.facebook.com/pg/grokking.engineering/photos/?tab=album&album_id=1355142854553679
   image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup17.jpg
 
   sessions:
   - title: Introduction to Blockchain
     speaker: Do The Luan (CARDADO labo)
-    slide_href:
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-introduction-to-blockchain
   - title: Interbank Transfer Systems in Vietnam & Some Improvement Ideas
     speaker: Truong Bui (Former CTO, Timo Digital Bank, timo.vn)
-    slide_href:
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-interbank-transfer-systems-in-vn-some-improvement-ideas
 
 - number: 16
+  date: February 25, 2017
   title: Front-end Technologies
+  venue: Shinhan Future's Lab
+  sponsor:
   event_href: https://www.facebook.com/events/745385925637047/
+  photo_href: https://www.facebook.com/pg/grokking.engineering/photos/?tab=album&album_id=1313377518730213
   image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup16.jpg
 
   sessions:
   - title: Isomorphic Web Application @ Lozi.vn
     speaker: Thinh Nguyen (Web Developer - lozi.vn)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-react-stack-at-lozi
   - title: Maybe functor in Javascript
     speaker: Lam Huynh (Senior FrontEnd Developer - 8Bit Rockstars Co. Ltd)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-maybe-functor-in-javascript
   - title: HtmlJs and Three way binding
     speaker: Nhan Nguyen (Software Architect - FPT IS)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-html-js-and-three-way-binding
   - title: Anduin Component Library
     speaker: Cong Pham (Product Designer - Anduin Transactions)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-fk-bad-css
+
+- number: 15
+  date: December 24, 2016
+  title: Data Challenge in Logistics
+  venue: The Ventures
+  sponsor:
+  event_href: https://www.facebook.com/events/1827540640795479/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+
+  sessions:
+  - title: The data processing journey at AhaMove
+    speaker: Thuc Nguyen (AhaMove)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-15-grokking-the-data-processing-journey-at-ahamove
+  - title: Batching and routing of deliveries
+    speaker: Ngoc Tran (HonestBee)
+    slide_href:
+  - title: Architectural decisions @ Parcel Perform
+    speaker: Khang Nguyen (Parcel Perform)
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-tech-talk-15-architectural-decisions-parcel-perform
+
+- number: 14
+  date: August 6, 2016
+  title: Database Systems
+  venue: Tiki
+  sponsor: TINYpulse
+  event_href: https://www.facebook.com/events/869225683183128/
+  photo_href: https://www.facebook.com/grokking.engineering/photos/?tab=album&album_id=1113615842039716
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup14.jpg
+
+  sessions:
+  - title: Why you should use PostgreSQL for your data analytics infrastructure
+    speaker: Huy Nguyen (Holistics)
+    slide_href:
+  - title: "Couchbase: NoSQL + Memcached + Real-time + Offline!"
+    speaker: Vu Nguyen (Liti Book)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-14-grokking-couchbase-nosql-memcached-realtime-offline
+
+- number: 13
+  date: June 25, 2016
+  title: Searches
+  venue: MySquar
+  sponsor: TINYpulse
+  event_href: https://www.facebook.com/events/194454270949757/
+  photo_href: https://www.facebook.com/grokking.engineering/photos/?tab=album&album_id=1085866281481339
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup13.jpg
+
+  sessions:
+  - title: Marrying Elasticsearch with NLP to solve real-world search problems
+    speaker: Phu Le (Country Manager / Head of R&D, Knorex)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-marrying-elasticsearch-with-nlp-to-solve-realworld-search-problems
+  - title: Scaling and supercharging your online business models with Elasticsearch
+    speaker: Tri Tran (Lead Developer, 8Bit Rockstars)
+    slide_href: https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-scaling-and-supercharging-your-online-business-models-with-elasticsearch
+
+- number: 12
+  date: May 28, 2016
+  title: Programming Languages and Paradigms
+  venue: DEK
+  sponsor: TINYpulse
+  event_href: https://www.facebook.com/events/594238287419155/
+  photo_href: https://www.facebook.com/grokking.engineering/photos/?tab=album&album_id=1070310999703534
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup12.jpg
+
+  sessions:
+  - title: Full stack Scala web application
+    speaker: Cuong Pham
+    slide_href: https://www.slideshare.net/GrokkingVN/tech-talk-12-grokking-full-stack-scala-web-application-cuong-pham
+  - title: Writing code that writes code
+    speaker: Nguyen Luong
+    slide_href: https://www.slideshare.net/GrokkingVN/techktalk-12-grokking-writing-code-that-writes-code-nguyen-luong
+  - title: Code productively in any language with testing and live reloading
+    speaker: Harley Trung
+    slide_href:
+
+- number: 11
+  date: April 23, 2016
+  title: Data
+  venue: DEK
+  sponsor: TINYpulse
+  event_href: https://www.facebook.com/events/1253414338006273/
+  photo_href: https://www.facebook.com/media/set/?set=a.1049353048465996.1073741838.764146283653342
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup11.jpg
+
+  sessions:
+  - title: Why data science?
+    speaker: An Mai
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-why-data-science
+  - title: Introduction to some probabilistics data-structures for real-time processing
+    speaker: Vo Viet Hung
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-an-introduction-to-probabilistic-datastructures-and-algorithms
+  - title: Reactive Data System in Practice at iTVad
+    speaker: Trieu Tan Nguyen
+    slide_href:
+
+- number: 09
+  date: March 29, 2016
+  title: Meetup 09
+  venue:
+  sponsor: TINYpulse
+  event_href: https://www.facebook.com/events/950369215012812/
+  photo_href: https://www.facebook.com/media/set/?set=a.1031087110292590.1073741837.764146283653342
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup09.jpg
+
+  sessions:
+  - title: Building a realtime & offline editing service from scratch with Couchbase
+    speaker: Vu Nguyen, CTO @ Liti Book
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-building-a-realtime-offline-editing-service-from-scratch-with-couchbase
+  - title: Secure Coding
+    speaker: Tran Anh Tuan, Security Engineer @ VietABank
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-why-data-science
+  - title: When a Java guy goes Ruby
+    speaker: Jonathan Bardin, Technical Architect @ TINYpulse
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-when-a-java-guy-goes-ruby
+
+- number: 08
+  date: Feb 27, 2016
+  title: A Date With DevOps
+  venue: Chotot.vn
+  sponsor: TINYpulse
+  event_href: https://www.facebook.com/events/1651426405122455/
+  photo_href: https://www.facebook.com/media/set/?set=a.1006854916049143.1073741835.764146283653342&type=3
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup08.jpg
+
+  sessions:
+  - title: Docker Internals
+    speaker: Vincent De Smet
+    slide_href:
+  - title: DevOps at Hoiio
+    speaker: Hieu @ Hoiio
+    slide_href:
+  - title: Docker management with Ansible
+    speaker: Thinh @ ChoTot
+    slide_href:
+
+- number: 06
+  date: December 06, 2015
+  title: Grokking Coding Challenge
+  venue: Dreamplex
+  sponsor: Hoiio and MySQUAR (Food & Prizes)
+  event_href: https://www.facebook.com/events/423555677848446/
+  photo_href: https://www.facebook.com/media/set/?set=a.961722197229082.1073741832.764146283653342&type=1&l=06208f75a2
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup06.jpg
+
+  sessions:
+  - title: Build a stripped-down version of Redis database in 3 hours.
+    speaker:
+    slide_href:
+
+- number: 05
+  date:
+  title: Meetup 05
+  venue: Air Lounge (Silicon Straits Saigon)
+  sponsor:
+  event_href: https://www.facebook.com/events/764117887031387/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+
+  sessions:
+  - title: Android from Linux perspective and Root on Android
+    speaker: Tran Ngoc Thuan (Android Team Lead, VNPT MEDIA)
+    slide_href:
+  - title: Phanbook - Open source library
+    speaker: Tran Duy Thien (PHP Developer)
+    slide_href:
+  - title: Coding standard and performance optimization
+    speaker: Le Thanh Xuan (Senior Developer, Atlassian)
+    slide_href:
+
+- number: 04
+  date:
+  title: Meetup 04
+  venue: Silicon Straits Saigon
+  sponsor:
+  event_href: https://www.facebook.com/events/477054909126245/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup04.jpg
+
+  sessions:
+  - title: Technology Stack at MySQUAR
+    speaker: Khac Anh (Software Engineer, MySQUAR)
+    slide_href:
+  - title: "Web 3.0: Offline first with CouchDB"
+    speaker: Hervé Vu (Co-Founder & former CTO, Linked Senior)
+    slide_href:
+  - title: Using Redis in building social networks with large user base
+    speaker: Chau Nguyen Nhat Thanh (Technical Manager, VNG)
+    slide_href:
+  - title: How to implement Flux Architecture on mobile (Native)
+    speaker: Pham Duc Huy (Software Engineer, Lozi.vn)
+    slide_href:
+  - title: HtmlJs - JavaScript MVVM framework
+    speaker: Nhan (Software Engineer, Play Studio)
+    slide_href:
+
+- number: 03
+  date:
+  title: Real-time Data Pipeline & Real-world Microservice Architecture
+  venue: Sentifi
+  sponsor:
+  event_href: https://www.facebook.com/events/864085826964097/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup03.jpg
+
+  sessions:
+  - title: Migrating to service-oriented architecture at LOZI
+    speaker: Nguyen Thanh Trung (C​TO/Co-founder of LOZI)
+    slide_href:
+  - title: Building Real-time Data Pipeline at FPT
+    speaker: Nguyen Tan Trieu (T​echnical lead and full-stack engineer at FPT)
+    slide_href:
+
+- number: 02
+  date:
+  title: Build big things from small components
+  venue: Officience
+  sponsor:
+  event_href: https://www.facebook.com/events/321724054703790/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+
+  sessions:
+  - title: Building microservices web application using Akka & Scala
+    speaker: Binh Nguyen (Director of Engineering, Anduin Transactions)
+    slide_href:
+  - title: A journey with Artificial Neural Network (ANN) in solving real-world problems
+    speaker: Steven Goh (Founder, Nubela Corp)
+    slide_href:
+
+- number: 01
+  date:
+  title: Kick-off Talk
+  event_href: https://www.facebook.com/events/560196397413884/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup01.jpg
+
+  sessions:
+  - title: The absolute minimum every software developer needs to know about database indexes
+    speaker: Cedric Chin (Floating Cube Studios)
+    slide_href: https://speakerdeck.com/ejamesc/the-absolute-minimum-every-software-developer-needs-to-know-about-database-indexes
+  - title: How we built our data-warehouse and analytics infrastructure at Viki
+    speaker: Huy Nguyen (Viki)
+    slide_href: http://www.slideshare.net/nvquanghuy/grokking-engineering-data-analytics-infrastructure-at-viki-huy-nguyen
