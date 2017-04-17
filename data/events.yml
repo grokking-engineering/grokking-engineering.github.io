@@ -1,5 +1,23 @@
 techtalks:
 
+- number: 18
+  incoming: true
+  date: "Date: TBD"
+  title: Telecommunications
+  venue: TBD
+  sponsor:
+  event_href: https://www.facebook.com/events/202575453561443/
+  photo_href: https://www.facebook.com/pg/grokking.engineering/photos/?tab=album&album_id=1355142854553679
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup17.jpg
+
+  sessions:
+  - title: Introduction to Blockchain
+    speaker: Do The Luan (CARDADO labo)
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-introduction-to-blockchain
+  - title: Interbank Transfer Systems in Vietnam & Some Improvement Ideas
+    speaker: Truong Bui (Former CTO, Timo Digital Bank, timo.vn)
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-interbank-transfer-systems-in-vn-some-improvement-ideas
+  
 - number: 17
   date: April 8, 2017
   title: Financial Technologies
