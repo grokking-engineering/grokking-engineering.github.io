@@ -9,6 +9,9 @@ title: Tech Talks
     <%- if tt.incoming == true %>
       <div class="container techtalk panel">
         <h1>Incoming TechTalk #<%= tt.number %>: <%= tt.title %></h1>
+        <%- if tt.date %>
+          <h2><%= tt.date %></h2>
+        <%- end -%>
       </div>
     <%- else %>
       <div class="container techtalk panel">
