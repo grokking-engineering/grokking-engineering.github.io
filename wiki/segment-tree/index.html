@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="icon" type="image/jpeg" href="/images/favico-origin.jpg" />
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title>Home - Grokking Vietnam</title>
+
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+  <link href="/stylesheets/application.css" rel="stylesheet" />
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/application.js"></script>
+
+  <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
+  <meta property="og:url" content="http://www.grokking.org/wiki/segment-tree/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Grokking Vietnam - For a strong and connected software engineers ecosystem in Vietnam - Grokking Vietnam" />
+  <meta property="og:description" content="Building a playground for highly-skilled Software engineers in Vietnam" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg" />
+
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="/assets/bxslider/jquery.bxslider.css">
+  <script src="/assets/bxslider/jquery.bxslider.js"></script>
+
+  <title>Grokking Vietnam</title>
+</head>
+<body>
+
+<header class="masthead" id="home">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-logo" href="/"><img class="logo" src="/images/logo_resize.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/techtalks">Tech Talks</a></li>
+            <li><a href="/consultant">Consultant</a></li>
+            <li><a href="/#about">About Us</a></li>
+            <li class="join-link">
+              <a href="/#contact">
+                Join Us
+                <img src="/images/slack_icon.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<h2 id="segment-tree">Segment Tree</h2>
+
+<hr />
+<p>Segment Tree is a kind of Full Binary Tree (which mean each node has either two or no children).
+The problem that comes up with the idea of segment tree is described as below:
+given an array of integer as input
+return the sum of a sub-array of input array from index i to index j</p>
+
+<p>Ex:</p>
+
+<p>In [1, 3, 8, 4, 2, 3, 18, 8] i=1, j=4</p>
+
+<p>Out 17</p>
+
+<p>If we take the regular approach for this problem, we just simply sum up all elements from index i to index j
+by using a loop, which mean the complexity is O(n). But think of worst case scenario,
+if i = 0 and j = size_of_array then we must loop over the entire array, which will be <strong>very very very <b>painful</b></strong>
+if the size of array is <strong>millions</strong> or <strong>billions</strong>.</p>
+
+<p>So, segment tree now jumps in, as a dynamic programming technique, makes a less painfully solution for this problem.</p>
+
+<p>First, we need to understand how a Segment Tree is created. Here is how</p>
+
+<p>Segment tree is built by recurrently dividing the current segment into two halves (while the length of segment still not 1), then call that
+procedure on both halves. So all the leafs are elements in array, the internal nodes are sum of two child nodes.
+Segment tree has n leaves node, and n - 1 internal nodes.</p>
+
+<p>The height of segment tree is log2(n)</p>
+
+<p>In each node, we need to store these two infos:</p>
+
+<ul>
+  <li>
+    <p>sum up of two child node</p>
+  </li>
+  <li>
+    <p>index i and index j which show us the segment from arr[i] to arr[j]</p>
+  </li>
+</ul>
+
+<hr />
+
+<p><img src="/images/segment-tree.png" alt="alt text" title="Segment Tree" /></p>
+
+<p>So now we can easily get the sum of any segments by perform a search through binary tree (BFS or DFS).</p>
+
+
+
+<footer class="footer">
+  <div class="container text-center">
+    <div class="copyright">
+      <div>Grokking Vietnam &copy 2016</div>
+      <div>All Rights Reserved.</div>
+    </div>
+  </div>
+
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-80299034-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
