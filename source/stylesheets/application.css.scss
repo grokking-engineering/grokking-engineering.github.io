@@ -651,6 +651,23 @@ body {
   margin-bottom: 50px;
 }
 
+// Grokking style
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: #bf1e2d;
+  border-color: #bf1e2d;
+}
+
+.active, .active a {
+  background-color: rgba(191, 30, 45, 0.9) !important;
+  border-color: #bf1e2d !important;
+  color: #fff !important;
+}
+
+.active:hover, .active a:hover {
+  background-color: rgb(191, 30, 45) !important;
+  border-color: #BF1E2D !important;
+}
+
 // TechTalks
 
 .techtalks-page {
@@ -663,59 +680,61 @@ body {
 
 }
 
-.bs-callout {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
+// back to top
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(191, 30, 45, 0.9) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
-.bs-callout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
 }
-.bs-callout p:last-child {
-    margin-bottom: 0;
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
 }
-.bs-callout code {
-    border-radius: 3px;
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .8;
 }
-.bs-callout+.bs-callout {
-    margin-top: -5px;
+.cd-top:hover {
+  opacity: 1;
 }
-.bs-callout-default {
-    border-left-color: #777;
+.no-touch .cd-top:hover {
+  background-color: rgba(191, 30, 45, 1);
+  opacity: 1;
 }
-.bs-callout-default h4 {
-    color: #777;
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
 }
-.bs-callout-primary {
-    border-left-color: #428bca;
-}
-.bs-callout-primary h4 {
-    color: #428bca;
-}
-.bs-callout-success {
-    border-left-color: #5cb85c;
-}
-.bs-callout-success h4 {
-    color: #5cb85c;
-}
-.bs-callout-danger {
-    border-left-color: #d9534f;
-}
-.bs-callout-danger h4 {
-    color: #d9534f;
-}
-.bs-callout-warning {
-    border-left-color: #f0ad4e;
-}
-.bs-callout-warning h4 {
-    color: #f0ad4e;
-}
-.bs-callout-info {
-    border-left-color: #5bc0de;
-}
-.bs-callout-info h4 {
-    color: #5bc0de;
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
 }
