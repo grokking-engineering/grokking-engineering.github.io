@@ -505,6 +505,12 @@ body {
 .techtalks-page .techtalk img {
   /* max-width: 680px; */ }
 
+.divider {
+  border-color: #bf1e2d !important; }
+
+.sidebar {
+  margin-top: 20px; }
+
 .cd-top {
   display: inline-block;
   height: 40px;
