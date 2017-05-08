@@ -4,10 +4,31 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
 ---
 <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-md-9">
+      <div class="col-sm-4 col-md-3 sidebar pull-right">
+        <div class="mini-submenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div class="list-group">
+          <span href="#" class="list-group-item active">
+            Our TechTalks
+            <span class="pull-right" id="slide-submenu">
+                <i class="fa fa-times"></i>
+            </span>
+          </span>
+          <%- data.events.techtalks.each do |tt| %>
+            <a href="#talk<%= tt.number.to_s.rjust(2, '0') %>" class="list-group-item">
+              <i class="fa fa-comment-o"></i>#<%= tt.number.to_s.rjust(2, '0') %>: <%= tt.title %>
+            </a>
+          <%- end -%>
+        </div> 
+      </div>
+      <div class="col-sm-8 col-md-9 pull-left">
         <div class="techtalks">
           <%- data.events.techtalks.each do |tt| %>
-              <h2 id="talk<%= tt.number %>"> <%- if tt.upcoming %> Upcoming <%- end -%>TechTalk #<%= tt.number %>: <a href="<%= tt.event_href %>"><%= tt.title %></a></h2>
+              <hr class="divider"/>
+              <h2 id="talk<%= tt.number.to_s.rjust(2, '0') %>"> <%- if tt.upcoming %> Upcoming <%- end -%>TechTalk #<%= tt.number.to_s.rjust(2, '0') %>: <a href="<%= tt.event_href %>"><%= tt.title %></a></h2>
               <%- if tt.upcoming && tt.date %>
                 <h2><%= tt.date %></h2>
               <%- end %>
@@ -48,27 +69,7 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
               </ul>
           <%- end %>
         </div>
-
-      </div>
-      <div class="col-sm-4 col-md-3 sidebar">
-        <div class="mini-submenu">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
-        <div class="list-group">
-            <span href="#" class="list-group-item active">
-                Our TechTalks
-                <span class="pull-right" id="slide-submenu">
-                    <i class="fa fa-times"></i>
-                </span>
-            </span>
-            <%- data.events.techtalks.each do |tt| %>
-              <a href="#talk<%= tt.number %>" class="list-group-item">
-                <i class="fa fa-comment-o"></i>#<%= tt.number %>: <%= tt.title %>
-              </a>
-            <%- end -%>
-        </div>        
+      </div>       
     </div>
   </div>
 </div>
