@@ -1,7 +1,6 @@
 ---
 pageable: true
 per_page: 12
-layout: home_layout
 blog: blog
 ---
 <div class="blog-wrapper">
@@ -12,7 +11,7 @@ blog: blog
       <div class="col-lg-8">
         <section class="blog-list">
           <% page_articles.each_with_index do |article, i| %>
-            <%= partial 'blog/blog_post', locals: {article: article, read_more: true, body: article.summary(500)} %>
+            <%= partial 'blog/blog_post', locals: {article: article, read_more: true, body: article.body} %>
           <% end %>
         </section>
         <%= partial 'pagination' %>
