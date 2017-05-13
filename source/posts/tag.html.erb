@@ -1,23 +1,20 @@
 ---
 pageable: true
 per_page: 12
-blog: blog
 ---
 <div class="blog-wrapper">
-  <%= partial 'blog/blog_header', locals: {tagname: tagname} %>
-
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
         <section class="blog-list">
           <% page_articles.each_with_index do |article, i| %>
-            <%= partial 'blog/blog_post', locals: {article: article, read_more: true, body: article.body} %>
+            <%= partial 'posts/blog_post', locals: {article: article, read_more: true, body: article.body} %>
           <% end %>
         </section>
         <%= partial 'pagination' %>
       </div>
       <div class="col-lg-4">
-        <%= partial 'blog/blog_sidebar', locals: {selected_tags: [tagname]} %>
+        <%= partial 'posts/blog_sidebar', locals: {selected_tags: [tagname]} %>
       </div>
     </div>
 
