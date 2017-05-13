@@ -18,18 +18,18 @@
 
 <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
 <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
-<meta property="og:url" content="http://www.grokking.org/posts/sharding-ids-at-instagram/"/>
+<meta property="og:url" content="http://www.grokking.org/posts/design-youtube/"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Sharding IDs at Instagram - Grokking Vietnam"/>
+<meta property="og:title" content="Design Youtube - Grokking Vietnam"/>
 <meta property="og:description" content="Building a playground for highly-skilled Software engineers in Vietnam"/>
-<meta property="og:image" content="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27"/>
+<meta property="og:image" content="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg"/>
 
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <title>Sharding IDs at Instagram - Grokking Vietnam</title>
+  <title>Design Youtube - Grokking Vietnam</title>
 </head>
 
-<body class="posts posts_sharding-ids-at-instagram posts_sharding-ids-at-instagram_index">
+<body class="posts posts_design-youtube posts_design-youtube_index">
 <header class="masthead" id="home">
   <div class="container">
     <nav class="navbar navbar-default">
@@ -70,7 +70,7 @@
         <div class="col-lg-8">
           <section class="blog-list">
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/sharding-ids-at-instagram/">Sharding IDs at Instagram</a></h2>
+    <h2 class="post-title"><a href="/posts/design-youtube/">Design Youtube</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
@@ -84,20 +84,26 @@
   </ul>
 
   <div class="post-body">
-    <p>Nếu bạn chưa dùng, hẳn cũng phải nghe qua Instagram rồi đúng không? Ngoài việc là mạng xã hội đã được mua lại bởi Facebook
- với giá 1 tỷ USD thì ở Instagram cũng có nhiều bài toán hay cho engineers nhà ta tham khảo thử nhé.</p>
+    <p>Youtube thì chắc chẳng ai là không biết đâu nhỉ? Nhưng các engineers nhà ta có ai từng thử đặt câu hỏi, khi xây dựng hệ thống như youtube cần phải giải quyết những vấn đề gì, và nên giải quyết như thế nào không?</p>
 
-<p>Với 25 photos và 90 likes mỗi giây (thời điểm năm 2012), Instagram phải chứa rất nhiều dữ liệu, đồng thời phải tìm cách 
-chia nhỏ để dữ liệu có thể được chứa trên memory, giúp việc query, truy xuất nhanh và hiệu quả hơn.</p>
+<p>Cùng tham khảo 2 bài viết cùng serie bên dưới để hiểu thêm về những technical decision đằng sau việc team Youtube giải quyết những vấn đề sau nhé:</p>
 
-<p>Một trong những bài toán mà team Instagram đã giải quyết, đó là sinh ra Ids với số lượng lớn và trong thời gian ngắn. 
-Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
+<ul>
+  <li>Storage và data model</li>
+  <li>Video và image storage</li>
+  <li>Popular VS long-tailed videos</li>
+  <li>Scale database</li>
+  <li>Cache</li>
+  <li>Security</li>
+  <li>Webserver</li>
+</ul>
+
+<p>Tham khảo <a href="">http://r.grokking.org/article-how-to-design-youtube-ii</a></p>
 
 
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-sharding-ids-at-instagram">http://r.grokking.org/article-sharding-ids-at-instagram</a>
+      <a target="_blank" href="http://r.grokking.org/article-design-youtube">http://r.grokking.org/article-design-youtube</a>
     <br />
   </div>
 
@@ -106,7 +112,7 @@ Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
     <script type="text/javascript">
       DiscourseEmbed = {
         discourseUrl: location.protocol + '//discuss.grokking.org/',
-        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/sharding-ids-at-instagram/'
+        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/design-youtube/'
       };
 
       (function () {

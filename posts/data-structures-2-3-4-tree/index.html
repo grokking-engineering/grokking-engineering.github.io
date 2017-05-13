@@ -18,18 +18,18 @@
 
 <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
 <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
-<meta property="og:url" content="http://www.grokking.org/posts/sharding-ids-at-instagram/"/>
+<meta property="og:url" content="http://www.grokking.org/posts/data-structures-2-3-4-tree/"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Sharding IDs at Instagram - Grokking Vietnam"/>
+<meta property="og:title" content="Data Structures: 2-3-4-Tree - Grokking Vietnam"/>
 <meta property="og:description" content="Building a playground for highly-skilled Software engineers in Vietnam"/>
-<meta property="og:image" content="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27"/>
+<meta property="og:image" content="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg"/>
 
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <title>Sharding IDs at Instagram - Grokking Vietnam</title>
+  <title>Data Structures: 2-3-4-Tree - Grokking Vietnam</title>
 </head>
 
-<body class="posts posts_sharding-ids-at-instagram posts_sharding-ids-at-instagram_index">
+<body class="posts posts_data-structures-2-3-4-tree posts_data-structures-2-3-4-tree_index">
 <header class="masthead" id="home">
   <div class="container">
     <nav class="navbar navbar-default">
@@ -70,7 +70,7 @@
         <div class="col-lg-8">
           <section class="blog-list">
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/sharding-ids-at-instagram/">Sharding IDs at Instagram</a></h2>
+    <h2 class="post-title"><a href="/posts/data-structures-2-3-4-tree/">Data Structures: 2-3-4-Tree</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
@@ -84,20 +84,40 @@
   </ul>
 
   <div class="post-body">
-    <p>Nếu bạn chưa dùng, hẳn cũng phải nghe qua Instagram rồi đúng không? Ngoài việc là mạng xã hội đã được mua lại bởi Facebook
- với giá 1 tỷ USD thì ở Instagram cũng có nhiều bài toán hay cho engineers nhà ta tham khảo thử nhé.</p>
+    <p>Chúng ta thường nghe nói nhiều về B-Tree, nhưng còn có một CTDL cây khác là 2-3-4 tree cũng tương tự như B-Tree.
+B-Tree thường được sử dụng như là external memory data structure còn 2-3-4 tree lại được sử dụng như main-memory data structure.
+B-Tree được thiết kế để có thể lưu trữ trên disk nhằm đáp ứng nhu cầu lưu trữ lượng dữ liệu lớn hơn là ưu tiên về tốc độ xử lý. Ngược lại, 2-3-4 tree là lại thích hợp với lượng dữ liệu nhỏ đủ chứa trên memory giúp tăng tốc độ xử lý.</p>
 
-<p>Với 25 photos và 90 likes mỗi giây (thời điểm năm 2012), Instagram phải chứa rất nhiều dữ liệu, đồng thời phải tìm cách 
-chia nhỏ để dữ liệu có thể được chứa trên memory, giúp việc query, truy xuất nhanh và hiệu quả hơn.</p>
+<p>Cấu trúc cây 2-3-4 được định nghĩa như sau:</p>
 
-<p>Một trong những bài toán mà team Instagram đã giải quyết, đó là sinh ra Ids với số lượng lớn và trong thời gian ngắn. 
-Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
+<ul>
+  <li>Là cấu trúc cây tự cân bằng (self-balancing)</li>
+  <li>Mỗi nút có thể có 2 con, hoặc 3, hoặc 4 nút con.</li>
+</ul>
+
+<p>Trong trường hợp 2 con thì chính là cây nhị phân:</p>
+
+<ul>
+  <li>Nút cha có 1 khóa K</li>
+  <li>Nút con trái chứa giá trị K1 &lt; K</li>
+  <li>Nút con phải chứ giá trị K2 &gt; K</li>
+</ul>
+
+<p>Trường trường hợp có 3 con thì có tại nút đó sẽ có 2 khóa K1 và K2:</p>
+
+<ul>
+  <li>Nút con nằm bên trái sẽ chứa các khóa K &lt; K1</li>
+  <li>Nút con nằm ở giữa sẽ chứa các khóa có giá trị K1 &lt; K &lt; K2</li>
+  <li>Nút con nằm bên phải sẽ chứ các khóa K &gt; K2</li>
+</ul>
+
+<p>Trường hợp có 4 nút con thì tương tự như có 3 nút con (nút cha sẽ có 3 giá trị khóa K1, K2 và K3. Các nút con sẽ chứa các khóa K có giá trị lần lượt trong từng khoảng K &lt; K1, K1 &lt; K &lt; K2, K2 &lt; K &lt; K3 và K &gt; K3).</p>
+
+<p>Đặc điểm đặc biệt của cây 2-3-4 là tất cả các nút lá đều cùng độ cao. Chiều dài tính từ nút gốc đến tất cả nút là bằng nhau.</p>
 
 
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-sharding-ids-at-instagram">http://r.grokking.org/article-sharding-ids-at-instagram</a>
     <br />
   </div>
 
@@ -106,7 +126,7 @@ Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
     <script type="text/javascript">
       DiscourseEmbed = {
         discourseUrl: location.protocol + '//discuss.grokking.org/',
-        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/sharding-ids-at-instagram/'
+        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/data-structures-2-3-4-tree/'
       };
 
       (function () {

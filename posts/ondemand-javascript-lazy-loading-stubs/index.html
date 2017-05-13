@@ -18,18 +18,18 @@
 
 <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
 <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
-<meta property="og:url" content="http://www.grokking.org/posts/sharding-ids-at-instagram/"/>
+<meta property="og:url" content="http://www.grokking.org/posts/ondemand-javascript-lazy-loading-stubs/"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Sharding IDs at Instagram - Grokking Vietnam"/>
+<meta property="og:title" content="Lazy loading Javascript: Ondemand Javascript Lazy Loading Stubs - Grokking Vietnam"/>
 <meta property="og:description" content="Building a playground for highly-skilled Software engineers in Vietnam"/>
-<meta property="og:image" content="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27"/>
+<meta property="og:image" content="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18199356_1379541392113825_2469642543212739686_n.png?oh=e11707f14c2ad18af396b246d289a632&oe=59C167BF"/>
 
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <title>Sharding IDs at Instagram - Grokking Vietnam</title>
+  <title>Lazy loading Javascript: Ondemand Javascript Lazy Loading Stubs - Grokking Vietnam</title>
 </head>
 
-<body class="posts posts_sharding-ids-at-instagram posts_sharding-ids-at-instagram_index">
+<body class="posts posts_ondemand-javascript-lazy-loading-stubs posts_ondemand-javascript-lazy-loading-stubs_index">
 <header class="masthead" id="home">
   <div class="container">
     <nav class="navbar navbar-default">
@@ -70,7 +70,7 @@
         <div class="col-lg-8">
           <section class="blog-list">
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/sharding-ids-at-instagram/">Sharding IDs at Instagram</a></h2>
+    <h2 class="post-title"><a href="/posts/ondemand-javascript-lazy-loading-stubs/">Lazy loading Javascript: Ondemand Javascript Lazy Loading Stubs</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
@@ -84,20 +84,17 @@
   </ul>
 
   <div class="post-body">
-    <p>Nếu bạn chưa dùng, hẳn cũng phải nghe qua Instagram rồi đúng không? Ngoài việc là mạng xã hội đã được mua lại bởi Facebook
- với giá 1 tỷ USD thì ở Instagram cũng có nhiều bài toán hay cho engineers nhà ta tham khảo thử nhé.</p>
+    <p>Dạo gần đây, với sự lên ngôi của những thư viện front-end, thì lượng code javascript càng ngày càng chiếm tỷ trọng cao trong nội dung trang.</p>
 
-<p>Với 25 photos và 90 likes mỗi giây (thời điểm năm 2012), Instagram phải chứa rất nhiều dữ liệu, đồng thời phải tìm cách 
-chia nhỏ để dữ liệu có thể được chứa trên memory, giúp việc query, truy xuất nhanh và hiệu quả hơn.</p>
+<p>Với những kỹ thuật lập trình hiện nay, việc đưa tất cả code vào 1 file script chung chưa hẳn đã là tối ưu. Nếu bạn có một module script phức tạp cần chạy ở front-end, mà chỉ được kích hoạt khoảng 5% trong tổng số lượng visitors viếng thăm site của bạn thì sao? 95% visitors còn lại sẽ phải load trang chậm hơn vì một tính năng họ không dùng đến?</p>
 
-<p>Một trong những bài toán mà team Instagram đã giải quyết, đó là sinh ra Ids với số lượng lớn và trong thời gian ngắn. 
-Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
+<p>Để tránh vấn đề này, kỹ thuật ondemand Javascript loading cũng là một kỹ thuật hữu ích. Cùng đọc để biết thêm kỹ thuật này implement thế nào nhé</p>
 
 
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27">
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18199356_1379541392113825_2469642543212739686_n.png?oh=e11707f14c2ad18af396b246d289a632&oe=59C167BF">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-sharding-ids-at-instagram">http://r.grokking.org/article-sharding-ids-at-instagram</a>
+      <a target="_blank" href="http://r.grokking.org/article-ondemand-javascript-lazy-loading-stub">http://r.grokking.org/article-ondemand-javascript-lazy-loading-stub</a>
     <br />
   </div>
 
@@ -106,7 +103,7 @@ Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
     <script type="text/javascript">
       DiscourseEmbed = {
         discourseUrl: location.protocol + '//discuss.grokking.org/',
-        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/sharding-ids-at-instagram/'
+        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/ondemand-javascript-lazy-loading-stubs/'
       };
 
       (function () {
