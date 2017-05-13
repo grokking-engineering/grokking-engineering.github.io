@@ -27,13 +27,15 @@
     <%= body %>
 
     <%- if article.data.img %>
-      <img src="<%=article.data.img%>">
+      <img class="img-responsive" src="<%=article.data.img%>">
     <%- end %>
 
+    <br >
     <%- if article.data.link %>
       <a target="_blank" href="<%=article.data.link %>"><%=article.data.link %></a>
     <%- end %>
 
+    <br />
   </div>
 
   <%- if read_more %>

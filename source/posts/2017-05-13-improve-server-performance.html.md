@@ -16,5 +16,3 @@ Bàn ngoài lề tí chơi, cùng đọc bài viết dưới đây để hiểu 
 viết này, anh Dan Fruehauf sẽ chia sẻ quá trình phân tích, bắt đầu từ việc phân tích xem hệ thống của bạn sẽ cần truy
  xuất kiểu đọc ghi tuần tự nhiều (dành cho server hay stream video, return download file), hay là đọc ghi ngẫu nhiên 
  (database read/write), sau đó có thể thử optimize memory từ phía ứng dụng (thao tác trên Ram nhiều hơn), .... và các kỹ thuật khác.
-
-http://r.grokking.org/article-how-to-improve-server-performance-by-io-tuning-part-1
