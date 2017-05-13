@@ -24,7 +24,8 @@
       display: inline;
       padding-right: 20px; }
   .single-post .post-body {
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-bottom: 25px; }
     .single-post .post-body a, .single-post .post-body a:visited, .single-post .post-body a:active {
       color: #3498db; }
     .single-post .post-body h2 {
