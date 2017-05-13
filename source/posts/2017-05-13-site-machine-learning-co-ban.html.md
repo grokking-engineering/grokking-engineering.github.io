@@ -1,5 +1,5 @@
 ---
-title: "Site: Machine Learning Co Ban"
+title: "Site: Machine Learning Cơ Bản"
 date: 2017-05-13 08:20 UTC
 tags:
 img: http://machinelearningcoban.com/assets/18_duality/dual_func.png
