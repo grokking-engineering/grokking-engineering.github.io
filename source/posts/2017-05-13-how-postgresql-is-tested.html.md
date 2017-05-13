@@ -3,7 +3,7 @@ title: How Postgresql Is Tested
 date: 2017-05-13 08:59 UTC
 tags:
 img: 
-link: http://r.grokking.org/how-postgresql-is-tested
+link: 
 ---
 
 Bạn nào xài PostgreSQL thì biết là mặc dù là open-source/community-contributed database nhưng độ ổn định và code structure quality là cực cao (project nhà mình làm có QA mà có khi còn không bằng)
