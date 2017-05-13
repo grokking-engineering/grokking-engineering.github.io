@@ -32,9 +32,8 @@
 
     <br >
     <%- if article.data.link %>
-      <a target="_blank" href="<%=article.data.link %>"><%=article.data.link %></a>
+      <a target="_blank" href="<%= article.data.link %>"><%= article.data.link %></a>
     <%- end %>
-
     <br />
   </div>
 
@@ -44,5 +43,23 @@
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
+  <%- else %>
+    <div id='discourse-comments'></div>
+
+    <script type="text/javascript">
+      DiscourseEmbed = {
+        discourseUrl: location.protocol + '//discuss.grokking.org/',
+        discourseEmbedUrl: location.protocol + '//www.grokking.org/posts/<%= article.slug %>/'
+      };
+
+      (function () {
+        var d = document.createElement('script');
+        d.type = 'text/javascript';
+        d.async = true;
+        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+      })();
+    </script>
   <%- end %>
+
 </div>

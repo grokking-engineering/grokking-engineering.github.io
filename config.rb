@@ -34,7 +34,7 @@ activate :directory_indexes
 helpers do
 
   def page_title(title)
-    base_title = 'Holistics - Business Intelligence and Data Infrastructure'
+    base_title = 'Grokking Vietnam'
     title.nil? ? base_title : (title + ' - ' + base_title)
   end
 
