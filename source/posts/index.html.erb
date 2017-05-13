@@ -1,0 +1,28 @@
+---
+pageable: true
+per_page: 6
+---
+
+<div class="blog-wrapper">
+
+  <div class="container">
+    <div class="row">
+
+      <!--main content-->
+      <div class="col-lg-8">
+        <section class="blog-list">
+          <% page_articles.each_with_index do |article, i| %>
+            <%= partial 'posts/blog_post', locals: {article: article, read_more: true, body: article.body } %>
+          <% end %>
+        </section>
+        <%= partial 'pagination' %>
+      </div>
+
+      <!--sidebar-->
+      <div class="col-lg-4">
+        <%= partial 'posts/blog_sidebar' %>
+      </div>
+    </div>
+
+  </div>
+</div>

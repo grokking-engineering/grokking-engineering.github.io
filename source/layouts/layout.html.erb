@@ -1,100 +1,13 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="icon" type="image/jpeg" href="/images/favico-origin.jpg" />
-
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Use the title from a page's frontmatter if it has one -->
+  <%= partial 'shared/meta' %>
   <title><%= current_page.data.title || "Home" %> - Grokking Vietnam</title>
-
-  <%= stylesheet_link_tag "bootstrap.min" %>
-  <%= stylesheet_link_tag "application" %>
-  <%= javascript_include_tag "jquery.min" %>
-  <%= javascript_include_tag "bootstrap.min" %>
-  <%= javascript_include_tag "application" %>
-
-  <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
-  <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
-  <meta property="og:url" content="http://www.grokking.org<%= current_page.url %>" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="<%= current_page.data.title || "Grokking Vietnam - For a strong and connected software engineers ecosystem in Vietnam" %> - Grokking Vietnam" />
-  <meta property="og:description" content="<%= current_page.data.description || "Building a playground for highly-skilled Software engineers in Vietnam" %>" />
-  <meta property="og:image" content="<%= current_page.data.image || "https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg" %>" />
-
-  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" type="text/css" href="/assets/bxslider/jquery.bxslider.css">
-  <script src="/assets/bxslider/jquery.bxslider.js"></script>
-
-  <title>Grokking Vietnam</title>
 </head>
 <body>
-
-<header class="masthead" id="home">
-  <div class="container">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-logo" href="/"><img class="logo" src="/images/logo_resize.png"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/techtalks/">Tech Talks</a></li>
-            <li><a href="/consultant/">Consultant</a></li>
-            <li><a href="/#about">About Us</a></li>
-            <li class="join-link">
-              <a href="/#contact">
-                Join Us
-                <img src="/images/slack_icon.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
-
+<%= partial 'shared/header' %>
 <%= yield %>
-
-<footer class="footer">
-  <div class="container text-center">
-    <div class="copyright">
-      <div>Grokking Vietnam &copy 2016</div>
-      <div>All Rights Reserved.</div>
-    </div>
-  </div>
-
-</footer>
-
-<a href="#0" class="cd-top">Top</a>
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-80299034-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
+<%= partial 'shared/footer' %>
 </body>
 </html>
 

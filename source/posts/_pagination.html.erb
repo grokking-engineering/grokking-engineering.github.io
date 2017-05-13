@@ -1,0 +1,25 @@
+<% if paginate && num_pages > 1 %>
+  <section class="pagination">
+    <% if prev_page %>
+      <div class="previous-page">
+        <% link_to prev_page do %>
+          <icon i="arrow-previous" wrap="true"></icon>
+          Previous
+        <% end %>
+      </div>
+    <% end %>
+
+    <div class="page-number">
+      Page <%= page_number %> of <%= num_pages %>
+    </div>
+
+    <% if next_page %>
+      <div class="next-page">
+        <% link_to next_page do %>
+          Next
+          <icon i="arrow-next" wrap="true"></icon>
+        <% end %>
+      </div>
+    <% end %>
+  </section>
+<% end %>

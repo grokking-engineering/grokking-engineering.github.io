@@ -1,0 +1,33 @@
+<%- selected_tags ||= [] %>
+
+<section class="blog-sidebar">
+
+  <% if defined?(sidebar_img) && sidebar_img.present? %>
+    <img src="/blog/images/<%= sidebar_img %>">
+  <% else %>
+
+    <nav class="nav flex-column tags">
+      <a class="nav-link <%= selected_tags.empty? ? 'active' : '' %>" href="/blog/">All Posts</a>
+      <% blog.tags.each do |tag, _articles| %>
+          <a class="nav-link <%= selected_tags.include?(tag) ? 'active' : '' %>" href="<%= tag_path(tag) %>"><%= tag_label_for(tag) %></a>
+      <% end %>
+    </nav>
+
+
+    <div class="info-card">
+      <div class="wrapper">
+        <img class="logo" src="/images/logo-color.svg">
+        <p class="intro">
+          Holistics Data Reporting provides a web interface for your existing SQL database to build and access
+          reports
+          <br><br>
+          Holistics Data Preparation helps provide you an effortless approach to set up your reporting database.
+        </p>
+      </div>
+      <div class="text-center link">
+        <a href="/" target="_blank" class="btn btn-sm btn-primary-green link">Learn more</a>
+      </div>
+    </div>
+  <% end %>
+
+</section>

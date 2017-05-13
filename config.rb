@@ -13,38 +13,70 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+
+activate :blog do |blog|
+  blog.name = 'posts'
+  blog.default_extension = '.md'
+  blog.layout = 'post_entry_layout'
+  blog.prefix = 'posts'
+  blog.permalink = "{title}"
+  blog.tag_template = "posts/tag.html"
+  blog.calendar_template = "posts/calendar.html"
+  blog.paginate = true
+end
+
+
 # turn about-us.html to /about-us/
 activate :directory_indexes
 
 
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
-
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
-
-# proxy(
-#   '/this-page-has-no-template.html',
-#   '/template-file.html',
-#   locals: {
-#     which_fake_page: 'Rendering a fake page with a local variable'
-#   },
-# )
-
-# Helpers
 # Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
+helpers do
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+  def page_title(title)
+    base_title = 'Holistics - Business Intelligence and Data Infrastructure'
+    title.nil? ? base_title : (title + ' - ' + base_title)
+  end
 
-# Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+  def title_case (str)
+    str.split('-').map { |word| word.capitalize }.join(' ')
+  end
+
+  def find_tag(tagname)
+    data.tags.select { |t| t.tag == tagname }.first
+  end
+
+  def tag_label_for(tag)
+    element = find_tag(tag)
+    if element.nil? || element.label.nil?
+      title_case(tag)
+    else
+      element.label
+    end
+  end
+
+  def tag_description_for(tagname)
+    element = find_tag(tagname)
+    element&.description
+  end
+
+
+  def find_author(author_slug)
+    return nil if author_slug.nil?
+    author_slug = author_slug.downcase
+    result = data.authors.select { |author| author.slug == author_slug }
+
+    raise ArgumentError unless result.any?
+    result.first
+  end
+
+  def get_route(route_name)
+    return nil if route_name.nil?
+    result = data.sitemaps.select do |r|
+      r.name.eql?(route_name)
+    end
+    result.first
+  end
+
+end

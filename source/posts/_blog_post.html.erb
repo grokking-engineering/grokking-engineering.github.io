@@ -1,0 +1,46 @@
+<%- hide_title ||= false %>
+<div class="blog-post single-post">
+  <%- unless hide_title %>
+    <h2 class="post-title"><%= link_to article.title, article %></h2>
+  <%- end %>
+  <ul class="post-meta">
+    <li class="meta-date">
+      <i class="fa fa-calendar"></i>
+      <%= article.date.strftime('%b %e, %Y') %>
+    </li>
+
+    <% author = find_author(article.data.author_slug) %>
+    <% if author %>
+      <li class="meta-author">by <%= author.name %></li>
+    <% end %>
+
+    <li>
+      <%- article.tags.each do |tag| %>
+        <i class="fa fa-tag"></i>
+        <a href="<%= tag_path(tag) %>"> <%= tag_label_for(tag) %> </a>
+      <%- end %>
+    </li>
+
+  </ul>
+
+  <div class="post-body">
+    <%= body %>
+
+    <%- if article.data.img %>
+      <img src="<%=article.data.img%>">
+    <%- end %>
+
+    <%- if article.data.link %>
+      <a target="_blank" href="<%=article.data.link %>"><%=article.data.link %></a>
+    <%- end %>
+
+  </div>
+
+  <%- if read_more %>
+    <div>
+      <a href="<%= article.url %>" class="btn btn-primary btn-sm">
+        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  <%- end %>
+</div>

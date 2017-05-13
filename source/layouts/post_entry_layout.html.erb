@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <%= partial "shared/meta" %>
+  <title><%= page_title(current_article.title) %></title>
+</head>
+
+<body class="<%= page_classes %>">
+<%= partial 'shared/header' %>
+
+<div id="grokking-posts">
+  <div class="blog-wrapper">
+    <div class="container" style="margin-top: 80px">
+      <div class="row">
+        <div class="col-lg-8">
+          <section class="blog-list">
+            <%= partial 'posts/blog_post', locals: {hide_title: false, article: current_article, read_more: false, body: yield} %>
+          </section>
+
+        </div>
+        <div class="col-lg-4">
+          <%= partial 'posts/blog_sidebar', locals: {sidebar_img: current_article.data.sidebar_img, selected_tags: current_article.tags} %>
+        </div>
+      </div>
+
+      <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
+
+        <% if prev_page %>
+          <p><%= link_to 'Previous page', prev_page %></p>
+        <% end %>
+      <% end %>
+
+      <% if paginate %>
+        <% if next_page %>
+          <p><%= link_to 'Next page', next_page %></p>
+        <% end %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+<%= partial 'shared/footer' %>
+</body>
+</html>
