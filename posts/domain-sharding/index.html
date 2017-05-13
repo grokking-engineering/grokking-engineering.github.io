@@ -18,17 +18,18 @@
 
 <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
 <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
-<meta property="og:url" content="http://www.grokking.org/wiki/segment-tree/"/>
+<meta property="og:url" content="http://www.grokking.org/posts/domain-sharding/"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Grokking Vietnam - For a strong and connected software engineers ecosystem in Vietnam - Grokking Vietnam"/>
+<meta property="og:title" content="Domain Sharding - Grokking Vietnam"/>
 <meta property="og:description" content="Building a playground for highly-skilled Software engineers in Vietnam"/>
 <meta property="og:image" content="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg"/>
 
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <title>Home - Grokking Vietnam</title>
+  <title>Domain Sharding - Holistics - Business Intelligence and Data Infrastructure</title>
 </head>
-<body>
+
+<body class="posts posts_domain-sharding posts_domain-sharding_index">
 <header class="masthead" id="home">
   <div class="container">
     <nav class="navbar navbar-default">
@@ -62,52 +63,88 @@
 </header>
 
 
-<h2 id="segment-tree">Segment Tree</h2>
+<div id="grokking-posts">
+  <div class="blog-wrapper">
+    <div class="container" style="margin-top: 80px">
+      <div class="row">
+        <div class="col-lg-8">
+          <section class="blog-list">
+            <div class="blog-post single-post">
+    <h2 class="post-title"><a href="/posts/domain-sharding/">Domain Sharding</a></h2>
+  <ul class="post-meta">
+    <li class="meta-date">
+      <i class="fa fa-calendar"></i>
+      Jun 28, 2016
+    </li>
 
-<hr />
-<p>Segment Tree is a kind of Full Binary Tree (which mean each node has either two or no children).
-The problem that comes up with the idea of segment tree is described as below:
-given an array of integer as input
-return the sum of a sub-array of input array from index i to index j</p>
+      <li class="meta-author">by Huy Nguyen</li>
 
-<p>Ex:</p>
+    <li>
+        <i class="fa fa-tag"></i>
+        <a href="/posts/tags/web-performance/"> Web performance </a>
+    </li>
 
-<p>In [1, 3, 8, 4, 2, 3, 18, 8] i=1, j=4</p>
+  </ul>
 
-<p>Out 17</p>
+  <div class="post-body">
+    <p>Hẳn là bạn đã nghe về Data Sharding rồi nhỉ, thế bạn có nghe qua Domain Sharding chưa?</p>
 
-<p>If we take the regular approach for this problem, we just simply sum up all elements from index i to index j
-by using a loop, which mean the complexity is O(n). But think of worst case scenario,
-if i = 0 and j = size_of_array then we must loop over the entire array, which will be <strong>very very very <b>painful</b></strong>
-if the size of array is <strong>millions</strong> or <strong>billions</strong>.</p>
+<p>Khi visitor vào xem 1 website, thì thứ thường thấy là danh sách dài các file resources sẽ được download. 
+Càng nhiều resources thì sẽ dẫn đến quá trình tải trang bị chậm.</p>
 
-<p>So, segment tree now jumps in, as a dynamic programming technique, makes a less painfully solution for this problem.</p>
+<p>Bên cạnh việc optimize resources bằng cách dùng gzip, tạo sprite, vẫn còn nhiều kỹ thuật khác, trong đó có 
+kỹ thuật Domain Sharding, trong đó chúng ta chia resources ra nhiều server khác nhau, do mỗi browser sẽ có một con 
+số giới hạn về số kết nối đồng thời đến cùng 1 domain nên việc chia nhỏ này cũng sẽ giúp tăng tốc quá trình tải trang. 
+Tuy nhiên, phương pháp này cũng có điểm bất lợi, đó là … mà thôi cùng đọc bài viết để hiểu thêm nhé.</p>
 
-<p>First, we need to understand how a Segment Tree is created. Here is how</p>
+<p>http://r.grokking.org/article-sharding-dominant-domains</p>
 
-<p>Segment tree is built by recurrently dividing the current segment into two halves (while the length of segment still not 1), then call that
-procedure on both halves. So all the leafs are elements in array, the internal nodes are sum of two child nodes.
-Segment tree has n leaves node, and n - 1 internal nodes.</p>
 
-<p>The height of segment tree is log2(n)</p>
 
-<p>In each node, we need to store these two infos:</p>
+  </div>
 
-<ul>
-  <li>
-    <p>sum up of two child node</p>
-  </li>
-  <li>
-    <p>index i and index j which show us the segment from arr[i] to arr[j]</p>
-  </li>
-</ul>
 
-<hr />
+  <div id='discourse-comments'></div>
 
-<p><img src="/images/segment-tree.png" alt="alt text" title="Segment Tree" /></p>
+  <script type="text/javascript">
+    DiscourseEmbed = { discourseUrl: 'http://discuss.grokking.org/',
+      discourseEmbedUrl: 'https://www.grokking.org/posts/domain-sharding' };
 
-<p>So now we can easily get the sum of any segments by perform a search through binary tree (BFS or DFS).</p>
+    (function() {
+      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+      d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+    })();
+  </script>
 
+
+</div>
+
+          </section>
+
+        </div>
+        <div class="col-lg-4">
+          
+<section class="blog-sidebar">
+
+
+  <div class="info-card">
+    <div class="wrapper">
+      <p> Grokking is a non-profit organization dedicated to leveling up Vietnamese software engineers. </p>
+      <p> Here you can find highly technical content and tech talks that we curate and organize every month.</p>
+    </div>
+  </div>
+
+</section>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
 
 <footer class="footer">
   <div class="container text-center">
@@ -141,4 +178,3 @@ Segment tree has n leaves node, and n - 1 internal nodes.</p>
 
 </body>
 </html>
-

@@ -1,3 +1,51 @@
+.single-post {
+  background: #fff;
+  margin: 0 20px 50px 0;
+  padding: 10px 15px; }
+  .single-post:not(:last-child) {
+    border-bottom: 1px solid #DCDCDC; }
+  .single-post .post-title, .single-post .post-title a {
+    text-transform: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: left; }
+  .single-post ul.post-meta {
+    font-size: 15px;
+    list-style: none;
+    color: #808080;
+    margin-bottom: 20px;
+    padding-left: 0; }
+    .single-post ul.post-meta a {
+      color: #808080; }
+      .single-post ul.post-meta a:hover {
+        text-decoration: underline; }
+    .single-post ul.post-meta > li {
+      display: inline;
+      padding-right: 20px; }
+  .single-post .post-body {
+    margin-top: 25px; }
+    .single-post .post-body a, .single-post .post-body a:visited, .single-post .post-body a:active {
+      color: #3498db; }
+    .single-post .post-body h2 {
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid #eaecef; }
+    .single-post .post-body blockquote {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 1rem;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(28, 37, 65, 0.08);
+      border-radius: 4px;
+      background-color: rgba(28, 37, 65, 0.02);
+      font-size: 1.424rem;
+      line-height: 1.602; }
+  .single-post p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 15px 0; }
+
 body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.6rem;
