@@ -2,7 +2,6 @@
 title: Designed Inter Region AWS Load Balancer Felix Stepski
 date: 2017-05-13 09:01 UTC
 tags:
-img: https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAjdAAAAJDI3NmIyNzQzLTY1NWItNGI2Zi05ZTExLWFjZTljNjczZmQ1MA.png
 link: http://r.grokking.org/article-how-we-designed-inter-region-aws
 ---
 
