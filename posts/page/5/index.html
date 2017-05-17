@@ -233,42 +233,71 @@ viết này, anh Dan Fruehauf sẽ chia sẻ quá trình phân tích, bắt đ�
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/domain-sharding/">Domain Sharding</a></h2>
+    <h2 class="post-title"><a href="/posts/data-structures-unrolled-linked-list/">Data Structures: Unrolled Linked List</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      Jun 28, 2016
+      Mar 25, 2017
     </li>
 
-      <li class="meta-author">by Huy Nguyen</li>
 
     <li>
-        <i class="fa fa-tag"></i>
-        <a href="/posts/tags/web-performance/"> Web performance </a>
     </li>
 
   </ul>
 
   <div class="post-body">
-    <p>Hẳn là bạn đã nghe về Data Sharding rồi nhỉ, thế bạn có nghe qua Domain Sharding chưa?</p>
+    <p>Là một biến thể của linked list, lưu trữ một mảng các phần tử tại mỗi node thay vì chỉ một phần tử như linked list thông thường.</p>
 
-<p>Khi visitor vào xem 1 website, thì thứ thường thấy là danh sách dài các file resources sẽ được download. 
-Càng nhiều resources thì sẽ dẫn đến quá trình tải trang bị chậm.</p>
+<p>Unrolled linked list yêu cầu bộ nhớ ít hơn, do với cùng 1 số lượng N phần tử trong list, nó không phải cung cấp thêm bộ nhớ cho pointer ở mỗi node như linked list, vì nhiều phần tử đã ở chung một node.</p>
 
-<p>Bên cạnh việc optimize resources bằng cách dùng gzip, tạo sprite, vẫn còn nhiều kỹ thuật khác, trong đó có 
-kỹ thuật Domain Sharding, trong đó chúng ta chia resources ra nhiều server khác nhau, do mỗi browser sẽ có một con 
-số giới hạn về số kết nối đồng thời đến cùng 1 domain nên việc chia nhỏ này cũng sẽ giúp tăng tốc quá trình tải trang. 
-Tuy nhiên, phương pháp này cũng có điểm bất lợi, đó là … mà thôi cùng đọc bài viết để hiểu thêm nhé.</p>
+<p>Nhưng ưu điểm chính của nó nằm ở việc tìm kiếm nhanh hơn so với linked list thông thường. Lý do là vì sử dụng mảng để lưu trữ nên việc truy xuất các phần tử rất nhanh nhờ vào cơ chế cache của processor, khi đọc 1 phần tử ở 1 address trên bộ nhớ, nó sẽ đọc luôn những phần từ liền kề gần đó, vì mảng được cấp phát liên tục, nên khi đọc một phần tử ở địa chỉ X thì các phần tử tiếp theo sẽ nằm ở (X + n, X + 2n,… với n là kích thước của mỗi phần tử), nên các lần truy cập sau sẽ rất nhanh (spatial locality). Với linked list thì processor không thể đọc theo cách này vì bộ nhớ cho linked list được cấp phát không liên tục như mảng.</p>
 
 
+      <img class="img-responsive" src="http://www.geeksforgeeks.org/wp-content/uploads/unrolledLinkedList.png">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-sharding-dominant-domains">http://r.grokking.org/article-sharding-dominant-domains</a>
+      <a target="_blank" href="http://r.grokking.org/article-unrolled-linked-list">http://r.grokking.org/article-unrolled-linked-list</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/domain-sharding/" class="btn btn-primary btn-sm">
+      <a href="/posts/data-structures-unrolled-linked-list/" class="btn btn-primary btn-sm">
+        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+</div>
+
+            <div class="blog-post single-post">
+    <h2 class="post-title"><a href="/posts/feature-toggles/">Feature Toggles</a></h2>
+  <ul class="post-meta">
+    <li class="meta-date">
+      <i class="fa fa-calendar"></i>
+      Mar 25, 2017
+    </li>
+
+
+    <li>
+    </li>
+
+  </ul>
+
+  <div class="post-body">
+    <p>Có khi nào bạn thắc mắc sao trên FB account của bạn thì thấy feature này còn account của người khác thì không có không?
+Đó là kĩ thuật Feature Toggle trong software development đó, giúp bạn có thể release/rollback features tự tin hơn mà không cần phải deploy/rollback code của mình. Ngoài ra còn có thể làm A/B testing, feature rollout theo từng vùng địa lý khác nhau nữa.
+Tham khảo bài viết sau trên trang MartinFowler để biết thêm về kĩ thuật này nhe.</p>
+
+
+      <img class="img-responsive" src="https://martinfowler.com/articles/feature-toggles/overview-diagram.png">
+
+    <br >
+      <a target="_blank" href="http://r.grokking.org/article-feature-toggles">http://r.grokking.org/article-feature-toggles</a>
+    <br />
+  </div>
+
+    <div>
+      <a href="/posts/feature-toggles/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -283,9 +312,13 @@ Tuy nhiên, phương pháp này cũng có điểm bất lợi, đó là … mà 
 </a>      </div>
 
     <div class="page-number">
-      Page 5 of 5
+      Page 5 of 7
     </div>
 
+      <div class="next-page">
+<a href="/posts/page/6/">          Next
+          <icon i="arrow-next" wrap="true"></icon>
+</a>      </div>
   </section>
 
       </div>
