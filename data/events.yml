@@ -11,8 +11,25 @@ techtalks:
   image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
 
   sessions:
-  - title: TBD
-  - title: TBD
+  - title: Giới thiệu về Viễn thông Di động
+    speaker: Tạ Hữu Việt @ Mobifone
+    description: 
+      desc: "Phần trình bày giới thiệu với người nghe những thông tin cơ bản về Viễn thông Di động bao gồm:"
+      items:
+        - value: Sơ đồ một hệ thống viễn thông 2G/3G/4G phổ biến
+        - value: Giao thức/ thủ tục trao đổi bản tin khi người dùng gọi điện thoại, truy cập internet
+        - value: Một số thông tin người dùng nên biết về mạng 4G LTE mới tại Việt Nam
+        - value: Những liên hệ với các hiện tượng thực tế người dùng thường gặp về mạng di động
+        - value: Giới thiệu sơ lược về lịch sử phát triển của viễn thông di động 2G/3G/4G
+  - title: VoIP Architecture for Telecommunications
+    speaker: Âu Dương Đạt, Chairman @ VHT
+    description:
+      desc: "Bài talk chia sẻ kiến thức, kinh nghiệm về kiến trúc VoIP cho các bạn dự định xây dựng hệ thống dựa trên nền tảng VoIP, lập trình phát triển ứng dụng CRM, ERP, POS...tích hợp Call & Contact Center, ứng dụng OTT tích hợp Mobile App và call out PSTN, tương tự dịch vụ Viber Out:"
+      items:
+        - value: VoIP Platform
+        - value: IP-PBX
+        - value: WebRTC Gateway & Client
+        - value: Use Cases
   
 - number: 17
   date: April 8, 2017

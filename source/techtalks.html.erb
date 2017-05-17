@@ -46,6 +46,18 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
                     </strong><%- if session.speaker %> - <%= session.speaker %> <%- end %>
                     <%- if session.slide_href %> - <a href="<%= session.slide_href %>">Slide</a> <%- end %>
                   </li>
+                  
+                  <%- if session.description %>
+                  <li>
+                    <strong>Description:</strong><br />
+                    <%= session.description.desc %>
+                    <ul>
+                    <%- session.description.items.each do |item| %>
+                      <li><%= item.value %></li>
+                    <%- end %>
+                    </ul>
+                  </li>
+                  <%- end %>
                 <%- end %>
               </ul>
               <h3>Info:</h3>
