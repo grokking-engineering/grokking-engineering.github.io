@@ -69,11 +69,11 @@
       <div class="col-lg-8">
         <section class="blog-list">
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/site-machine-learning-co-ban/">Site: Machine Learning Cơ Bản</a></h2>
+    <h2 class="post-title"><a href="/posts/command-query-responsibility-segregation/">Command Query Responsibility Segregation (CQRS)</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      Apr  4, 2017
     </li>
 
 
@@ -83,18 +83,22 @@
   </ul>
 
   <div class="post-body">
-    <p>"Thêm màu cho ảnh trắng đen", "Tự sinh ra âm thanh cho những đoạn phim câm", "Dịch tự động", "Phân loại và đánh nhãn những đối tượng trong những tấm ảnh", …. Với sự phát triển của Machine Learning, càng ngày càng nhiều ứng dụng được phát triển, khiến cho phần mềm ngày càng thông minh hơn. Nếu bạn hứng thú với khuynh hướng này, có thể bắt đầu với một website (Tiếng Việt) được xây dựng bởi một anh nghiên cứu sinh người Việt đang sống và làm việc ở Mỹ nhé.</p>
+    <p>CRUD là một mô hình phổ biến nhưng chỉ phù hợp cho trường hợp đơn giản. Khi nhu cầu tương tác với dữ liệu của bạn càng phức tạp (như update model cha và con cùng lúc, gộp cha + con lại thành nested attributes, ..) thì CRUD sẽ không phù hợp nữa, và nhiều đơn vị chuyển sang dùng CQRS.</p>
+
+<p>Việc tương tác với Database theo mô hình CQRS sẽ hướng đến tương tác theo 2 cơ chế Query (Read) và Commands (Create, Update, Delete) độc lập hoàn toàn với nhau.</p>
+
+<p>Cùng tham khảo bài viết dưới đây để biết thêm về tư tưởng này nhé.</p>
 
 
-      <img class="img-responsive" src="http://machinelearningcoban.com/assets/18_duality/dual_func.png">
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/17499144_1339052396162725_7659564233679168314_n.png?oh=053ff280a577803eb1a8ef71f6a7001f&oe=59AB929E">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/site-machine-learning-co-ban">http://r.grokking.org/site-machine-learning-co-ban</a>
+      <a target="_blank" href="http://r.grokking.org/article-cqrs">http://r.grokking.org/article-cqrs</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/site-machine-learning-co-ban/" class="btn btn-primary btn-sm">
+      <a href="/posts/command-query-responsibility-segregation/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -102,11 +106,11 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/linux-explain-shell/">Linux: Explain Shell</a></h2>
+    <h2 class="post-title"><a href="/posts/critical-metric-critical-resources/">Critical Metric Critical Resources</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      Apr  4, 2017
     </li>
 
 
@@ -116,18 +120,24 @@
   </ul>
 
   <div class="post-body">
-    <p>Bắt gặp một command linux trong một tutorial trên Internet nhưng không hiểu ý nghĩa của nó, trang web dưới đây sẽ giải thích giúp bạn một cách chi tiết: command đó làm việc gì, ý nghĩa các tham số, pipeline…</p>
+    <p>Bước chân vào thế giới của Performance, chắc bạn nào cũng đã từng trải qua vòng lặp Benchmark -&gt; Xác định actions -&gt; Optimize -&gt; Benchmark.</p>
+
+<p>Trong đó "benchmark theo metrics gì" vốn là một câu hỏi rất quan trọng mà các bạn Junior thường bỏ sót.</p>
+
+<p>Optimize một website, đầu tiên ta hay nghĩ đến: page load time, javascript load time, … Nhưng gần đây, một vài Metrics khác cũng đã được phát triển và đề nghị, ví dụ như 2 tham số sẽ ảnh hưởng nhiều đến UX của website như là Start Render, Speed Index, …</p>
+
+<p>Cùng tham khảo bài viết dưới để hiểu thêm về 2 metrics này và một số metrics liên quan khác nhé.</p>
 
 
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t31.0-8/18121300_1372605452807419_8943877038770852141_o.png?oh=577aca9a78484965ee9e5a84c63e28d8&oe=59AA2A70">
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18274983_1388724374528860_7270964859431369675_n.png?oh=8ccab60988bd12ad7394dfa3c867dec1&oe=597D7D76">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/explain-shell">http://r.grokking.org/explain-shell</a>
+      <a target="_blank" href="http://r.grokking.org/article-critical-metric-critical-resources">http://r.grokking.org/article-critical-metric-critical-resources</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/linux-explain-shell/" class="btn btn-primary btn-sm">
+      <a href="/posts/critical-metric-critical-resources/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -135,11 +145,11 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/postgres-safe-and-unsafe-operations/">Postgres: Safe And Unsafe Operations</a></h2>
+    <h2 class="post-title"><a href="/posts/design-youtube/">Design Youtube</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      Apr  3, 2017
     </li>
 
 
@@ -149,158 +159,136 @@
   </ul>
 
   <div class="post-body">
-    <p>Database có thể được coi là trái tim của một hệ thống, mọi hành động trên database đều có ảnh hưởng ít nhiều đến hiệu năng, tính khả dụng (availability ) của toàn bộ hệ thống đang vận hành. Những hành động như thêm một cột với default value hoặc thay đổi kiểu dữ liệu của một cột có khiến table bị lock hay không?</p>
+    <p>Youtube thì chắc chẳng ai là không biết đâu nhỉ? Nhưng các engineers nhà ta có ai từng thử đặt câu hỏi, khi xây dựng hệ thống như youtube cần phải giải quyết những vấn đề gì, và nên giải quyết như thế nào không?</p>
 
-<p>Hãy cùng tìm hiểu thêm qua bài viết sau để hiểu thêm nhé:</p>
-
-
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18057089_1372607032807261_4265403645765726847_n.png?oh=bb3d982c7cb3c08469330d8d7fba879f&oe=59BB8A25">
-
-    <br >
-      <a target="_blank" href="http://r.grokking.org/safe-and-unsafe-operations-postgresql">http://r.grokking.org/safe-and-unsafe-operations-postgresql</a>
-    <br />
-  </div>
-
-    <div>
-      <a href="/posts/postgres-safe-and-unsafe-operations/" class="btn btn-primary btn-sm">
-        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-      </a>
-    </div>
-
-</div>
-
-            <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/ondemand-javascript-lazy-loading-stubs/">Lazy loading Javascript: Ondemand Javascript Lazy Loading Stubs</a></h2>
-  <ul class="post-meta">
-    <li class="meta-date">
-      <i class="fa fa-calendar"></i>
-      May 13, 2017
-    </li>
-
-
-    <li>
-    </li>
-
-  </ul>
-
-  <div class="post-body">
-    <p>Dạo gần đây, với sự lên ngôi của những thư viện front-end, thì lượng code javascript càng ngày càng chiếm tỷ trọng cao trong nội dung trang.</p>
-
-<p>Với những kỹ thuật lập trình hiện nay, việc đưa tất cả code vào 1 file script chung chưa hẳn đã là tối ưu. Nếu bạn có một module script phức tạp cần chạy ở front-end, mà chỉ được kích hoạt khoảng 5% trong tổng số lượng visitors viếng thăm site của bạn thì sao? 95% visitors còn lại sẽ phải load trang chậm hơn vì một tính năng họ không dùng đến?</p>
-
-<p>Để tránh vấn đề này, kỹ thuật ondemand Javascript loading cũng là một kỹ thuật hữu ích. Cùng đọc để biết thêm kỹ thuật này implement thế nào nhé</p>
-
-
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18199356_1379541392113825_2469642543212739686_n.png?oh=e11707f14c2ad18af396b246d289a632&oe=59C167BF">
-
-    <br >
-      <a target="_blank" href="http://r.grokking.org/article-ondemand-javascript-lazy-loading-stub">http://r.grokking.org/article-ondemand-javascript-lazy-loading-stub</a>
-    <br />
-  </div>
-
-    <div>
-      <a href="/posts/ondemand-javascript-lazy-loading-stubs/" class="btn btn-primary btn-sm">
-        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-      </a>
-    </div>
-
-</div>
-
-            <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/sharding-dominant-domains/">Data Sharding: Sharding Dominant Domains</a></h2>
-  <ul class="post-meta">
-    <li class="meta-date">
-      <i class="fa fa-calendar"></i>
-      May 13, 2017
-    </li>
-
-
-    <li>
-    </li>
-
-  </ul>
-
-  <div class="post-body">
-    <p>Hẳn là bạn đã nghe về Data Sharding rồi nhỉ, thế bạn có nghe qua Domain Sharding chưa?</p>
-
-<p>Khi visitor vào xem 1 website, thì thứ thường thấy là danh sách dài các file resources sẽ được download. Càng nhiều resources thì sẽ dẫn đến quá trình tải trang bị chậm.</p>
-
-<p>Bên cạnh việc optimize resources bằng cách dùng gzip, tạo sprite, vẫn còn nhiều kỹ thuật khác, trong đó có kỹ thuật Domain Sharding, trong đó chúng ta chia resources ra nhiều server khác nhau, do mỗi browser sẽ có một con số giới hạn về số kết nối đồng thời đến cùng 1 domain nên việc chia nhỏ này cũng sẽ giúp tăng tốc quá trình tải trang. Tuy nhiên, phương pháp này cũng có điểm bất lợi, đó là … mà thôi cùng đọc bài viết để hiểu thêm nhé.</p>
-
-<p>Notes: một luồng thảo luận hay về số lượng kết nối đồng thời ở mỗi browser</p>
-
-<p><a href="">http://r.grokking.org/stack-get-number-of-concurrent-requests-by-browser</a></p>
-
-
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18157531_1379549498779681_1800199008164551574_n.png?oh=f1375e064739919159977e512bfd4917&oe=5975F572">
-
-    <br >
-      <a target="_blank" href="http://r.grokking.org/article-sharding-dominant-domains">http://r.grokking.org/article-sharding-dominant-domains</a>
-    <br />
-  </div>
-
-    <div>
-      <a href="/posts/sharding-dominant-domains/" class="btn btn-primary btn-sm">
-        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-      </a>
-    </div>
-
-</div>
-
-            <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/data-structures-2-3-4-tree/">Data Structures: 2-3-4-Tree</a></h2>
-  <ul class="post-meta">
-    <li class="meta-date">
-      <i class="fa fa-calendar"></i>
-      May 13, 2017
-    </li>
-
-
-    <li>
-    </li>
-
-  </ul>
-
-  <div class="post-body">
-    <p>Chúng ta thường nghe nói nhiều về B-Tree, nhưng còn có một CTDL cây khác là 2-3-4 tree cũng tương tự như B-Tree.
-B-Tree thường được sử dụng như là external memory data structure còn 2-3-4 tree lại được sử dụng như main-memory data structure.
-B-Tree được thiết kế để có thể lưu trữ trên disk nhằm đáp ứng nhu cầu lưu trữ lượng dữ liệu lớn hơn là ưu tiên về tốc độ xử lý. Ngược lại, 2-3-4 tree là lại thích hợp với lượng dữ liệu nhỏ đủ chứa trên memory giúp tăng tốc độ xử lý.</p>
-
-<p>Cấu trúc cây 2-3-4 được định nghĩa như sau:</p>
+<p>Cùng tham khảo 2 bài viết cùng serie bên dưới để hiểu thêm về những technical decision đằng sau việc team Youtube giải quyết những vấn đề sau nhé:</p>
 
 <ul>
-  <li>Là cấu trúc cây tự cân bằng (self-balancing)</li>
-  <li>Mỗi nút có thể có 2 con, hoặc 3, hoặc 4 nút con.</li>
+  <li>Storage và data model</li>
+  <li>Video và image storage</li>
+  <li>Popular VS long-tailed videos</li>
+  <li>Scale database</li>
+  <li>Cache</li>
+  <li>Security</li>
+  <li>Webserver</li>
 </ul>
 
-<p>Trong trường hợp 2 con thì chính là cây nhị phân:</p>
-
-<ul>
-  <li>Nút cha có 1 khóa K</li>
-  <li>Nút con trái chứa giá trị K1 &lt; K</li>
-  <li>Nút con phải chứ giá trị K2 &gt; K</li>
-</ul>
-
-<p>Trường trường hợp có 3 con thì có tại nút đó sẽ có 2 khóa K1 và K2:</p>
-
-<ul>
-  <li>Nút con nằm bên trái sẽ chứa các khóa K &lt; K1</li>
-  <li>Nút con nằm ở giữa sẽ chứa các khóa có giá trị K1 &lt; K &lt; K2</li>
-  <li>Nút con nằm bên phải sẽ chứ các khóa K &gt; K2</li>
-</ul>
-
-<p>Trường hợp có 4 nút con thì tương tự như có 3 nút con (nút cha sẽ có 3 giá trị khóa K1, K2 và K3. Các nút con sẽ chứa các khóa K có giá trị lần lượt trong từng khoảng K &lt; K1, K1 &lt; K &lt; K2, K2 &lt; K &lt; K3 và K &gt; K3).</p>
-
-<p>Đặc điểm đặc biệt của cây 2-3-4 là tất cả các nút lá đều cùng độ cao. Chiều dài tính từ nút gốc đến tất cả nút là bằng nhau.</p>
+<p>Tham khảo <a href="">http://r.grokking.org/article-how-to-design-youtube-ii</a></p>
 
 
 
     <br >
+      <a target="_blank" href="http://r.grokking.org/article-design-youtube">http://r.grokking.org/article-design-youtube</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/data-structures-2-3-4-tree/" class="btn btn-primary btn-sm">
+      <a href="/posts/design-youtube/" class="btn btn-primary btn-sm">
+        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+</div>
+
+            <div class="blog-post single-post">
+    <h2 class="post-title"><a href="/posts/mobile-design-push-dont-pull/">Mobile Design Push Dont Pull</a></h2>
+  <ul class="post-meta">
+    <li class="meta-date">
+      <i class="fa fa-calendar"></i>
+      Apr  2, 2017
+    </li>
+
+
+    <li>
+    </li>
+
+  </ul>
+
+  <div class="post-body">
+    <p>Chuyện kể rằng, một vài ngân hàng lớn sau khi triển khai ứng dụng mobile app của họ cho người dùng để phục vụ cho việc kiểm tra tài khoản nhanh gọn hơn thì phát hiện ra là gánh nặng cho hệ thống server và hạ tầng tăng đột biến trong thời gian ngắn.</p>
+
+<p>Nhưng thay vì giải quyết vấn đề bằng cách ngay lập tức tăng số lượng servers và resources - tăng chi phí, các kỹ sư phân tích đã tìm ra cách giải quyết lượng tải lớn đó bằng cách …. thay đổi cơ chế xử lý giao diện trên mobile app, gỡ bỏ 1 button trên UI….</p>
+
+<p>Cùng đọc bài viết dưới đây (tiếng Anh) để biết thêm về câu chuyện này nhé.</p>
+
+
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/17629788_1347678745300090_5316522233870602813_n.png?oh=f41da8e080c420fccfe80a76efd620db&oe=597B6D4F">
+
+    <br >
+      <a target="_blank" href="http://r.grokking.org/article-mobile-design-push-dont-pull">http://r.grokking.org/article-mobile-design-push-dont-pull</a>
+    <br />
+  </div>
+
+    <div>
+      <a href="/posts/mobile-design-push-dont-pull/" class="btn btn-primary btn-sm">
+        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+</div>
+
+            <div class="blog-post single-post">
+    <h2 class="post-title"><a href="/posts/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery/">Kipalog Cach Mysql Innodb Thuc Hien Crash Recovery</a></h2>
+  <ul class="post-meta">
+    <li class="meta-date">
+      <i class="fa fa-calendar"></i>
+      Mar 31, 2017
+    </li>
+
+
+    <li>
+    </li>
+
+  </ul>
+
+  <div class="post-body">
+    <p>MySQL InnoDB là một datastore engine có độ ổn định cao và được sử dụng rộng rãi nhất trong cộng đồng MySQL. Bài viết dưới đây giải thích sơ lược cấu trúc và cách hoạt động của InnoDB, cũng như thảo luận cách thực hiện crash recovery sau mỗi lần sự cố (hint: đọc commit log và reply lại những transactions chưa được xử lý)</p>
+
+
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/17499068_1339051479496150_1137426524173257498_n.png?oh=c95205ebc1866eef9cf493b41c9a677d&oe=59A9A2DB">
+
+    <br >
+      <a target="_blank" href="http://r.grokking.org/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery">http://r.grokking.org/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery</a>
+    <br />
+  </div>
+
+    <div>
+      <a href="/posts/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery/" class="btn btn-primary btn-sm">
+        Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+</div>
+
+            <div class="blog-post single-post">
+    <h2 class="post-title"><a href="/posts/airflow/">Airflow</a></h2>
+  <ul class="post-meta">
+    <li class="meta-date">
+      <i class="fa fa-calendar"></i>
+      Mar 30, 2017
+    </li>
+
+
+    <li>
+    </li>
+
+  </ul>
+
+  <div class="post-body">
+    <p>Nhắc tới data engineering, một trong những bài toán cơ bản cần phải giải quyết đó là xây dựng Data Pipeline: lựa chọn công nghệ phù hợp cho data store, log parser, analytics engine, … ngoài ra, việc kết nối các thành phần này để giao tiếp và truyền tải dữ liệu qua lại cũng rất quan trọng.</p>
+
+<p>Một trong những công cụ được sử dụng dể quản lý workflow, giúp tạo pipeline dễ dàng từ các công nghệ riêng lẻ đó chính là Airflow đấy các bạn, cùng tham khảo thêm bài viết dưới đây để biết thêm về Airflow nhé.</p>
+
+
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-0/s480x480/17499454_1339039972830634_7299429826137205434_n.png?oh=5ead94c83c5f91ff962d98c961b633ed&oe=59BD8907">
+
+    <br >
+      <a target="_blank" href="http://r.grokking.org/article-airflow">http://r.grokking.org/article-airflow</a>
+    <br />
+  </div>
+
+    <div>
+      <a href="/posts/airflow/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>

@@ -69,11 +69,11 @@
       <div class="col-lg-8">
         <section class="blog-list">
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/how-we-designed-inter-region-aws-load-balancer-felix-stepski/">Designed Inter Region AWS Load Balancer Felix Stepski</a></h2>
+    <h2 class="post-title"><a href="/posts/data-structures-2-3-4-tree/">Data Structures: 2-3-4-Tree</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      May  6, 2017
     </li>
 
 
@@ -83,19 +83,45 @@
   </ul>
 
   <div class="post-body">
-    <p>Load Balancer là một bài toán khá cơ bản, bạn có thể dựng một con HAProxy, hoặc Nginx để đạt được mục đích. Đối với những bạn đã từng sử dụng AWS, chắc hẳn cũng đã từng sử dụng ELB để làm load balancing.</p>
+    <p>Chúng ta thường nghe nói nhiều về B-Tree, nhưng còn có một CTDL cây khác là 2-3-4 tree cũng tương tự như B-Tree.
+B-Tree thường được sử dụng như là external memory data structure còn 2-3-4 tree lại được sử dụng như main-memory data structure.
+B-Tree được thiết kế để có thể lưu trữ trên disk nhằm đáp ứng nhu cầu lưu trữ lượng dữ liệu lớn hơn là ưu tiên về tốc độ xử lý. Ngược lại, 2-3-4 tree là lại thích hợp với lượng dữ liệu nhỏ đủ chứa trên memory giúp tăng tốc độ xử lý.</p>
 
-<p>Vậy bạn có bao giờ tự hỏi làm thế nào để làm multi-region load-balancing? Cùng đọc bài viết của một bạn kỹ sư Datapath để tìm hiểu cách làm nhé.</p>
+<p>Cấu trúc cây 2-3-4 được định nghĩa như sau:</p>
+
+<ul>
+  <li>Là cấu trúc cây tự cân bằng (self-balancing)</li>
+  <li>Mỗi nút có thể có 2 con, hoặc 3, hoặc 4 nút con.</li>
+</ul>
+
+<p>Trong trường hợp 2 con thì chính là cây nhị phân:</p>
+
+<ul>
+  <li>Nút cha có 1 khóa K</li>
+  <li>Nút con trái chứa giá trị K1 &lt; K</li>
+  <li>Nút con phải chứ giá trị K2 &gt; K</li>
+</ul>
+
+<p>Trường trường hợp có 3 con thì có tại nút đó sẽ có 2 khóa K1 và K2:</p>
+
+<ul>
+  <li>Nút con nằm bên trái sẽ chứa các khóa K &lt; K1</li>
+  <li>Nút con nằm ở giữa sẽ chứa các khóa có giá trị K1 &lt; K &lt; K2</li>
+  <li>Nút con nằm bên phải sẽ chứ các khóa K &gt; K2</li>
+</ul>
+
+<p>Trường hợp có 4 nút con thì tương tự như có 3 nút con (nút cha sẽ có 3 giá trị khóa K1, K2 và K3. Các nút con sẽ chứa các khóa K có giá trị lần lượt trong từng khoảng K &lt; K1, K1 &lt; K &lt; K2, K2 &lt; K &lt; K3 và K &gt; K3).</p>
+
+<p>Đặc điểm đặc biệt của cây 2-3-4 là tất cả các nút lá đều cùng độ cao. Chiều dài tính từ nút gốc đến tất cả nút là bằng nhau.</p>
 
 
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-how-we-designed-inter-region-aws">http://r.grokking.org/article-how-we-designed-inter-region-aws</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/how-we-designed-inter-region-aws-load-balancer-felix-stepski/" class="btn btn-primary btn-sm">
+      <a href="/posts/data-structures-2-3-4-tree/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -103,11 +129,11 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/how-postgresql-is-tested/">How Postgresql Is Tested</a></h2>
+    <h2 class="post-title"><a href="/posts/sharding-dominant-domains/">Data Sharding: Sharding Dominant Domains</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      May  4, 2017
     </li>
 
 
@@ -117,20 +143,26 @@
   </ul>
 
   <div class="post-body">
-    <p>Bạn nào xài PostgreSQL thì biết là mặc dù là open-source/community-contributed database nhưng độ ổn định và code structure quality là cực cao (project nhà mình làm có QA mà có khi còn không bằng)</p>
+    <p>Hẳn là bạn đã nghe về Data Sharding rồi nhỉ, thế bạn có nghe qua Domain Sharding chưa?</p>
 
-<p>Để làm được chuyện đó thì hệ thống testing PostgreSQL phải tốt và hiệu quả. Xem video sau (tiếng Anh) để tìm hiểu thêm PostgreSQL được testing như thế nào nhé!</p>
+<p>Khi visitor vào xem 1 website, thì thứ thường thấy là danh sách dài các file resources sẽ được download. Càng nhiều resources thì sẽ dẫn đến quá trình tải trang bị chậm.</p>
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/-sjyjpUbYO0" frameborder="0" allowfullscreen=""></iframe>
+<p>Bên cạnh việc optimize resources bằng cách dùng gzip, tạo sprite, vẫn còn nhiều kỹ thuật khác, trong đó có kỹ thuật Domain Sharding, trong đó chúng ta chia resources ra nhiều server khác nhau, do mỗi browser sẽ có một con số giới hạn về số kết nối đồng thời đến cùng 1 domain nên việc chia nhỏ này cũng sẽ giúp tăng tốc quá trình tải trang. Tuy nhiên, phương pháp này cũng có điểm bất lợi, đó là … mà thôi cùng đọc bài viết để hiểu thêm nhé.</p>
+
+<p>Notes: một luồng thảo luận hay về số lượng kết nối đồng thời ở mỗi browser</p>
+
+<p><a href="">http://r.grokking.org/stack-get-number-of-concurrent-requests-by-browser</a></p>
 
 
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18157531_1379549498779681_1800199008164551574_n.png?oh=f1375e064739919159977e512bfd4917&oe=5975F572">
 
     <br >
+      <a target="_blank" href="http://r.grokking.org/article-sharding-dominant-domains">http://r.grokking.org/article-sharding-dominant-domains</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/how-postgresql-is-tested/" class="btn btn-primary btn-sm">
+      <a href="/posts/sharding-dominant-domains/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -138,11 +170,11 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/cloudflares-architecture-eliminating-single-p/">Cloudflares Architecture Eliminating Single Point Of Failure</a></h2>
+    <h2 class="post-title"><a href="/posts/ondemand-javascript-lazy-loading-stubs/">Lazy loading Javascript: Ondemand Javascript Lazy Loading Stubs</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      May  2, 2017
     </li>
 
 
@@ -152,22 +184,22 @@
   </ul>
 
   <div class="post-body">
-    <p>Single Point Of Failure luôn là điều cần tránh khi thiết kế những hệ thống có độ ổn định cao.</p>
+    <p>Dạo gần đây, với sự lên ngôi của những thư viện front-end, thì lượng code javascript càng ngày càng chiếm tỷ trọng cao trong nội dung trang.</p>
 
-<p>Một trong các kỹ thuật thường dùng là Load Balancer cho tầng ứng dụng, RAID cho hardware, Clustering cho databases. Nhưng ngoài ra, còn kỹ thuật Anycast nữa, không biết có bạn nào dùng thử chưa?</p>
+<p>Với những kỹ thuật lập trình hiện nay, việc đưa tất cả code vào 1 file script chung chưa hẳn đã là tối ưu. Nếu bạn có một module script phức tạp cần chạy ở front-end, mà chỉ được kích hoạt khoảng 5% trong tổng số lượng visitors viếng thăm site của bạn thì sao? 95% visitors còn lại sẽ phải load trang chậm hơn vì một tính năng họ không dùng đến?</p>
 
-<p>Cùng tham khảo bài viết dưới đây để hiểu Anycast đóng vai trò thế nào trong quá trình design architecture của kỹ sư ở Cloudflare nhé.</p>
+<p>Để tránh vấn đề này, kỹ thuật ondemand Javascript loading cũng là một kỹ thuật hữu ích. Cùng đọc để biết thêm kỹ thuật này implement thế nào nhé</p>
 
 
-      <img class="img-responsive" src="https://blog.cloudflare.com/content/images/global_thermonuclear_war.jpg.scaled500.jpg">
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18199356_1379541392113825_2469642543212739686_n.png?oh=e11707f14c2ad18af396b246d289a632&oe=59C167BF">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/cloudflares-architecture-eliminating-single-p">http://r.grokking.org/cloudflares-architecture-eliminating-single-p</a>
+      <a target="_blank" href="http://r.grokking.org/article-ondemand-javascript-lazy-loading-stub">http://r.grokking.org/article-ondemand-javascript-lazy-loading-stub</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/cloudflares-architecture-eliminating-single-p/" class="btn btn-primary btn-sm">
+      <a href="/posts/ondemand-javascript-lazy-loading-stubs/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -175,34 +207,43 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/web-scalability-101-database-va-microservices/">Web Scalability 101 Database Va Microservices</a></h2>
+    <h2 class="post-title"><a href="/posts/improve-server-performance/">Improve server performance</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      May  1, 2017
     </li>
 
 
     <li>
+        <i class="fa fa-tag"></i>
+        <a href="/posts/tags/web-performance/"> Web performance </a>
     </li>
 
   </ul>
 
   <div class="post-body">
-    <p>Scale database, một bài toán có vai trò quan trọng, đặc biệt là khi những hệ thống đang được sử dụng ngày nay càng ngày càng phình to, cũng như đòi hỏi về availability càng ngày càng cao.</p>
+    <p>Tuning luôn là một chủ đề mà ai làm server/back-end lâu năm cũng cần nắm các bạn nhỉ.</p>
 
-<p>Cùng đọc chia sẻ của một anh Senior về kinh nghiệm scale database dùng Micro-services nhé.</p>
+<p>Hôm bữa, hệ thống của dự án của team mình đang làm, bạn back-end mới bật gzip lên cho nginx thì site load nhanh thấy 
+rõ. Nhưng ngay sau đó lại gặp vấn đề là mysql lại die. Sau khi kiểm tra thông số thì phát hiện ra là thông số opens
+ file limit của MySQL chưa được tinh chỉnh, chỉ còn mặc định. Khi site load nhanh hơn bình thường dẫn đến số kết nối
+  query vào database tăng lên, hệ quả là lượng files open cũng tăng hơn so với thường lệ -&gt; crash.</p>
+
+<p>Bàn ngoài lề tí chơi, cùng đọc bài viết dưới đây để hiểu thêm về các kỹ thuật liên quan đến IO Tuning nhé. Trong bài 
+viết này, anh Dan Fruehauf sẽ chia sẻ quá trình phân tích, bắt đầu từ việc phân tích xem hệ thống của bạn sẽ cần truy
+ xuất kiểu đọc ghi tuần tự nhiều (dành cho server hay stream video, return download file), hay là đọc ghi ngẫu nhiên 
+ (database read/write), sau đó có thể thử optimize memory từ phía ứng dụng (thao tác trên Ram nhiều hơn), …. và các kỹ thuật khác.</p>
 
 
-      <img class="img-responsive" src="http://bloghoctap.com/wp-content/uploads/2017/03/Replication.png">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-web-scalability-101-database-va-microservices">http://r.grokking.org/article-web-scalability-101-database-va-microservices</a>
+      <a target="_blank" href="http://r.grokking.org/article-how-to-improve-server-performance-by-io-tuning-part-1">http://r.grokking.org/article-how-to-improve-server-performance-by-io-tuning-part-1</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/web-scalability-101-database-va-microservices/" class="btn btn-primary btn-sm">
+      <a href="/posts/improve-server-performance/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -210,11 +251,11 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/airflow/">Airflow</a></h2>
+    <h2 class="post-title"><a href="/posts/postgres-explain-analyze/">Postgres Explain Analyze</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      Apr 30, 2017
     </li>
 
 
@@ -224,20 +265,26 @@
   </ul>
 
   <div class="post-body">
-    <p>Nhắc tới data engineering, một trong những bài toán cơ bản cần phải giải quyết đó là xây dựng Data Pipeline: lựa chọn công nghệ phù hợp cho data store, log parser, analytics engine, … ngoài ra, việc kết nối các thành phần này để giao tiếp và truyền tải dữ liệu qua lại cũng rất quan trọng.</p>
+    
+<p>Bạn nào làm qua Postgres hẳn sẽ biết đến câu lệnh EXPLAIN ANALYZE của Postgres rất hay và mạnh.</p>
 
-<p>Một trong những công cụ được sử dụng dể quản lý workflow, giúp tạo pipeline dễ dàng từ các công nghệ riêng lẻ đó chính là Airflow đấy các bạn, cùng tham khảo thêm bài viết dưới đây để biết thêm về Airflow nhé.</p>
+<p>Hôm bữa dự án của team bọn mình cần tune lại database index, có một câu query mà bọn mình đã làm index rồi, 
+nhưng tốc độ query lên đến 8 giây, trong khi chỉ có vài dòng dữ liệu. Mặc dù query cũng phức tạp với tâm 8-10 lệnh 
+joins với tầm 7-8 điều kiện. Nhờ dùng lệnh EXPLAIN ANALYZE để phân tích từng bước của query, chỗ nào sử dụng Seq Scan, 
+chỗ nào Index dược dùng, chỗ nào Join table dư, … mà tốc độ đã được tối ưu và giảm xuống chỉ còn tầm 80 ms thôi.</p>
+
+<p>Cùng đọc bài viết dưới đây để hiểu về cách đọc và vận dụng Explain Analyze query cho hiệu quả nhé.</p>
 
 
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-0/s480x480/17499454_1339039972830634_7299429826137205434_n.png?oh=5ead94c83c5f91ff962d98c961b633ed&oe=59BD8907">
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18157019_1379539722113992_4294431155484081847_n.png?oh=2802ca89590a9da5f5ac9c08f835e905&oe=59780316">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/article-airflow">http://r.grokking.org/article-airflow</a>
+      <a target="_blank" href="https://r.grokking.org/article-reading-an-explain-analyze-query-plan">https://r.grokking.org/article-reading-an-explain-analyze-query-plan</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/airflow/" class="btn btn-primary btn-sm">
+      <a href="/posts/postgres-explain-analyze/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
@@ -245,11 +292,11 @@
 </div>
 
             <div class="blog-post single-post">
-    <h2 class="post-title"><a href="/posts/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery/">Kipalog Cach Mysql Innodb Thuc Hien Crash Recovery</a></h2>
+    <h2 class="post-title"><a href="/posts/sharding-ids-at-instagram/">Sharding IDs at Instagram</a></h2>
   <ul class="post-meta">
     <li class="meta-date">
       <i class="fa fa-calendar"></i>
-      May 13, 2017
+      Apr 29, 2017
     </li>
 
 
@@ -259,18 +306,25 @@
   </ul>
 
   <div class="post-body">
-    <p>MySQL InnoDB là một datastore engine có độ ổn định cao và được sử dụng rộng rãi nhất trong cộng đồng MySQL. Bài viết dưới đây giải thích sơ lược cấu trúc và cách hoạt động của InnoDB, cũng như thảo luận cách thực hiện crash recovery sau mỗi lần sự cố (hint: đọc commit log và reply lại những transactions chưa được xử lý)</p>
+    <p>Nếu bạn chưa dùng, hẳn cũng phải nghe qua Instagram rồi đúng không? Ngoài việc là mạng xã hội đã được mua lại bởi Facebook
+ với giá 1 tỷ USD thì ở Instagram cũng có nhiều bài toán hay cho engineers nhà ta tham khảo thử nhé.</p>
+
+<p>Với 25 photos và 90 likes mỗi giây (thời điểm năm 2012), Instagram phải chứa rất nhiều dữ liệu, đồng thời phải tìm cách 
+chia nhỏ để dữ liệu có thể được chứa trên memory, giúp việc query, truy xuất nhanh và hiệu quả hơn.</p>
+
+<p>Một trong những bài toán mà team Instagram đã giải quyết, đó là sinh ra Ids với số lượng lớn và trong thời gian ngắn. 
+Cùng tham khảo cách team Instagram giải quyết bài toán này nhé.</p>
 
 
-      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/17499068_1339051479496150_1137426524173257498_n.png?oh=c95205ebc1866eef9cf493b41c9a677d&oe=59A9A2DB">
+      <img class="img-responsive" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/18195007_1379538462114118_1651917885878203855_n.png?oh=c953839284b236f7d05b41afcb1e83cd&oe=59C2AB27">
 
     <br >
-      <a target="_blank" href="http://r.grokking.org/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery">http://r.grokking.org/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery</a>
+      <a target="_blank" href="http://r.grokking.org/article-sharding-ids-at-instagram">http://r.grokking.org/article-sharding-ids-at-instagram</a>
     <br />
   </div>
 
     <div>
-      <a href="/posts/kipalog-cach-mysql-innodb-thuc-hien-crash-recovery/" class="btn btn-primary btn-sm">
+      <a href="/posts/sharding-ids-at-instagram/" class="btn btn-primary btn-sm">
         Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </div>
