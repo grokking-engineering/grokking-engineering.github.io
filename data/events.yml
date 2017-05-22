@@ -1,6 +1,6 @@
 techtalks:
 
-- number: 18
+- number: 18B
   upcoming: true
   date: May 27, 2017
   title: Telecommunications
@@ -30,6 +30,23 @@ techtalks:
         - value: IP-PBX
         - value: WebRTC Gateway & Client
         - value: Use Cases
+
+- number: 18A
+  date: May 20, 2017
+  title: "Data Science: Understand what people talk on Social Network"
+  venue: CirCO Coworking Space
+  sponsor:
+  event_href: https://www.facebook.com/events/124879238075996/
+  photo_href: https://www.facebook.com/pg/grokking.engineering/photos/?tab=album&album_id=1402198186514812
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18a.jpg
+
+  sessions:
+  - title: "Vietnamese Sentiment Analysis in a Big Data Scenario: The Deep Learning Approach"
+    speaker: "Assocciate Professor Quan Thanh Tho @ Faculty of Computer Science and Engineering - Bach Khoa University"
+    slide_href: http://r.grokking.org/techtalk-18a-vietnamese-sentiment-analysis-in-a-big-data-scenario-the-deep-learning-approach
+  - title: Introduction to Recommendation Systems for News, Education and Entertainment
+    speaker: Nguyen Tan Trieu - Lead Engineer @ FPT Telecom
+    slide_href: http://r.grokking.org/techtalk-18a-introduction-to-recommendation-systems-for-news-education-and-entertainment
   
 - number: 17
   date: April 8, 2017
