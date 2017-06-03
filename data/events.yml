@@ -1,14 +1,31 @@
 techtalks:
 
-- number: 18B
+- number: 19
   upcoming: true
+  date: June 17, 2017
+  title: Data Structures and Algorithms
+  venue: TBD
+  sponsor:
+  event_href: https://www.facebook.com/events/834576233356753
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+
+  sessions:
+  - title: TBD
+    speaker: TBD
+    slide_href: 
+  - title: TBD
+    speaker: TBD
+    slide_href: 
+
+- number: 18B
   date: May 27, 2017
   title: Telecommunications
   venue: DEK Technology - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC 
   sponsor: DEK Technology 
   event_href: https://www.facebook.com/events/222752658206002/
-  photo_href: 
-  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk18b.jpg
+  photo_href: https://www.facebook.com/pg/grokking.engineering/photos/?tab=album&album_id=1408817925852838
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18b.jpg
 
   sessions:
   - title: Giới thiệu về Viễn thông Di động
@@ -21,6 +38,7 @@ techtalks:
         - value: Một số thông tin người dùng nên biết về mạng 4G LTE mới tại Việt Nam
         - value: Những liên hệ với các hiện tượng thực tế người dùng thường gặp về mạng di động
         - value: Giới thiệu sơ lược về lịch sử phát triển của viễn thông di động 2G/3G/4G
+    slide_href: http://r.grokking.org/techtalk-18b-gioi-thieu-ve-vien-thong-di-dong
   - title: VoIP Architecture for Telecommunications
     speaker: Âu Dương Đạt, Chairman @ VHT
     description:
@@ -30,6 +48,7 @@ techtalks:
         - value: IP-PBX
         - value: WebRTC Gateway & Client
         - value: Use Cases
+    slide_href: http://r.grokking.org/techtalk-18b-voip-architecture-for-telecommunications
 
 - number: 18A
   date: May 20, 2017
