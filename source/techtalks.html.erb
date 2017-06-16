@@ -52,8 +52,10 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
                     <strong>Description:</strong><br />
                     <%= session.description.desc %>
                     <ul>
-                    <%- session.description.items.each do |item| %>
-                      <li><%= item.value %></li>
+                    <% if(session.description.items) %>
+                      <%- session.description.items.each do |item| %>
+                        <li><%= item.value %></li>
+                      <%- end %>
                     <%- end %>
                     </ul>
                   </li>
