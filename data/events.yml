@@ -1,10 +1,9 @@
 techtalks:
 
 - number: 19
-  upcoming: true
   date: June 24, 2017
-  title: How application is made in the IMF
-  venue: TBD
+  title: Software Development Cycle In The International Monetary Fund (IMF)
+  venue: OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10
   sponsor:
   event_href: https://www.facebook.com/events/653262008200679
   photo_href: 
@@ -15,7 +14,7 @@ techtalks:
     speaker: Mic Nguyen, CTO of Med2Lab, Inc
     description: 
       desc: "The talk discusses the standard process of software development in the multi-culture and multi-billion dollar organization. It shows how a software/application comes to reality from just an idea, and how all team members collaborate in a successful software development life cycle."
-    slide_href: 
+    slide_href: http://r.grokking.org/techtalk-19-software-development-cycle-in-the-international-monetary-fund-imf
 
 - number: 18B
   date: May 27, 2017
