@@ -15,7 +15,7 @@ techtalks:
       desc: "The talk will cover concepts and internal mechanisms of how PostgreSQL, a popular open-source database, operates. While doing so, I'll also draw similarities to other RDBMS like Oracle, MySQL or SQL Server"
       items:
         - value: "PostgreSQL internal concepts: table, index, page, heap, vacuum, toast, etc"
-        - value: MVCC and relational transactions
+        - value: "MVCC and relational transactions"
         - value: Indexes and how they affect performance
         - value: Discuss on Uber's blog post about moving from PostgreSQL to MySQL
     slide_href: http://r.grokking.org/techtalk-20-postgresql-internals-101
