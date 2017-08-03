@@ -1,4 +1,24 @@
 techtalks:
+- number: 20
+  date: August 02, 2017
+  title: PostgreSQL Internals 101
+  venue: OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10
+  sponsor:
+  event_href: https://www.facebook.com/events/1750564321902740/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup20.jpg
+
+  sessions:
+  - title: PostgreSQL Internals 101
+    speaker: Huy Nguyen - CTO, Cofounder - Holistics Software, Cofounder - Grokking Vietnam
+    description: 
+      desc: "The talk will cover concepts and internal mechanisms of how PostgreSQL, a popular open-source database, operates. While doing so, I'll also draw similarities to other RDBMS like Oracle, MySQL or SQL Server"
+      items:
+        - value: "PostgreSQL internal concepts: table, index, page, heap, vacuum, toast, etc"
+        - value: MVCC and relational transactions
+        - value: Indexes and how they affect performance
+        - value: Discuss on Uber's blog post about moving from PostgreSQL to MySQL
+    slide_href: http://r.grokking.org/techtalk-20-postgresql-internals-101
 
 - number: 19
   date: June 24, 2017
