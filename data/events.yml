@@ -1,4 +1,24 @@
 techtalks:
+- number: 21
+  date: October 28, 2017
+  title: Deep Learning in Computer Vision
+  venue: OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10
+  sponsor:
+  event_href: https://www.facebook.com/events/120676741941149/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+
+  sessions:
+  - title: Deep Learning in Computer Vision
+    speaker: Dang Huynh, Researcher @ Axon Research
+    description: 
+      desc: "This talk, you will learn about:"
+      items:
+        - value: "How ML/DL are being applied in Computer Vision (a very old field!)"
+        - value: "Comparision between old methods/algorithms of Computer Vision, and the new approaches using Deep Learning"
+        - value: Discuss how DL in CV are being done in practice (vs theory)
+    slide_href: http://r.grokking.org/techtalk-21-deep-learning-in-computer-vision
+
 - number: 20
   date: August 02, 2017
   title: PostgreSQL Internals 101
