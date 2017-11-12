@@ -6,7 +6,7 @@ techtalks:
   sponsor:
   event_href: https://www.facebook.com/events/120676741941149/
   photo_href: 
-  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+  image_path: /photos/techtalk21.jpg
 
   sessions:
   - title: Deep Learning in Computer Vision
