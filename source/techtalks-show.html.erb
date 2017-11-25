@@ -1,0 +1,87 @@
+---
+title: Tech Talks
+description: "Every month, Grokking organize an offline Grokking TechTalk where we invite technical leaders, senior engineers, CTO who come from Viki, Anduin, Palantir, Mysquar, Sentifi, Hoiio... to come and share their in-depth experiences in their fields."
+---
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3 sidebar pull-right">
+        <div class="mini-submenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div class="list-group">
+          <span href="#" class="list-group-item active">
+            Our TechTalks
+            <span class="pull-right" id="slide-submenu">
+                <i class="fa fa-times"></i>
+            </span>
+          </span>
+          <%- data.events.techtalks.each do |tt| %>
+            <a href="#talk<%= tt.number.to_s.rjust(2, '0') %>" class="list-group-item">
+              <i class="fa fa-comment-o"></i>#<%= tt.number.to_s.rjust(2, '0') %>: <%= tt.title %>
+            </a>
+          <%- end -%>
+        </div> 
+      </div>
+      <div class="col-sm-8 col-md-9 pull-left">
+        <div class="techtalks">
+          <hr class="divider"/>
+          <h2 id="talk<%= current_talk.number.to_s.rjust(2, '0') %>"> <%- if current_talk.upcoming %> Upcoming <%- end -%>TechTalk #<%= current_talk.number.to_s.rjust(2, '0') %>: <a href="<%= current_talk.event_href %>"><%= current_talk.title %></a></h2>
+          <%- if current_talk.upcoming && current_talk.date %>
+            <h2><%= current_talk.date %></h2>
+          <%- end %>
+          <%- if current_talk.image_path %>
+            <img class="img-responsive center-block img-fluid" src="<%= current_talk.image_path %>">
+          <%- end %>
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+            <%- current_talk.sessions.each do |session| %>
+              <li>
+                <strong>
+                  <%= session.title %>
+                </strong><%- if session.speaker %> - <%= session.speaker %> <%- end %>
+                <%- if session.slide_href %> - <a href="<%= session.slide_href %>">Slide</a> <%- end %>
+              </li>
+              
+              <%- if session.description %>
+              <li>
+                <strong>Description:</strong><br />
+                <%= session.description.desc %>
+                <ul>
+                <% if(session.description.items) %>
+                  <%- session.description.items.each do |item| %>
+                    <li><%= item.value %></li>
+                  <%- end %>
+                <%- end %>
+                </ul>
+              </li>
+              <%- end %>
+            <%- end %>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+            <%- if current_talk.sponsor %>
+              <li><strong>Sponsor: </strong><%= current_talk.sponsor %> </li>
+            <%- end %>
+
+            <%- if current_talk.venue %>
+              <li><strong>Venue Sponsor: </strong><%= current_talk.venue %> </li>
+            <%- end %>
+
+            <%- if current_talk.event_href %>
+              <li><strong>Event: </strong><a href="<%= current_talk.event_href %>">Facebook</a></li>
+            <%- end %>
+
+            <%- if current_talk.photo_href %>
+              <li><strong>Photo: </strong><a href="<%= current_talk.photo_href %>">Album</a></li>
+            <%- end %>
+            <li><strong>Date: <%= current_talk.date %></li>
+          </ul>
+        </div>
+      </div>       
+    </div>
+  </div>
+</div>
