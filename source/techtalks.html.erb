@@ -18,7 +18,7 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
             </span>
           </span>
           <%- data.events.techtalks.each do |tt| %>
-            <a href="#talk<%= tt.number.to_s.rjust(2, '0') %>" class="list-group-item">
+            <a href="/techtalks/<%= tt.slug %>" class="list-group-item">
               <i class="fa fa-comment-o"></i>#<%= tt.number.to_s.rjust(2, '0') %>: <%= tt.title %>
             </a>
           <%- end -%>

@@ -25,6 +25,12 @@ activate :blog do |blog|
   blog.paginate = true
 end
 
+@app.data.events.techtalks.each do |talk|
+  if talk.slug
+    proxy "/techtalks/#{talk.slug}/index.html", "/techtalks-show.html", :locals => { :current_talk => talk }, :ignore => true
+  end
+end
+
 
 # turn about-us.html to /about-us/
 activate :directory_indexes
