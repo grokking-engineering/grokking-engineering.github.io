@@ -606,3 +606,6 @@ body {
     width: 60px;
     right: 30px;
     bottom: 30px; } }
+#talk-list {
+  max-height: 600px;
+  overflow-y: scroll; }
