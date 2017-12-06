@@ -1,4 +1,23 @@
 techtalks:
+- number: 22
+  slug: 22-machine-learning-in-hr-tech
+  date: November 22, 2017
+  title: Machine Learning in HR-Tech
+  venue: Circo Co-working Space, 1st Floor, H3 Building, 384 Hoang Dieu, Ward 6, District 4, Ho Chi Minh
+  sponsor:
+  event_href: https://www.facebook.com/events/1888386464535019/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1574192999315329
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup22.jpg
+
+  sessions:
+  - title: Machine Learning in HR-Tech
+    speaker: Mr. Masanori Nakashima, CTO from IGS, Japan
+    description: 
+      desc: "With the innovation from AI, many companies are applying this technology to improve their performance"
+      items:
+        - value: "Recruitment is something very abstractive/ subjective. Can it be innovated by machine? If so, how?"
+        - value: "What are the challenges of applying Machine Learning recently? Insight and case study?"
+    
 - number: 21
   slug: 21-deep-learning-in-computer-vision
   date: October 28, 2017
@@ -43,6 +62,7 @@ techtalks:
     slide_href: http://r.grokking.org/techtalk-20-postgresql-internals-101
 
 - number: 19
+  slug: 19-software-development-cycle-in-the-imf
   date: June 24, 2017
   title: Software Development Cycle In The International Monetary Fund (IMF)
   venue: OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10
@@ -59,6 +79,7 @@ techtalks:
     slide_href: http://r.grokking.org/techtalk-19-software-development-cycle-in-the-international-monetary-fund-imf
 
 - number: 18B
+  slug: 18b-telecommunications
   date: May 27, 2017
   title: Telecommunications
   venue: DEK Technology - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC 
@@ -91,6 +112,7 @@ techtalks:
     slide_href: http://r.grokking.org/techtalk-18b-voip-architecture-for-telecommunications
 
 - number: 18A
+  slug: 18a-understand-what-people-talk-on-social-network
   date: May 20, 2017
   title: "Data Science: Understand what people talk on Social Network"
   venue: CirCO Coworking Space
@@ -108,6 +130,7 @@ techtalks:
     slide_href: http://r.grokking.org/techtalk-18a-introduction-to-recommendation-systems-for-news-education-and-entertainment
   
 - number: 17
+  slug: 17-financial-technologies
   date: April 8, 2017
   title: Financial Technologies
   venue: Shinhan Future's Lab
@@ -125,6 +148,7 @@ techtalks:
     slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-interbank-transfer-systems-in-vn-some-improvement-ideas
 
 - number: 16
+  slug: 16-front-end-technologies
   date: February 25, 2017
   title: Front-end Technologies
   venue: Shinhan Future's Lab
@@ -148,6 +172,7 @@ techtalks:
     slide_href: https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-fk-bad-css
 
 - number: 15
+  slug: 15-data-challenge-in-logistics
   date: December 24, 2016
   title: Data Challenge in Logistics
   venue: The Ventures
@@ -168,6 +193,7 @@ techtalks:
     slide_href: https://www.slideshare.net/GrokkingVN/grokking-tech-talk-15-architectural-decisions-parcel-perform
 
 - number: 14
+  slug: 14-database-systems
   date: August 6, 2016
   title: Database Systems
   venue: Tiki
@@ -185,6 +211,7 @@ techtalks:
     slide_href: https://www.slideshare.net/GrokkingVN/techtalk-14-grokking-couchbase-nosql-memcached-realtime-offline
 
 - number: 13
+  slug: 13-searches
   date: June 25, 2016
   title: Searches
   venue: MySquar
@@ -202,6 +229,7 @@ techtalks:
     slide_href: https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-scaling-and-supercharging-your-online-business-models-with-elasticsearch
 
 - number: 12
+  slug: 12-programming-languages-and-paradigms
   date: May 28, 2016
   title: Programming Languages and Paradigms
   venue: DEK
@@ -222,6 +250,7 @@ techtalks:
     slide_href:
 
 - number: 11
+  slug: 11-data
   date: April 23, 2016
   title: Data
   venue: DEK
@@ -242,6 +271,7 @@ techtalks:
     slide_href:
 
 - number: 09
+  slug: 9-meetup-09
   date: March 29, 2016
   title: Meetup 09
   venue:
@@ -262,6 +292,7 @@ techtalks:
     slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-when-a-java-guy-goes-ruby
 
 - number: 08
+  slug: 8-a-date-with-devops
   date: Feb 27, 2016
   title: A Date With DevOps
   venue: Chotot.vn
@@ -282,6 +313,7 @@ techtalks:
     slide_href:
 
 - number: 06
+  slug: 6-grokking-coding-challenge
   date: December 06, 2015
   title: Grokking Coding Challenge
   venue: Dreamplex
@@ -296,6 +328,7 @@ techtalks:
     slide_href:
 
 - number: 05
+  slug: 5-meetup-05
   date:
   title: Meetup 05
   venue: Air Lounge (Silicon Straits Saigon)
@@ -316,6 +349,7 @@ techtalks:
     slide_href:
 
 - number: 04
+  slug: 4-meetup-04
   date:
   title: Meetup 04
   venue: Silicon Straits Saigon
@@ -342,6 +376,7 @@ techtalks:
     slide_href:
 
 - number: 03
+  slug: 3-real-time-data-pipeline-real-world-microservice-architecture
   date:
   title: Real-time Data Pipeline & Real-world Microservice Architecture
   venue: Sentifi
@@ -359,6 +394,7 @@ techtalks:
     slide_href:
 
 - number: 02
+  slug: 2-build-big-things-from-small-components
   date:
   title: Build big things from small components
   venue: Officience
@@ -376,6 +412,7 @@ techtalks:
     slide_href:
 
 - number: 01
+  slug: 1-kick-off-talk
   date:
   title: Kick-off Talk
   event_href: https://www.facebook.com/events/560196397413884/

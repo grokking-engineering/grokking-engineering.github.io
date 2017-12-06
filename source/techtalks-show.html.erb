@@ -12,13 +12,44 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
         </div>
         <div class="list-group">
           <span href="#" class="list-group-item active">
+            Talk's Info
+            <span class="pull-right" id="slide-submenu">
+                <i class="fa fa-times"></i>
+            </span>
+          </span>
+          <%- if current_talk.sponsor %>
+            <span class="list-group-item">
+              <strong>Sponsor: </strong><%= current_talk.sponsor %>
+            </span>
+          <%- end %>
+          <%- if current_talk.venue %>
+            <span class="list-group-item">
+              <strong>Venue Sponsor: </strong><%= current_talk.venue %>
+            </span>
+          <%- end %>
+          <%- if current_talk.event_href %>
+            <span class="list-group-item">
+              <strong>Event: </strong><a href="<%= current_talk.event_href %>">Facebook</a>
+            </span>
+          <%- end %>
+          <%- if current_talk.photo_href %>
+            <span class="list-group-item">
+              <strong>Photo: </strong><a href="<%= current_talk.photo_href %>">Album</a>
+            </span>
+          <%- end %>
+          <span class="list-group-item">
+            <strong>Date: <%= current_talk.date %>
+          </strong>
+        </div>
+        <div id="talk-list" class="list-group">
+          <span href="#" class="list-group-item active">
             Our TechTalks
             <span class="pull-right" id="slide-submenu">
                 <i class="fa fa-times"></i>
             </span>
           </span>
           <%- data.events.techtalks.each do |tt| %>
-            <a href="#talk<%= tt.number.to_s.rjust(2, '0') %>" class="list-group-item">
+            <a href="/techtalks/<%= tt.slug %>" class="list-group-item">
               <i class="fa fa-comment-o"></i>#<%= tt.number.to_s.rjust(2, '0') %>: <%= tt.title %>
             </a>
           <%- end -%>
@@ -28,9 +59,6 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
         <div class="techtalks">
           <hr class="divider"/>
           <h2 id="talk<%= current_talk.number.to_s.rjust(2, '0') %>"> <%- if current_talk.upcoming %> Upcoming <%- end -%>TechTalk #<%= current_talk.number.to_s.rjust(2, '0') %>: <a href="<%= current_talk.event_href %>"><%= current_talk.title %></a></h2>
-          <%- if current_talk.upcoming && current_talk.date %>
-            <h2><%= current_talk.date %></h2>
-          <%- end %>
           <%- if current_talk.image_path %>
             <img class="img-responsive center-block img-fluid" src="<%= current_talk.image_path %>">
           <%- end %>
@@ -60,25 +88,6 @@ description: "Every month, Grokking organize an offline Grokking TechTalk where 
               </li>
               <%- end %>
             <%- end %>
-          </ul>
-          <h3>Info:</h3>
-          <ul>
-            <%- if current_talk.sponsor %>
-              <li><strong>Sponsor: </strong><%= current_talk.sponsor %> </li>
-            <%- end %>
-
-            <%- if current_talk.venue %>
-              <li><strong>Venue Sponsor: </strong><%= current_talk.venue %> </li>
-            <%- end %>
-
-            <%- if current_talk.event_href %>
-              <li><strong>Event: </strong><a href="<%= current_talk.event_href %>">Facebook</a></li>
-            <%- end %>
-
-            <%- if current_talk.photo_href %>
-              <li><strong>Photo: </strong><a href="<%= current_talk.photo_href %>">Album</a></li>
-            <%- end %>
-            <li><strong>Date: <%= current_talk.date %></li>
           </ul>
         </div>
       </div>       
