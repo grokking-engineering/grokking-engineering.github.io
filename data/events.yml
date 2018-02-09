@@ -1,4 +1,22 @@
 techtalks:
+- number: 23
+  slug: 23-component-based-architecture
+  date: Jan 27, 2018
+  title: Component-based Architecture & Civic Hacking
+  venue: Shinhan Future's Lab Vietnam - 162 Pasteur, Ben Nghe Ward, District 1, HCMC
+  event_href: https://www.facebook.com/events/139729963383291/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1642652039136091
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup23.jpg
+
+  sessions:
+  - title: Component-based Frontend Architecture
+    speaker: Albert @ Piktochart
+    slide_href: https://goo.gl/mGPEDU
+
+  - title: "Civic Hacking: Code That Impacts Society - Technical Challenges and Solutions"
+    speaker: Kyle @ Piktochart
+    slide_href: https://goo.gl/KQ8VKJ
+
 - number: 22
   slug: 22-machine-learning-in-hr-tech
   date: November 22, 2017
