@@ -1,4 +1,22 @@
 techtalks:
+- number: 24
+  slug: 24-message-queue-and-background-job-systems
+  date: Mar 10, 2018
+  title: Message Queue & Background Job Systems
+  venue: Shinhan Future's Lab Vietnam - 162 Pasteur, Ben Nghe Ward, District 1, HCMC
+  event_href: https://www.facebook.com/events/114135589410437/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1694284293972865
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup24.jpg
+
+  sessions:
+  - title: Kafka's principles and protocols
+    speaker: Nguyen Quang Minh - Software Engineer, Technical Lead @ Employment Hero
+    slide_href: http://r.grokking.org/techtalk-24-kafkas-principles-and-protocols
+
+  - title: Thiết kế hệ thống Background Job Queue bằng Ruby & PostgreSQL
+    speaker: Huy Nguyen - Cofounder & CTO of Holistics Software
+    slide_href: http://r.grokking.org/techtalk-24-thiet-ke-he-thong-background-job-queue-bang-ruby-postgresql
+    
 - number: 23
   slug: 23-component-based-architecture
   date: Jan 27, 2018
