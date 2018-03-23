@@ -196,7 +196,9 @@ body {
   margin-left: 20px; }
 
 .join-link a:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
 
 .join-link img {
@@ -214,10 +216,13 @@ body {
     display: none; }
 
   .join-link a:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: all 0.1s ease-in;
     transition: all 0.1s ease-in; } }
 /*-----Slogan-----*/
 .jumbo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0)), color-stop(rgba(33, 33, 33, 0.7)), to(rgba(33, 33, 33, 0.8))), url("/images/banner.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(33, 33, 33, 0), rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.8)), url("/images/banner.jpg") no-repeat center/cover;
   height: 500px; }
 
@@ -284,6 +289,7 @@ body {
   text-align: center;
   background: #8a1d28;
   background: -webkit-gradient(left top, right top, color-stop(0%, #8a1d28), color-stop(100%, #1b103d));
+  background: -webkit-gradient(linear, left top, right top, from(#8a1d28), to(#1b103d));
   background: linear-gradient(to right, #8a1d28 0%, #1b103d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a1d28', endColorstr='#1b103d', GradientType=1 );
   padding: 15px;
@@ -390,7 +396,8 @@ body {
 - Hack to prevent slide show broken at <320 pixel screen width when using box-sizing: border-box.
 */
 .slideshow * {
-  box-sizing: content-box; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
 
 @media (max-width: 1200px) and (min-width: 650px) {
   .card {
@@ -567,7 +574,8 @@ body {
   position: fixed;
   bottom: 40px;
   right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   overflow: hidden;
   text-indent: 100%;
@@ -575,9 +583,11 @@ body {
   background: rgba(191, 30, 45, 0.9) url(../images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s; }
 
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s; }
 
 .cd-top.cd-is-visible {
