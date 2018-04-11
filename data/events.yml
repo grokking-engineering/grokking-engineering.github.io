@@ -1,4 +1,26 @@
 techtalks:
+- number: 25
+  slug: 25-LINE-scalable-infrastructure
+  date: Apr 01, 2018
+  title: LINE Scalable Infrastructure
+  venue: DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC
+  event_href: https://www.facebook.com/events/1742510005769003/
+  photo_href: https://www.facebook.com/764146283653342/photos/?tab=album&album_id=1706733712727923
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup25.jpg
+
+  sessions:
+  - title: Metrics driven development with dedicated Observability Team
+    speaker: Huy Do
+    slide_href: https://www.slideshare.net/linecorp/metrics-driven-development-with-dedicated-observability-team
+
+  - title: Building a company-wide data pipeline on Apache Kafka - engineering for 150 billion messages per day
+    speaker: Kawamura Yuto
+    slide_href: https://www.slideshare.net/linecorp/building-a-companywide-data-pipeline-on-apache-kafka-engineering-for-150-billion-messages-per-day-92437878
+
+  - title: Architecture Sustaining LINE Sticker services
+    speaker: Ide Masahiro
+    slide_href: https://www.slideshare.net/linecorp/architecture-sustaining-line-sticker-services
+
 - number: 24
   slug: 24-message-queue-and-background-job-systems
   date: Mar 10, 2018
@@ -118,8 +140,8 @@ techtalks:
   slug: 18b-telecommunications
   date: May 27, 2017
   title: Telecommunications
-  venue: DEK Technology - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC 
-  sponsor: DEK Technology 
+  venue: DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC 
+  sponsor: DEK Technologies 
   event_href: https://www.facebook.com/events/222752658206002/
   photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1408817925852838
   image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18b.jpg
