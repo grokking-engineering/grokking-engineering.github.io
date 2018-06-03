@@ -4,6 +4,9 @@
   padding: 10px 15px; }
   .single-post:not(:last-child) {
     border-bottom: 1px solid #DCDCDC; }
+  .single-post h1 {
+    text-transform: none;
+    text-align: left; }
   .single-post .post-title, .single-post .post-title a {
     text-transform: none;
     font-size: 20px;
@@ -44,8 +47,10 @@
       line-height: 1.602; }
   .single-post p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.4;
     margin: 15px 0; }
+  .single-post .img-responsive {
+    max-width: 100%; }
 
 body {
   font-family: 'Fira Sans', sans-serif;
