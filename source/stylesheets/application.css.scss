@@ -690,6 +690,11 @@ body {
   margin-top: 20px;
 }
 
+.main-column {
+  margin-top: 20px;
+}
+
+
 // back to top
 
 .cd-top {
@@ -750,6 +755,6 @@ body {
 }
 
 #talk-list {
-  max-height: 600px;
-  overflow-y:scroll; 
+  //max-height: 600px;
+  //overflow-y: scroll;
 }

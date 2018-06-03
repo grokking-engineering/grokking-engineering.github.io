@@ -1,89 +1,123 @@
 ---
 title: Tech Talks
-description: "Every month, Grokking organize an offline Grokking TechTalk where we invite technical leaders, senior engineers, CTO who come from Viki, Anduin, Palantir, Mysquar, Sentifi, Hoiio... to come and share their in-depth experiences in their fields."
+description: "Grokking's regular, flagship technical sharing events about Computer Science and Software Engineering"
 ---
 <div class="container">
-    <div class="row">
-      <div class="col-sm-4 col-md-3 sidebar pull-right">
-        <div class="mini-submenu">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
-        <div id="talk-list" class="list-group">
+  <div class="row">
+    <div class="col-sm-4 col-md-4 sidebar pull-right">
+      <div class="mini-submenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="talk-list" class="list-group">
           <span href="#" class="list-group-item active">
-            Our TechTalks
+            List of Talks
             <span class="pull-right" id="slide-submenu">
                 <i class="fa fa-times"></i>
             </span>
           </span>
-          <%- data.events.techtalks.each do |tt| %>
-            <a href="/techtalks/<%= tt.slug %>" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#<%= tt.number.to_s.rjust(2, '0') %>: <%= tt.title %>
-            </a>
-          <%- end -%>
-        </div> 
+        <%- data.events.techtalks.each do |tt| %>
+          <a href="/techtalks/<%= tt.slug %>" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#<%= tt.number.to_s.rjust(2, '0') %>: <%= tt.title %>
+          </a>
+        <%- end -%>
       </div>
-      <div class="col-sm-8 col-md-9 pull-left">
-        <div class="techtalks">
-          <%- data.events.techtalks.each do |tt| %>
-              <hr class="divider"/>
-              <h2 id="talk<%= tt.number.to_s.rjust(2, '0') %>"> <%- if tt.upcoming %> Upcoming <%- end -%>TechTalk #<%= tt.number.to_s.rjust(2, '0') %>: <a href="<%= tt.event_href %>"><%= tt.title %></a></h2>
-              <%- if tt.upcoming && tt.date %>
-                <h2><%= tt.date %></h2>
-              <%- end %>
-              <%- if tt.image_path %>
-                <img class="img-responsive center-block img-fluid" src="<%= tt.image_path %>">
-              <%- end %>
-              <br/>
+    </div>
+    <div class="col-sm-8 col-md-8 pull-left main-column">
+      <div class="hero-info">
+        <h1>Grokking TechTalks</h1>
 
-              <h3>Talks:</h3>
-              <ul>
-                <%- tt.sessions.each do |session| %>
-                  <li>
-                    <strong>
-                      <%= session.title %>
-                    </strong><%- if session.speaker %> - <%= session.speaker %> <%- end %>
-                    <%- if session.slide_href %> - <a href="<%= session.slide_href %>">Slide</a> <%- end %>
-                  </li>
-                  
-                  <%- if session.description %>
-                  <li>
-                    <strong>Description:</strong><br />
-                    <%= session.description.desc %>
-                    <ul>
-                    <% if(session.description.items) %>
+        <p>
+          Grokking TechTalks is our regular, flagship event series, where we invite experienced engineers / speakers
+          working on various fields in <strong>Computer Science</strong> and <strong>Software Engineering</strong> to
+          to share about their experience and knowledge.
+        </p>
+
+        <p>
+          Our talks are highly technical and target working software engineers. Each talk usually attract an audience of
+          50-100 people.
+        </p>
+
+        <p>
+          <a href="https://facebook.com/grokking.vietnam/events" target="_blank" class="btn btn-primary">
+            Check out when the next talk is
+          </a>
+
+        </p>
+
+        <p>
+          If you/your company is interested in giving talks, contact us techtalks@grokking.org and we will get back to you
+          with more details.
+        </p>
+      </div>
+
+
+      <div class="techtalks">
+        <%- data.events.techtalks.each do |tt| %>
+          <hr class="divider"/>
+          <h2 id="talk<%= tt.number.to_s.rjust(2, '0') %>">
+            <%- if tt.upcoming %> Upcoming
+            <%- end -%>TechTalk #<%= tt.number.to_s.rjust(2, '0') %>: <a href="<%= tt.event_href %>"><%= tt.title %></a>
+          </h2>
+          <%- if tt.upcoming && tt.date %>
+            <h2><%= tt.date %></h2>
+          <%- end %>
+          <%- if tt.image_path %>
+            <img class="img-responsive center-block img-fluid" src="<%= tt.image_path %>">
+          <%- end %>
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+            <%- tt.sessions.each do |session| %>
+              <li>
+                <strong>
+                  <%= session.title %>
+                </strong>
+                <%- if session.speaker %> - <%= session.speaker %>
+                <%- end %>
+                <%- if session.slide_href %> - <a href="<%= session.slide_href %>">Slide</a>
+                <%- end %>
+              </li>
+
+              <%- if session.description %>
+                <li>
+                  <strong>Description:</strong><br/>
+                  <%= session.description.desc %>
+                  <ul>
+                    <% if (session.description.items) %>
                       <%- session.description.items.each do |item| %>
                         <li><%= item.value %></li>
                       <%- end %>
                     <%- end %>
-                    </ul>
-                  </li>
-                  <%- end %>
-                <%- end %>
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                <%- if tt.sponsor %>
-                  <li><strong>Sponsor: </strong><%= tt.sponsor %> </li>
-                <%- end %>
+                  </ul>
+                </li>
+              <%- end %>
+            <%- end %>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+            <%- if tt.sponsor %>
+              <li><strong>Sponsor: </strong><%= tt.sponsor %> </li>
+            <%- end %>
 
-                <%- if tt.venue %>
-                  <li><strong>Venue Sponsor: </strong><%= tt.venue %> </li>
-                <%- end %>
+            <%- if tt.venue %>
+              <li><strong>Venue Sponsor: </strong><%= tt.venue %> </li>
+            <%- end %>
 
-                <%- if tt.event_href %>
-                  <li><strong>Event: </strong><a href="<%= tt.event_href %>">Facebook</a></li>
-                <%- end %>
+            <%- if tt.event_href %>
+              <li><strong>Event: </strong><a href="<%= tt.event_href %>">Facebook</a></li>
+            <%- end %>
 
-                <%- if tt.photo_href %>
-                  <li><strong>Photo: </strong><a href="<%= tt.photo_href %>">Album</a></li>
-                <%- end %>
-                <li><strong>Date: <%= tt.date %></li>
-              </ul>
-          <%- end %>
-        </div>
-      </div>       
+            <%- if tt.photo_href %>
+              <li><strong>Photo: </strong><a href="<%= tt.photo_href %>">Album</a></li>
+            <%- end %>
+            <li><strong>Date: <%= tt.date %></li>
+          </ul>
+        <%- end %>
+      </div>
     </div>
   </div>
+</div>
 </div>
