@@ -567,6 +567,9 @@ body {
 .sidebar {
   margin-top: 20px; }
 
+.main-column {
+  margin-top: 20px; }
+
 .cd-top {
   display: inline-block;
   height: 40px;
@@ -616,6 +619,3 @@ body {
     width: 60px;
     right: 30px;
     bottom: 30px; } }
-#talk-list {
-  max-height: 600px;
-  overflow-y: scroll; }

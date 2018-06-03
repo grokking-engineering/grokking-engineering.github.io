@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://www.grokking.org/techtalks/"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Tech Talks - Grokking Vietnam"/>
-<meta property="og:description" content="Every month, Grokking organize an offline Grokking TechTalk where we invite technical leaders, senior engineers, CTO who come from Viki, Anduin, Palantir, Mysquar, Sentifi, Hoiio... to come and share their in-depth experiences in their fields."/>
+<meta property="og:description" content="Grokking's regular, flagship technical sharing events about Computer Science and Software Engineering"/>
 <meta property="og:image" content="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg"/>
 
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -65,969 +65,1078 @@
 </header>
 
 <div class="container">
-    <div class="row">
-      <div class="col-sm-4 col-md-3 sidebar pull-right">
-        <div class="mini-submenu">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
-        <div id="talk-list" class="list-group">
+  <div class="row">
+    <div class="col-sm-4 col-md-4 sidebar pull-right">
+      <div class="mini-submenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="talk-list" class="list-group">
           <span href="#" class="list-group-item active">
-            Our TechTalks
+            List of Talks
             <span class="pull-right" id="slide-submenu">
                 <i class="fa fa-times"></i>
             </span>
           </span>
-            <a href="/techtalks/25-LINE-scalable-infrastructure" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#25: LINE Scalable Infrastructure
-            </a>
-            <a href="/techtalks/24-message-queue-and-background-job-systems" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#24: Message Queue & Background Job Systems
-            </a>
-            <a href="/techtalks/23-component-based-architecture" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#23: Component-based Architecture & Civic Hacking
-            </a>
-            <a href="/techtalks/22-machine-learning-in-hr-tech" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#22: Machine Learning in HR-Tech
-            </a>
-            <a href="/techtalks/21-deep-learning-in-computer-vision" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#21: Deep Learning in Computer Vision
-            </a>
-            <a href="/techtalks/20-postgresql-internals" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#20: PostgreSQL Internals 101
-            </a>
-            <a href="/techtalks/19-software-development-cycle-in-the-imf" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#19: Software Development Cycle In The International Monetary Fund (IMF)
-            </a>
-            <a href="/techtalks/18b-telecommunications" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#18B: Telecommunications
-            </a>
-            <a href="/techtalks/18a-understand-what-people-talk-on-social-network" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#18A: Data Science: Understand what people talk on Social Network
-            </a>
-            <a href="/techtalks/17-financial-technologies" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#17: Financial Technologies
-            </a>
-            <a href="/techtalks/16-front-end-technologies" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#16: Front-end Technologies
-            </a>
-            <a href="/techtalks/15-data-challenge-in-logistics" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#15: Data Challenge in Logistics
-            </a>
-            <a href="/techtalks/14-database-systems" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#14: Database Systems
-            </a>
-            <a href="/techtalks/13-searches" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#13: Searches
-            </a>
-            <a href="/techtalks/12-programming-languages-and-paradigms" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#12: Programming Languages and Paradigms
-            </a>
-            <a href="/techtalks/11-data" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#11: Data
-            </a>
-            <a href="/techtalks/9-meetup-09" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#09: Meetup 09
-            </a>
-            <a href="/techtalks/8-a-date-with-devops" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#08: A Date With DevOps
-            </a>
-            <a href="/techtalks/6-grokking-coding-challenge" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#06: Grokking Coding Challenge
-            </a>
-            <a href="/techtalks/5-meetup-05" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#05: Meetup 05
-            </a>
-            <a href="/techtalks/4-meetup-04" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#04: Meetup 04
-            </a>
-            <a href="/techtalks/3-real-time-data-pipeline-real-world-microservice-architecture" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#03: Real-time Data Pipeline & Real-world Microservice Architecture
-            </a>
-            <a href="/techtalks/2-build-big-things-from-small-components" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#02: Build big things from small components
-            </a>
-            <a href="/techtalks/1-kick-off-talk" class="list-group-item">
-              <i class="fa fa-comment-o"></i>#01: Kick-off Talk
-            </a>
-        </div> 
+          <a href="/techtalks/25-LINE-scalable-infrastructure" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#25: LINE Scalable Infrastructure
+          </a>
+          <a href="/techtalks/24-message-queue-and-background-job-systems" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#24: Message Queue & Background Job Systems
+          </a>
+          <a href="/techtalks/23-component-based-architecture" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#23: Component-based Architecture & Civic Hacking
+          </a>
+          <a href="/techtalks/22-machine-learning-in-hr-tech" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#22: Machine Learning in HR-Tech
+          </a>
+          <a href="/techtalks/21-deep-learning-in-computer-vision" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#21: Deep Learning in Computer Vision
+          </a>
+          <a href="/techtalks/20-postgresql-internals" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#20: PostgreSQL Internals 101
+          </a>
+          <a href="/techtalks/19-software-development-cycle-in-the-imf" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#19: Software Development Cycle In The International Monetary Fund (IMF)
+          </a>
+          <a href="/techtalks/18b-telecommunications" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#18B: Telecommunications
+          </a>
+          <a href="/techtalks/18a-understand-what-people-talk-on-social-network" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#18A: Data Science: Understand what people talk on Social Network
+          </a>
+          <a href="/techtalks/17-financial-technologies" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#17: Financial Technologies
+          </a>
+          <a href="/techtalks/16-front-end-technologies" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#16: Front-end Technologies
+          </a>
+          <a href="/techtalks/15-data-challenge-in-logistics" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#15: Data Challenge in Logistics
+          </a>
+          <a href="/techtalks/14-database-systems" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#14: Database Systems
+          </a>
+          <a href="/techtalks/13-searches" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#13: Searches
+          </a>
+          <a href="/techtalks/12-programming-languages-and-paradigms" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#12: Programming Languages and Paradigms
+          </a>
+          <a href="/techtalks/11-data" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#11: Data
+          </a>
+          <a href="/techtalks/9-meetup-09" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#09: Meetup 09
+          </a>
+          <a href="/techtalks/8-a-date-with-devops" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#08: A Date With DevOps
+          </a>
+          <a href="/techtalks/6-grokking-coding-challenge" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#06: Grokking Coding Challenge
+          </a>
+          <a href="/techtalks/5-meetup-05" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#05: Meetup 05
+          </a>
+          <a href="/techtalks/4-meetup-04" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#04: Meetup 04
+          </a>
+          <a href="/techtalks/3-real-time-data-pipeline-real-world-microservice-architecture" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#03: Real-time Data Pipeline & Real-world Microservice Architecture
+          </a>
+          <a href="/techtalks/2-build-big-things-from-small-components" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#02: Build big things from small components
+          </a>
+          <a href="/techtalks/1-kick-off-talk" class="list-group-item">
+            <i class="fa fa-comment-o"></i>#01: Kick-off Talk
+          </a>
       </div>
-      <div class="col-sm-8 col-md-9 pull-left">
-        <div class="techtalks">
-              <hr class="divider"/>
-              <h2 id="talk25"> TechTalk #25: <a href="https://www.facebook.com/events/1742510005769003/">LINE Scalable Infrastructure</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup25.jpg">
-              <br/>
+    </div>
+    <div class="col-sm-8 col-md-8 pull-left main-column">
+      <div class="hero-info">
+        <h1>Grokking TechTalks</h1>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Metrics driven development with dedicated Observability Team
-                    </strong> - Huy Do 
-                     - <a href="https://www.slideshare.net/linecorp/metrics-driven-development-with-dedicated-observability-team">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Building a company-wide data pipeline on Apache Kafka - engineering for 150 billion messages per day
-                    </strong> - Kawamura Yuto 
-                     - <a href="https://www.slideshare.net/linecorp/building-a-companywide-data-pipeline-on-apache-kafka-engineering-for-150-billion-messages-per-day-92437878">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Architecture Sustaining LINE Sticker services
-                    </strong> - Ide Masahiro 
-                     - <a href="https://www.slideshare.net/linecorp/architecture-sustaining-line-sticker-services">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+        <p>
+          Grokking TechTalks is our regular, flagship event series, where we invite experienced engineers / speakers
+          working on various fields in <strong>Computer Science</strong> and <strong>Software Engineering</strong> to
+          to share about their experience and knowledge.
+        </p>
 
-                  <li><strong>Venue Sponsor: </strong>DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC </li>
+        <p>
+          Our talks are highly technical and target working software engineers. Each talk usually attract an audience of
+          50-100 people.
+        </p>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/1742510005769003/">Facebook</a></li>
+        <p>
+          <a href="https://facebook.com/grokking.vietnam/events" target="_blank" class="btn btn-primary">
+            Check out when the next talk is
+          </a>
 
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/764146283653342/photos/?tab=album&album_id=1706733712727923">Album</a></li>
-                <li><strong>Date: Apr 01, 2018</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk24"> TechTalk #24: <a href="https://www.facebook.com/events/114135589410437/">Message Queue & Background Job Systems</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup24.jpg">
-              <br/>
+        </p>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Kafka's principles and protocols
-                    </strong> - Nguyen Quang Minh - Software Engineer, Technical Lead @ Employment Hero 
-                     - <a href="http://r.grokking.org/techtalk-24-kafkas-principles-and-protocols">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Thiết kế hệ thống Background Job Queue bằng Ruby & PostgreSQL
-                    </strong> - Huy Nguyen - Cofounder & CTO of Holistics Software 
-                     - <a href="http://r.grokking.org/techtalk-24-thiet-ke-he-thong-background-job-queue-bang-ruby-postgresql">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+        <p>
+          If you/your company is interested in giving talks, contact us techtalks@grokking.org and we will get back to you
+          with more details.
+        </p>
+      </div>
 
-                  <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab Vietnam - 162 Pasteur, Ben Nghe Ward, District 1, HCMC </li>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/114135589410437/">Facebook</a></li>
+      <div class="techtalks">
+          <hr class="divider"/>
+          <h2 id="talk25">
+            TechTalk #25: <a href="https://www.facebook.com/events/1742510005769003/">LINE Scalable Infrastructure</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup25.jpg">
+          <br/>
 
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1694284293972865">Album</a></li>
-                <li><strong>Date: Mar 10, 2018</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk23"> TechTalk #23: <a href="https://www.facebook.com/events/139729963383291/">Component-based Architecture & Civic Hacking</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup23.jpg">
-              <br/>
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Metrics driven development with dedicated Observability Team
+                </strong>
+                 - Huy Do
+                 - <a href="https://www.slideshare.net/linecorp/metrics-driven-development-with-dedicated-observability-team">Slide</a>
+              </li>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Component-based Frontend Architecture
-                    </strong> - Albert @ Piktochart 
-                     - <a href="https://goo.gl/mGPEDU">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Civic Hacking: Code That Impacts Society - Technical Challenges and Solutions
-                    </strong> - Kyle @ Piktochart 
-                     - <a href="https://goo.gl/KQ8VKJ">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+              <li>
+                <strong>
+                  Building a company-wide data pipeline on Apache Kafka - engineering for 150 billion messages per day
+                </strong>
+                 - Kawamura Yuto
+                 - <a href="https://www.slideshare.net/linecorp/building-a-companywide-data-pipeline-on-apache-kafka-engineering-for-150-billion-messages-per-day-92437878">Slide</a>
+              </li>
 
-                  <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab Vietnam - 162 Pasteur, Ben Nghe Ward, District 1, HCMC </li>
+              <li>
+                <strong>
+                  Architecture Sustaining LINE Sticker services
+                </strong>
+                 - Ide Masahiro
+                 - <a href="https://www.slideshare.net/linecorp/architecture-sustaining-line-sticker-services">Slide</a>
+              </li>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/139729963383291/">Facebook</a></li>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
 
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1642652039136091">Album</a></li>
-                <li><strong>Date: Jan 27, 2018</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk22"> TechTalk #22: <a href="https://www.facebook.com/events/1888386464535019/">Machine Learning in HR-Tech</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup22.jpg">
-              <br/>
+              <li><strong>Venue Sponsor: </strong>DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC </li>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Machine Learning in HR-Tech
-                    </strong> - Mr. Masanori Nakashima, CTO from IGS, Japan 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>Description:</strong><br />
-                    With the innovation from AI, many companies are applying this technology to improve their performance
-                    <ul>
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/1742510005769003/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/764146283653342/photos/?tab=album&album_id=1706733712727923">Album</a></li>
+            <li><strong>Date: Apr 01, 2018</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk24">
+            TechTalk #24: <a href="https://www.facebook.com/events/114135589410437/">Message Queue & Background Job Systems</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup24.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Kafka's principles and protocols
+                </strong>
+                 - Nguyen Quang Minh - Software Engineer, Technical Lead @ Employment Hero
+                 - <a href="http://r.grokking.org/techtalk-24-kafkas-principles-and-protocols">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Thiết kế hệ thống Background Job Queue bằng Ruby & PostgreSQL
+                </strong>
+                 - Huy Nguyen - Cofounder & CTO of Holistics Software
+                 - <a href="http://r.grokking.org/techtalk-24-thiet-ke-he-thong-background-job-queue-bang-ruby-postgresql">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab Vietnam - 162 Pasteur, Ben Nghe Ward, District 1, HCMC </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/114135589410437/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1694284293972865">Album</a></li>
+            <li><strong>Date: Mar 10, 2018</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk23">
+            TechTalk #23: <a href="https://www.facebook.com/events/139729963383291/">Component-based Architecture & Civic Hacking</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup23.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Component-based Frontend Architecture
+                </strong>
+                 - Albert @ Piktochart
+                 - <a href="https://goo.gl/mGPEDU">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Civic Hacking: Code That Impacts Society - Technical Challenges and Solutions
+                </strong>
+                 - Kyle @ Piktochart
+                 - <a href="https://goo.gl/KQ8VKJ">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab Vietnam - 162 Pasteur, Ben Nghe Ward, District 1, HCMC </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/139729963383291/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1642652039136091">Album</a></li>
+            <li><strong>Date: Jan 27, 2018</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk22">
+            TechTalk #22: <a href="https://www.facebook.com/events/1888386464535019/">Machine Learning in HR-Tech</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup22.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Machine Learning in HR-Tech
+                </strong>
+                 - Mr. Masanori Nakashima, CTO from IGS, Japan
+                              </li>
+
+                <li>
+                  <strong>Description:</strong><br/>
+                  With the innovation from AI, many companies are applying this technology to improve their performance
+                  <ul>
                         <li>Recruitment is something very abstractive/ subjective. Can it be innovated by machine? If so, how?</li>
                         <li>What are the challenges of applying Machine Learning recently? Insight and case study?</li>
-                    </ul>
-                  </li>
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+                  </ul>
+                </li>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
 
-                  <li><strong>Venue Sponsor: </strong>Circo Co-working Space, 1st Floor, H3 Building, 384 Hoang Dieu, Ward 6, District 4, Ho Chi Minh </li>
+              <li><strong>Venue Sponsor: </strong>Circo Co-working Space, 1st Floor, H3 Building, 384 Hoang Dieu, Ward 6, District 4, Ho Chi Minh </li>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/1888386464535019/">Facebook</a></li>
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/1888386464535019/">Facebook</a></li>
 
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1574192999315329">Album</a></li>
-                <li><strong>Date: November 22, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk21"> TechTalk #21: <a href="https://www.facebook.com/events/120676741941149/">Deep Learning in Computer Vision</a></h2>
-                <img class="img-responsive center-block img-fluid" src="/photos/techtalk21.jpg">
-              <br/>
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1574192999315329">Album</a></li>
+            <li><strong>Date: November 22, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk21">
+            TechTalk #21: <a href="https://www.facebook.com/events/120676741941149/">Deep Learning in Computer Vision</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="/photos/techtalk21.jpg">
+          <br/>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Deep Learning in Computer Vision
-                    </strong> - Dang Huynh, Researcher @ Axon Research 
-                     - <a href="http://r.grokking.org/techtalk-21-deep-learning-in-computer-vision">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>Description:</strong><br />
-                    This talk, you will learn about:
-                    <ul>
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Deep Learning in Computer Vision
+                </strong>
+                 - Dang Huynh, Researcher @ Axon Research
+                 - <a href="http://r.grokking.org/techtalk-21-deep-learning-in-computer-vision">Slide</a>
+              </li>
+
+                <li>
+                  <strong>Description:</strong><br/>
+                  This talk, you will learn about:
+                  <ul>
                         <li>How ML/DL are being applied in Computer Vision (a very old field!)</li>
                         <li>Comparision between old methods/algorithms of Computer Vision, and the new approaches using Deep Learning</li>
                         <li>Discuss how DL in CV are being done in practice (vs theory)</li>
-                    </ul>
-                  </li>
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+                  </ul>
+                </li>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
 
-                  <li><strong>Venue Sponsor: </strong>OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10 </li>
+              <li><strong>Venue Sponsor: </strong>OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10 </li>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/120676741941149/">Facebook</a></li>
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/120676741941149/">Facebook</a></li>
 
-                <li><strong>Date: October 28, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk20"> TechTalk #20: <a href="https://www.facebook.com/events/1750564321902740/">PostgreSQL Internals 101</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup20.jpg">
-              <br/>
+            <li><strong>Date: October 28, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk20">
+            TechTalk #20: <a href="https://www.facebook.com/events/1750564321902740/">PostgreSQL Internals 101</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup20.jpg">
+          <br/>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      PostgreSQL Internals 101
-                    </strong> - Huy Nguyen - CTO, Cofounder - Holistics Software, Cofounder - Grokking Vietnam 
-                     - <a href="http://r.grokking.org/techtalk-20-postgresql-internals-101">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>Description:</strong><br />
-                    The talk will cover concepts and internal mechanisms of how PostgreSQL, a popular open-source database, operates. While doing so, I'll also draw similarities to other RDBMS like Oracle, MySQL or SQL Server
-                    <ul>
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  PostgreSQL Internals 101
+                </strong>
+                 - Huy Nguyen - CTO, Cofounder - Holistics Software, Cofounder - Grokking Vietnam
+                 - <a href="http://r.grokking.org/techtalk-20-postgresql-internals-101">Slide</a>
+              </li>
+
+                <li>
+                  <strong>Description:</strong><br/>
+                  The talk will cover concepts and internal mechanisms of how PostgreSQL, a popular open-source database, operates. While doing so, I'll also draw similarities to other RDBMS like Oracle, MySQL or SQL Server
+                  <ul>
                         <li>PostgreSQL internal concepts: table, index, page, heap, vacuum, toast, etc</li>
                         <li>MVCC and relational transactions</li>
                         <li>Indexes and how they affect performance</li>
                         <li>Discuss on Uber's blog post about moving from PostgreSQL to MySQL</li>
-                    </ul>
-                  </li>
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+                  </ul>
+                </li>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
 
-                  <li><strong>Venue Sponsor: </strong>OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10 </li>
+              <li><strong>Venue Sponsor: </strong>OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10 </li>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/1750564321902740/">Facebook</a></li>
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/1750564321902740/">Facebook</a></li>
 
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/764146283653342/photos/?tab=album&album_id=1474547755946521">Album</a></li>
-                <li><strong>Date: August 02, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk19"> TechTalk #19: <a href="https://www.facebook.com/events/653262008200679">Software Development Cycle In The International Monetary Fund (IMF)</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
-              <br/>
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/764146283653342/photos/?tab=album&album_id=1474547755946521">Album</a></li>
+            <li><strong>Date: August 02, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk19">
+            TechTalk #19: <a href="https://www.facebook.com/events/653262008200679">Software Development Cycle In The International Monetary Fund (IMF)</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
+          <br/>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      How software/application is made in the International Monetary Fund (IMF)
-                    </strong> - Mic Nguyen, CTO of Med2Lab, Inc 
-                     - <a href="http://r.grokking.org/techtalk-19-software-development-cycle-in-the-international-monetary-fund-imf">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>Description:</strong><br />
-                    The talk discusses the standard process of software development in the multi-culture and multi-billion dollar organization. It shows how a software/application comes to reality from just an idea, and how all team members collaborate in a successful software development life cycle.
-                    <ul>
-                    </ul>
-                  </li>
-              </ul>
-              <h3>Info:</h3>
-              <ul>
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  How software/application is made in the International Monetary Fund (IMF)
+                </strong>
+                 - Mic Nguyen, CTO of Med2Lab, Inc
+                 - <a href="http://r.grokking.org/techtalk-19-software-development-cycle-in-the-international-monetary-fund-imf">Slide</a>
+              </li>
 
-                  <li><strong>Venue Sponsor: </strong>OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10 </li>
+                <li>
+                  <strong>Description:</strong><br/>
+                  The talk discusses the standard process of software development in the multi-culture and multi-billion dollar organization. It shows how a software/application comes to reality from just an idea, and how all team members collaborate in a successful software development life cycle.
+                  <ul>
+                  </ul>
+                </li>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
 
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/653262008200679">Facebook</a></li>
+              <li><strong>Venue Sponsor: </strong>OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10 </li>
 
-                <li><strong>Date: June 24, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk18B"> TechTalk #18B: <a href="https://www.facebook.com/events/222752658206002/">Telecommunications</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18b.jpg">
-              <br/>
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/653262008200679">Facebook</a></li>
 
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Giới thiệu về Viễn thông Di động
-                    </strong> - Tạ Hữu Việt @ Mobifone 
-                     - <a href="http://r.grokking.org/techtalk-18b-gioi-thieu-ve-vien-thong-di-dong">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>Description:</strong><br />
-                    Phần trình bày giới thiệu với người nghe những thông tin cơ bản về Viễn thông Di động bao gồm:
-                    <ul>
+            <li><strong>Date: June 24, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk18B">
+            TechTalk #18B: <a href="https://www.facebook.com/events/222752658206002/">Telecommunications</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18b.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Giới thiệu về Viễn thông Di động
+                </strong>
+                 - Tạ Hữu Việt @ Mobifone
+                 - <a href="http://r.grokking.org/techtalk-18b-gioi-thieu-ve-vien-thong-di-dong">Slide</a>
+              </li>
+
+                <li>
+                  <strong>Description:</strong><br/>
+                  Phần trình bày giới thiệu với người nghe những thông tin cơ bản về Viễn thông Di động bao gồm:
+                  <ul>
                         <li>Sơ đồ một hệ thống viễn thông 2G/3G/4G phổ biến</li>
                         <li>Giao thức/ thủ tục trao đổi bản tin khi người dùng gọi điện thoại, truy cập internet</li>
                         <li>Một số thông tin người dùng nên biết về mạng 4G LTE mới tại Việt Nam</li>
                         <li>Những liên hệ với các hiện tượng thực tế người dùng thường gặp về mạng di động</li>
                         <li>Giới thiệu sơ lược về lịch sử phát triển của viễn thông di động 2G/3G/4G</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>
-                      VoIP Architecture for Telecommunications
-                    </strong> - Âu Dương Đạt, Chairman @ VHT 
-                     - <a href="http://r.grokking.org/techtalk-18b-voip-architecture-for-telecommunications">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>Description:</strong><br />
-                    Bài talk chia sẻ kiến thức, kinh nghiệm về kiến trúc VoIP cho các bạn dự định xây dựng hệ thống dựa trên nền tảng VoIP, lập trình phát triển ứng dụng CRM, ERP, POS...tích hợp Call & Contact Center, ứng dụng OTT tích hợp Mobile App và call out PSTN, tương tự dịch vụ Viber Out:
-                    <ul>
+                  </ul>
+                </li>
+              <li>
+                <strong>
+                  VoIP Architecture for Telecommunications
+                </strong>
+                 - Âu Dương Đạt, Chairman @ VHT
+                 - <a href="http://r.grokking.org/techtalk-18b-voip-architecture-for-telecommunications">Slide</a>
+              </li>
+
+                <li>
+                  <strong>Description:</strong><br/>
+                  Bài talk chia sẻ kiến thức, kinh nghiệm về kiến trúc VoIP cho các bạn dự định xây dựng hệ thống dựa trên nền tảng VoIP, lập trình phát triển ứng dụng CRM, ERP, POS...tích hợp Call & Contact Center, ứng dụng OTT tích hợp Mobile App và call out PSTN, tương tự dịch vụ Viber Out:
+                  <ul>
                         <li>VoIP Platform</li>
                         <li>IP-PBX</li>
                         <li>WebRTC Gateway & Client</li>
                         <li>Use Cases</li>
-                    </ul>
-                  </li>
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>DEK Technologies </li>
-
-                  <li><strong>Venue Sponsor: </strong>DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/222752658206002/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1408817925852838">Album</a></li>
-                <li><strong>Date: May 27, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk18A"> TechTalk #18A: <a href="https://www.facebook.com/events/124879238075996/">Data Science: Understand what people talk on Social Network</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18a.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Vietnamese Sentiment Analysis in a Big Data Scenario: The Deep Learning Approach
-                    </strong> - Assocciate Professor Quan Thanh Tho @ Faculty of Computer Science and Engineering - Bach Khoa University 
-                     - <a href="http://r.grokking.org/techtalk-18a-vietnamese-sentiment-analysis-in-a-big-data-scenario-the-deep-learning-approach">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Introduction to Recommendation Systems for News, Education and Entertainment
-                    </strong> - Nguyen Tan Trieu - Lead Engineer @ FPT Telecom 
-                     - <a href="http://r.grokking.org/techtalk-18a-introduction-to-recommendation-systems-for-news-education-and-entertainment">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>CirCO Coworking Space </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/124879238075996/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1402198186514812">Album</a></li>
-                <li><strong>Date: May 20, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk17"> TechTalk #17: <a href="https://www.facebook.com/events/202575453561443/">Financial Technologies</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup17.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Introduction to Blockchain
-                    </strong> - Do The Luan (CARDADO labo) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-introduction-to-blockchain">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Interbank Transfer Systems in Vietnam & Some Improvement Ideas
-                    </strong> - Truong Bui (Former CTO, Timo Digital Bank, timo.vn) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-interbank-transfer-systems-in-vn-some-improvement-ideas">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/202575453561443/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1355142854553679">Album</a></li>
-                <li><strong>Date: April 8, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk16"> TechTalk #16: <a href="https://www.facebook.com/events/745385925637047/">Front-end Technologies</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup16.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Isomorphic Web Application @ Lozi.vn
-                    </strong> - Thinh Nguyen (Web Developer - lozi.vn) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-react-stack-at-lozi">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Maybe functor in Javascript
-                    </strong> - Lam Huynh (Senior FrontEnd Developer - 8Bit Rockstars Co. Ltd) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-maybe-functor-in-javascript">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      HtmlJs and Three way binding
-                    </strong> - Nhan Nguyen (Software Architect - FPT IS) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-html-js-and-three-way-binding">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Anduin Component Library
-                    </strong> - Cong Pham (Product Designer - Anduin Transactions) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-fk-bad-css">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/745385925637047/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1313377518730213">Album</a></li>
-                <li><strong>Date: February 25, 2017</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk15"> TechTalk #15: <a href="https://www.facebook.com/events/1827540640795479/">Data Challenge in Logistics</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      The data processing journey at AhaMove
-                    </strong> - Thuc Nguyen (AhaMove) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-15-grokking-the-data-processing-journey-at-ahamove">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Batching and routing of deliveries
-                    </strong> - Ngoc Tran (HonestBee) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Architectural decisions @ Parcel Perform
-                    </strong> - Khang Nguyen (Parcel Perform) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-tech-talk-15-architectural-decisions-parcel-perform">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>The Ventures </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/1827540640795479/">Facebook</a></li>
-
-                <li><strong>Date: December 24, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk14"> TechTalk #14: <a href="https://www.facebook.com/events/869225683183128/">Database Systems</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup14.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Why you should use PostgreSQL for your data analytics infrastructure
-                    </strong> - Huy Nguyen (Holistics) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Couchbase: NoSQL + Memcached + Real-time + Offline!
-                    </strong> - Vu Nguyen (Liti Book) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-14-grokking-couchbase-nosql-memcached-realtime-offline">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>TINYpulse </li>
-
-                  <li><strong>Venue Sponsor: </strong>Tiki </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/869225683183128/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/grokking.vietnam/photos/?tab=album&album_id=1113615842039716">Album</a></li>
-                <li><strong>Date: August 6, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk13"> TechTalk #13: <a href="https://www.facebook.com/events/194454270949757/">Searches</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup13.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Marrying Elasticsearch with NLP to solve real-world search problems
-                    </strong> - Phu Le (Country Manager / Head of R&D, Knorex) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-marrying-elasticsearch-with-nlp-to-solve-realworld-search-problems">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Scaling and supercharging your online business models with Elasticsearch
-                    </strong> - Tri Tran (Lead Developer, 8Bit Rockstars) 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-scaling-and-supercharging-your-online-business-models-with-elasticsearch">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>TINYpulse </li>
-
-                  <li><strong>Venue Sponsor: </strong>MySquar </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/194454270949757/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/grokking.vietnam/photos/?tab=album&album_id=1085866281481339">Album</a></li>
-                <li><strong>Date: June 25, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk12"> TechTalk #12: <a href="https://www.facebook.com/events/594238287419155/">Programming Languages and Paradigms</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup12.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Full stack Scala web application
-                    </strong> - Cuong Pham 
-                     - <a href="https://www.slideshare.net/GrokkingVN/tech-talk-12-grokking-full-stack-scala-web-application-cuong-pham">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Writing code that writes code
-                    </strong> - Nguyen Luong 
-                     - <a href="https://www.slideshare.net/GrokkingVN/techktalk-12-grokking-writing-code-that-writes-code-nguyen-luong">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Code productively in any language with testing and live reloading
-                    </strong> - Harley Trung 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>TINYpulse </li>
-
-                  <li><strong>Venue Sponsor: </strong>DEK </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/594238287419155/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/grokking.vietnam/photos/?tab=album&album_id=1070310999703534">Album</a></li>
-                <li><strong>Date: May 28, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk11"> TechTalk #11: <a href="https://www.facebook.com/events/1253414338006273/">Data</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup11.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Why data science?
-                    </strong> - An Mai 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-why-data-science">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Introduction to some probabilistics data-structures for real-time processing
-                    </strong> - Vo Viet Hung 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-an-introduction-to-probabilistic-datastructures-and-algorithms">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Reactive Data System in Practice at iTVad
-                    </strong> - Trieu Tan Nguyen 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>TINYpulse </li>
-
-                  <li><strong>Venue Sponsor: </strong>DEK </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/1253414338006273/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.1049353048465996.1073741838.764146283653342">Album</a></li>
-                <li><strong>Date: April 23, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk09"> TechTalk #09: <a href="https://www.facebook.com/events/950369215012812/">Meetup 09</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup09.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Building a realtime & offline editing service from scratch with Couchbase
-                    </strong> - Vu Nguyen, CTO @ Liti Book 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-building-a-realtime-offline-editing-service-from-scratch-with-couchbase">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Secure Coding
-                    </strong> - Tran Anh Tuan, Security Engineer @ VietABank 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-why-data-science">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      When a Java guy goes Ruby
-                    </strong> - Jonathan Bardin, Technical Architect @ TINYpulse 
-                     - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-when-a-java-guy-goes-ruby">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>TINYpulse </li>
-
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/950369215012812/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.1031087110292590.1073741837.764146283653342">Album</a></li>
-                <li><strong>Date: March 29, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk08"> TechTalk #08: <a href="https://www.facebook.com/events/1651426405122455/">A Date With DevOps</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup08.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Docker Internals
-                    </strong> - Vincent De Smet 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      DevOps at Hoiio
-                    </strong> - Hieu @ Hoiio 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Docker management with Ansible
-                    </strong> - Thinh @ ChoTot 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>TINYpulse </li>
-
-                  <li><strong>Venue Sponsor: </strong>Chotot.vn </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/1651426405122455/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.1006854916049143.1073741835.764146283653342&type=3">Album</a></li>
-                <li><strong>Date: Feb 27, 2016</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk06"> TechTalk #06: <a href="https://www.facebook.com/events/423555677848446/">Grokking Coding Challenge</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup06.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Build a stripped-down version of Redis database in 3 hours.
-                    </strong>
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-                  <li><strong>Sponsor: </strong>Hoiio and MySQUAR (Food & Prizes) </li>
-
-                  <li><strong>Venue Sponsor: </strong>Dreamplex </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/423555677848446/">Facebook</a></li>
-
-                  <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.961722197229082.1073741832.764146283653342&type=1&l=06208f75a2">Album</a></li>
-                <li><strong>Date: December 06, 2015</li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk05"> TechTalk #05: <a href="https://www.facebook.com/events/764117887031387/">Meetup 05</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Android from Linux perspective and Root on Android
-                    </strong> - Tran Ngoc Thuan (Android Team Lead, VNPT MEDIA) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Phanbook - Open source library
-                    </strong> - Tran Duy Thien (PHP Developer) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Coding standard and performance optimization
-                    </strong> - Le Thanh Xuan (Senior Developer, Atlassian) 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>Air Lounge (Silicon Straits Saigon) </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/764117887031387/">Facebook</a></li>
-
-                <li><strong>Date: </li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk04"> TechTalk #04: <a href="https://www.facebook.com/events/477054909126245/">Meetup 04</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup04.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Technology Stack at MySQUAR
-                    </strong> - Khac Anh (Software Engineer, MySQUAR) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Web 3.0: Offline first with CouchDB
-                    </strong> - Hervé Vu (Co-Founder & former CTO, Linked Senior) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Using Redis in building social networks with large user base
-                    </strong> - Chau Nguyen Nhat Thanh (Technical Manager, VNG) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      How to implement Flux Architecture on mobile (Native)
-                    </strong> - Pham Duc Huy (Software Engineer, Lozi.vn) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      HtmlJs - JavaScript MVVM framework
-                    </strong> - Nhan (Software Engineer, Play Studio) 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>Silicon Straits Saigon </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/477054909126245/">Facebook</a></li>
-
-                <li><strong>Date: </li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk03"> TechTalk #03: <a href="https://www.facebook.com/events/864085826964097/">Real-time Data Pipeline & Real-world Microservice Architecture</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup03.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Migrating to service-oriented architecture at LOZI
-                    </strong> - Nguyen Thanh Trung (C​TO/Co-founder of LOZI) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      Building Real-time Data Pipeline at FPT
-                    </strong> - Nguyen Tan Trieu (T​echnical lead and full-stack engineer at FPT) 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>Sentifi </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/864085826964097/">Facebook</a></li>
-
-                <li><strong>Date: </li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk02"> TechTalk #02: <a href="https://www.facebook.com/events/321724054703790/">Build big things from small components</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      Building microservices web application using Akka & Scala
-                    </strong> - Binh Nguyen (Director of Engineering, Anduin Transactions) 
-                    
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      A journey with Artificial Neural Network (ANN) in solving real-world problems
-                    </strong> - Steven Goh (Founder, Nubela Corp) 
-                    
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-                  <li><strong>Venue Sponsor: </strong>Officience </li>
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/321724054703790/">Facebook</a></li>
-
-                <li><strong>Date: </li>
-              </ul>
-              <hr class="divider"/>
-              <h2 id="talk01"> TechTalk #01: <a href="https://www.facebook.com/events/560196397413884/">Kick-off Talk</a></h2>
-                <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup01.jpg">
-              <br/>
-
-              <h3>Talks:</h3>
-              <ul>
-                  <li>
-                    <strong>
-                      The absolute minimum every software developer needs to know about database indexes
-                    </strong> - Cedric Chin (Floating Cube Studios) 
-                     - <a href="https://speakerdeck.com/ejamesc/the-absolute-minimum-every-software-developer-needs-to-know-about-database-indexes">Slide</a> 
-                  </li>
-                  
-                  <li>
-                    <strong>
-                      How we built our data-warehouse and analytics infrastructure at Viki
-                    </strong> - Huy Nguyen (Viki) 
-                     - <a href="http://www.slideshare.net/nvquanghuy/grokking-engineering-data-analytics-infrastructure-at-viki-huy-nguyen">Slide</a> 
-                  </li>
-                  
-              </ul>
-              <h3>Info:</h3>
-              <ul>
-
-
-                  <li><strong>Event: </strong><a href="https://www.facebook.com/events/560196397413884/">Facebook</a></li>
-
-                <li><strong>Date: </li>
-              </ul>
-        </div>
-      </div>       
+                  </ul>
+                </li>
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>DEK Technologies </li>
+
+              <li><strong>Venue Sponsor: </strong>DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/222752658206002/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1408817925852838">Album</a></li>
+            <li><strong>Date: May 27, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk18A">
+            TechTalk #18A: <a href="https://www.facebook.com/events/124879238075996/">Data Science: Understand what people talk on Social Network</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup18a.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Vietnamese Sentiment Analysis in a Big Data Scenario: The Deep Learning Approach
+                </strong>
+                 - Assocciate Professor Quan Thanh Tho @ Faculty of Computer Science and Engineering - Bach Khoa University
+                 - <a href="http://r.grokking.org/techtalk-18a-vietnamese-sentiment-analysis-in-a-big-data-scenario-the-deep-learning-approach">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Introduction to Recommendation Systems for News, Education and Entertainment
+                </strong>
+                 - Nguyen Tan Trieu - Lead Engineer @ FPT Telecom
+                 - <a href="http://r.grokking.org/techtalk-18a-introduction-to-recommendation-systems-for-news-education-and-entertainment">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>CirCO Coworking Space </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/124879238075996/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1402198186514812">Album</a></li>
+            <li><strong>Date: May 20, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk17">
+            TechTalk #17: <a href="https://www.facebook.com/events/202575453561443/">Financial Technologies</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup17.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Introduction to Blockchain
+                </strong>
+                 - Do The Luan (CARDADO labo)
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-introduction-to-blockchain">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Interbank Transfer Systems in Vietnam & Some Improvement Ideas
+                </strong>
+                 - Truong Bui (Former CTO, Timo Digital Bank, timo.vn)
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-17-interbank-transfer-systems-in-vn-some-improvement-ideas">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/202575453561443/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1355142854553679">Album</a></li>
+            <li><strong>Date: April 8, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk16">
+            TechTalk #16: <a href="https://www.facebook.com/events/745385925637047/">Front-end Technologies</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup16.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Isomorphic Web Application @ Lozi.vn
+                </strong>
+                 - Thinh Nguyen (Web Developer - lozi.vn)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-react-stack-at-lozi">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Maybe functor in Javascript
+                </strong>
+                 - Lam Huynh (Senior FrontEnd Developer - 8Bit Rockstars Co. Ltd)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-maybe-functor-in-javascript">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  HtmlJs and Three way binding
+                </strong>
+                 - Nhan Nguyen (Software Architect - FPT IS)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-html-js-and-three-way-binding">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Anduin Component Library
+                </strong>
+                 - Cong Pham (Product Designer - Anduin Transactions)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-16-grokking-fk-bad-css">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Shinhan Future's Lab </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/745385925637047/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1313377518730213">Album</a></li>
+            <li><strong>Date: February 25, 2017</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk15">
+            TechTalk #15: <a href="https://www.facebook.com/events/1827540640795479/">Data Challenge in Logistics</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  The data processing journey at AhaMove
+                </strong>
+                 - Thuc Nguyen (AhaMove)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-15-grokking-the-data-processing-journey-at-ahamove">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Batching and routing of deliveries
+                </strong>
+                 - Ngoc Tran (HonestBee)
+                              </li>
+
+              <li>
+                <strong>
+                  Architectural decisions @ Parcel Perform
+                </strong>
+                 - Khang Nguyen (Parcel Perform)
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-tech-talk-15-architectural-decisions-parcel-perform">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>The Ventures </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/1827540640795479/">Facebook</a></li>
+
+            <li><strong>Date: December 24, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk14">
+            TechTalk #14: <a href="https://www.facebook.com/events/869225683183128/">Database Systems</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup14.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Why you should use PostgreSQL for your data analytics infrastructure
+                </strong>
+                 - Huy Nguyen (Holistics)
+                              </li>
+
+              <li>
+                <strong>
+                  Couchbase: NoSQL + Memcached + Real-time + Offline!
+                </strong>
+                 - Vu Nguyen (Liti Book)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-14-grokking-couchbase-nosql-memcached-realtime-offline">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>TINYpulse </li>
+
+              <li><strong>Venue Sponsor: </strong>Tiki </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/869225683183128/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/grokking.vietnam/photos/?tab=album&album_id=1113615842039716">Album</a></li>
+            <li><strong>Date: August 6, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk13">
+            TechTalk #13: <a href="https://www.facebook.com/events/194454270949757/">Searches</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup13.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Marrying Elasticsearch with NLP to solve real-world search problems
+                </strong>
+                 - Phu Le (Country Manager / Head of R&D, Knorex)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-marrying-elasticsearch-with-nlp-to-solve-realworld-search-problems">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Scaling and supercharging your online business models with Elasticsearch
+                </strong>
+                 - Tri Tran (Lead Developer, 8Bit Rockstars)
+                 - <a href="https://www.slideshare.net/GrokkingVN/techtalk-13-grokking-scaling-and-supercharging-your-online-business-models-with-elasticsearch">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>TINYpulse </li>
+
+              <li><strong>Venue Sponsor: </strong>MySquar </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/194454270949757/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/grokking.vietnam/photos/?tab=album&album_id=1085866281481339">Album</a></li>
+            <li><strong>Date: June 25, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk12">
+            TechTalk #12: <a href="https://www.facebook.com/events/594238287419155/">Programming Languages and Paradigms</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup12.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Full stack Scala web application
+                </strong>
+                 - Cuong Pham
+                 - <a href="https://www.slideshare.net/GrokkingVN/tech-talk-12-grokking-full-stack-scala-web-application-cuong-pham">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Writing code that writes code
+                </strong>
+                 - Nguyen Luong
+                 - <a href="https://www.slideshare.net/GrokkingVN/techktalk-12-grokking-writing-code-that-writes-code-nguyen-luong">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Code productively in any language with testing and live reloading
+                </strong>
+                 - Harley Trung
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>TINYpulse </li>
+
+              <li><strong>Venue Sponsor: </strong>DEK </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/594238287419155/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/grokking.vietnam/photos/?tab=album&album_id=1070310999703534">Album</a></li>
+            <li><strong>Date: May 28, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk11">
+            TechTalk #11: <a href="https://www.facebook.com/events/1253414338006273/">Data</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup11.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Why data science?
+                </strong>
+                 - An Mai
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-why-data-science">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Introduction to some probabilistics data-structures for real-time processing
+                </strong>
+                 - Vo Viet Hung
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-an-introduction-to-probabilistic-datastructures-and-algorithms">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Reactive Data System in Practice at iTVad
+                </strong>
+                 - Trieu Tan Nguyen
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>TINYpulse </li>
+
+              <li><strong>Venue Sponsor: </strong>DEK </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/1253414338006273/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.1049353048465996.1073741838.764146283653342">Album</a></li>
+            <li><strong>Date: April 23, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk09">
+            TechTalk #09: <a href="https://www.facebook.com/events/950369215012812/">Meetup 09</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup09.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Building a realtime & offline editing service from scratch with Couchbase
+                </strong>
+                 - Vu Nguyen, CTO @ Liti Book
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-building-a-realtime-offline-editing-service-from-scratch-with-couchbase">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  Secure Coding
+                </strong>
+                 - Tran Anh Tuan, Security Engineer @ VietABank
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-11-why-data-science">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  When a Java guy goes Ruby
+                </strong>
+                 - Jonathan Bardin, Technical Architect @ TINYpulse
+                 - <a href="https://www.slideshare.net/GrokkingVN/grokking-techtalk-9-when-a-java-guy-goes-ruby">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>TINYpulse </li>
+
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/950369215012812/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.1031087110292590.1073741837.764146283653342">Album</a></li>
+            <li><strong>Date: March 29, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk08">
+            TechTalk #08: <a href="https://www.facebook.com/events/1651426405122455/">A Date With DevOps</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup08.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Docker Internals
+                </strong>
+                 - Vincent De Smet
+                              </li>
+
+              <li>
+                <strong>
+                  DevOps at Hoiio
+                </strong>
+                 - Hieu @ Hoiio
+                              </li>
+
+              <li>
+                <strong>
+                  Docker management with Ansible
+                </strong>
+                 - Thinh @ ChoTot
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>TINYpulse </li>
+
+              <li><strong>Venue Sponsor: </strong>Chotot.vn </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/1651426405122455/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.1006854916049143.1073741835.764146283653342&type=3">Album</a></li>
+            <li><strong>Date: Feb 27, 2016</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk06">
+            TechTalk #06: <a href="https://www.facebook.com/events/423555677848446/">Grokking Coding Challenge</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup06.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Build a stripped-down version of Redis database in 3 hours.
+                </strong>
+                                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+              <li><strong>Sponsor: </strong>Hoiio and MySQUAR (Food & Prizes) </li>
+
+              <li><strong>Venue Sponsor: </strong>Dreamplex </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/423555677848446/">Facebook</a></li>
+
+              <li><strong>Photo: </strong><a href="https://www.facebook.com/media/set/?set=a.961722197229082.1073741832.764146283653342&type=1&l=06208f75a2">Album</a></li>
+            <li><strong>Date: December 06, 2015</li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk05">
+            TechTalk #05: <a href="https://www.facebook.com/events/764117887031387/">Meetup 05</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Android from Linux perspective and Root on Android
+                </strong>
+                 - Tran Ngoc Thuan (Android Team Lead, VNPT MEDIA)
+                              </li>
+
+              <li>
+                <strong>
+                  Phanbook - Open source library
+                </strong>
+                 - Tran Duy Thien (PHP Developer)
+                              </li>
+
+              <li>
+                <strong>
+                  Coding standard and performance optimization
+                </strong>
+                 - Le Thanh Xuan (Senior Developer, Atlassian)
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Air Lounge (Silicon Straits Saigon) </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/764117887031387/">Facebook</a></li>
+
+            <li><strong>Date: </li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk04">
+            TechTalk #04: <a href="https://www.facebook.com/events/477054909126245/">Meetup 04</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup04.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Technology Stack at MySQUAR
+                </strong>
+                 - Khac Anh (Software Engineer, MySQUAR)
+                              </li>
+
+              <li>
+                <strong>
+                  Web 3.0: Offline first with CouchDB
+                </strong>
+                 - Hervé Vu (Co-Founder & former CTO, Linked Senior)
+                              </li>
+
+              <li>
+                <strong>
+                  Using Redis in building social networks with large user base
+                </strong>
+                 - Chau Nguyen Nhat Thanh (Technical Manager, VNG)
+                              </li>
+
+              <li>
+                <strong>
+                  How to implement Flux Architecture on mobile (Native)
+                </strong>
+                 - Pham Duc Huy (Software Engineer, Lozi.vn)
+                              </li>
+
+              <li>
+                <strong>
+                  HtmlJs - JavaScript MVVM framework
+                </strong>
+                 - Nhan (Software Engineer, Play Studio)
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Silicon Straits Saigon </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/477054909126245/">Facebook</a></li>
+
+            <li><strong>Date: </li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk03">
+            TechTalk #03: <a href="https://www.facebook.com/events/864085826964097/">Real-time Data Pipeline & Real-world Microservice Architecture</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup03.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Migrating to service-oriented architecture at LOZI
+                </strong>
+                 - Nguyen Thanh Trung (C​TO/Co-founder of LOZI)
+                              </li>
+
+              <li>
+                <strong>
+                  Building Real-time Data Pipeline at FPT
+                </strong>
+                 - Nguyen Tan Trieu (T​echnical lead and full-stack engineer at FPT)
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Sentifi </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/864085826964097/">Facebook</a></li>
+
+            <li><strong>Date: </li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk02">
+            TechTalk #02: <a href="https://www.facebook.com/events/321724054703790/">Build big things from small components</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  Building microservices web application using Akka & Scala
+                </strong>
+                 - Binh Nguyen (Director of Engineering, Anduin Transactions)
+                              </li>
+
+              <li>
+                <strong>
+                  A journey with Artificial Neural Network (ANN) in solving real-world problems
+                </strong>
+                 - Steven Goh (Founder, Nubela Corp)
+                              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+              <li><strong>Venue Sponsor: </strong>Officience </li>
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/321724054703790/">Facebook</a></li>
+
+            <li><strong>Date: </li>
+          </ul>
+          <hr class="divider"/>
+          <h2 id="talk01">
+            TechTalk #01: <a href="https://www.facebook.com/events/560196397413884/">Kick-off Talk</a>
+          </h2>
+            <img class="img-responsive center-block img-fluid" src="https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup01.jpg">
+          <br/>
+
+          <h3>Talks:</h3>
+          <ul>
+              <li>
+                <strong>
+                  The absolute minimum every software developer needs to know about database indexes
+                </strong>
+                 - Cedric Chin (Floating Cube Studios)
+                 - <a href="https://speakerdeck.com/ejamesc/the-absolute-minimum-every-software-developer-needs-to-know-about-database-indexes">Slide</a>
+              </li>
+
+              <li>
+                <strong>
+                  How we built our data-warehouse and analytics infrastructure at Viki
+                </strong>
+                 - Huy Nguyen (Viki)
+                 - <a href="http://www.slideshare.net/nvquanghuy/grokking-engineering-data-analytics-infrastructure-at-viki-huy-nguyen">Slide</a>
+              </li>
+
+          </ul>
+          <h3>Info:</h3>
+          <ul>
+
+
+              <li><strong>Event: </strong><a href="https://www.facebook.com/events/560196397413884/">Facebook</a></li>
+
+            <li><strong>Date: </li>
+          </ul>
+      </div>
     </div>
   </div>
+</div>
 </div>
 <footer class="footer">
   <div class="container text-center">
