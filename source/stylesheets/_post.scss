@@ -5,6 +5,11 @@
     border-bottom: 1px solid $border-color;
   }
 
+  h1 {
+    text-transform: none;
+    text-align: left;
+  }
+
   background: $white;
   margin: 0 20px 50px 0;
   padding: 10px 15px;
@@ -49,10 +54,6 @@
       border-bottom: 1px solid #eaecef;
     }
 
-    p {
-      //text-align: justify;
-    }
-
     blockquote {
       //width: 940px;
       margin-top: 20px;
@@ -72,8 +73,12 @@
 
   p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.4;
     margin: 15px 0;
-
   }
+
+  .img-responsive {
+    max-width: 100%;
+  }
+
 }

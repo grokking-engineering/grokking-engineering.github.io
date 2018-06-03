@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+  <%= partial 'shared/meta' %>
+  <title><%= current_page.data.title || "Home" %> - Grokking Vietnam</title>
+</head>
+<body>
+<%= partial 'shared/header' %>
+<%= yield %>
+<%= partial 'shared/footer' %>
+</body>
+</html>
+
