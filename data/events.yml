@@ -1,4 +1,21 @@
 techtalks:
+- number: 26
+  slug: 26-mobile-development
+  date: May 19, 2018
+  title: Mobile Development
+  venue: OffyPlex, FCentral building, 2nd Floor, 16A Le Hong Phong, Ward 12, Dist 10, HCMC
+  event_href: https://www.facebook.com/events/230328644403717/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1766473016753992
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup26.jpg
+
+  sessions:
+  - title: Compare ios and android platform
+    speaker: Loc Vo - Freelance Mobile Developer
+    slide_href: http://r.grokking.org/grokking-techtalk-26-compare-ios-and-android-platform
+
+  - title: Kotlin, Understand the Magic
+    speaker: Ngo Minh Hien - Senior Android Developer, Android Mobile Team lead @ Wizeline
+    slide_href: http://r.grokking.org/grokking-techtalk-26-kotlin-understand-the-magic
 - number: 25
   slug: 25-LINE-scalable-infrastructure
   date: Apr 01, 2018
