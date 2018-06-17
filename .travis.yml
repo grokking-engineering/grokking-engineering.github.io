@@ -6,4 +6,5 @@ deploy:
   keep-history: true
   on:
     branch: master
-script: 'rake publish'
+script:
+  - bundle exec rake publish
