@@ -2,8 +2,8 @@ language: ruby
 cache: bundler
 before_install:
   - openssl aes-256-cbc -K $encrypted_fc328be85019_key -iv $encrypted_fc328be85019_iv -in deploy_key.enc -out tmp/deploy_key -d
+  - ssh-add tmp/deploy_key
 script:
   - git diff
-  - ssh-add tmp/deploy_key
   - ls
   - bundle exec rake publish
