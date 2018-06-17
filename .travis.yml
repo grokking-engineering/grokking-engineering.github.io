@@ -5,11 +5,5 @@ before_install:
   - chmod 600 tmp/deploy_key
   - eval `ssh-agent -s`
   - ssh-add tmp/deploy_key
-#install:
-#  - git clone git@github.com:$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG
-#  - cd $TRAVIS_REPO_SLUG
-#  - git checkout -qf $TRAVIS_COMMIT
 script:
-  - git diff
-  - ls
   - ./travis_deploy.sh
