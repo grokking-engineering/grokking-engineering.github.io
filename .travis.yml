@@ -9,5 +9,4 @@ deploy:
 script:
   - git diff
   - ls
-  - git clean -df
   - bundle exec rake publish
