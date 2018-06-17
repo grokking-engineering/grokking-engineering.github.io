@@ -1,12 +1,9 @@
 language: ruby
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
+cache: bundler
+before_install:
+  - openssl aes-256-cbc -K $encrypted_fc328be85019_key -iv $encrypted_fc328be85019_iv -in deploy_key.enc -out tmp/deploy_key -d
 script:
   - git diff
+  - ssh-add tmp/deploy_key
   - ls
   - bundle exec rake publish
