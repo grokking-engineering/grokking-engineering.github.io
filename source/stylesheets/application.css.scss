@@ -687,7 +687,12 @@ body {
 }
 
 .sidebar {
-  margin-top: 20px;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.research-page .sidebar {
+  background: #ececec;
 }
 
 .main-column {
@@ -757,4 +762,16 @@ body {
 #talk-list {
   //max-height: 600px;
   //overflow-y: scroll;
+}
+
+.panel {
+  padding-bottom: 50px;
+}
+
+// MAGAZINE
+img.magazine {
+  display: block;
+  max-width:300px;
+  width: auto;
+  height: auto;
 }

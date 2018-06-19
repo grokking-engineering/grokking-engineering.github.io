@@ -1,4 +1,4 @@
-# About Grokking Research Group
+## About Grokking Research Group
 
 Every good engineer we met has a strong desire to learn, and most of them have been learning by themselves. So we
 thought, why not bring them together so that everyone can learn faster together.

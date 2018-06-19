@@ -101,7 +101,7 @@ techtalks:
   sponsor:
   event_href: https://www.facebook.com/events/120676741941149/
   photo_href: 
-  image_path: /photos/techtalk21.jpg
+  image_path: /images/techtalks/techtalk21.jpg
 
   sessions:
   - title: Deep Learning in Computer Vision
