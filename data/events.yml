@@ -1,4 +1,21 @@
 techtalks:
+- number: 27
+  slug: 27-tree-data-structures-and-database
+  date: August 04, 2018
+  title: Tree Data Structures and Database
+  venue: QUOINE Vietnam, F22 - Saigon Center, 67 Le Loi, District 1, HCMC
+  event_href: https://www.facebook.com/events/731433800520933/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=1864028693665090
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup27.jpg
+
+  sessions:
+  - title: Optimize Binary Search Tree
+    speaker: Phong Vu - Software Engineer
+    slide_href: http://r.grokking.org/grokking-techtalk-27-optimal-binary-search-tree
+
+  - title: Hierarchical Tree Structure in Database
+    speaker: Thanh Dinh - Chief Engineer @ Holistics Software
+    slide_href: http://r.grokking.org/grokking-techtalk-27-hierarchical-tree-structure-in-database
 - number: 26
   slug: 26-mobile-development
   date: May 19, 2018
