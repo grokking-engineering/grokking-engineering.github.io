@@ -1,4 +1,21 @@
 techtalks:
+- number: 28
+  slug: 28-selenium-docker-end-to-end-testing
+  date: September 08, 2018
+  title: "Selenium - Docker: End to End Testing"
+  venue: Wizeline Vietnam - Viettel Complex Building, 285 Cach Mang Thang 8, Ward 12, District 10, HCMC
+  sponsor: Wizeline Vietnam
+  event_href: https://www.facebook.com/events/286160678639306/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/grokking.jpg
+
+  sessions:
+  - title: "Selenium - Docker: End to End Testing"
+    speaker: "Pham Quang Huy (Lewis Pham) - Senior Software Engineer & Ngo Thanh Nhan - Software Test Engineer @ Wizeline
+"
+    description: 
+      desc: "Introduce Selenium in Automation Testing and the way to set up Selenium in Docker"
+    slide_href: 
 - number: 27
   slug: 27-tree-data-structures-and-database
   date: August 04, 2018
