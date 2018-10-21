@@ -1,4 +1,16 @@
 techtalks:
+- number: 29
+  slug: 29-building-realtime-metrics-platform-at-linkedIn
+  date: September 22, 2018
+  title: "Building Realtime Metrics Platform at LinkedIn"
+  event_href: https://www.facebook.com/events/235320210487746/
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup29.jpg
+
+  sessions:
+  - title: "Building Realtime Metrics Platform at LinkedIn"
+    speaker: "Khai Tran, Staff Software Engineer - LinkedIn"
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-29-building-realtime-metrics-platform-at-linkedin
+    
 - number: 28
   slug: 28-selenium-docker-end-to-end-testing
   date: September 08, 2018
