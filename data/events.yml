@@ -1,4 +1,22 @@
 techtalks:
+- number: 30
+  slug: 30-frontend-development
+  date: March 09, 2019
+  title: Frontend Development
+  venue: Axon Vietnam - 8F, E.TOWN CENTRAL, 11 Doan Van Bo, Ward 12, District 4, HCMC
+  event_href: https://www.facebook.com/events/251894242412927/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2176524139082209
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup30.jpg
+
+  sessions:
+  - title: GraphQL and some common problems
+    speaker: Thanh Nguyen - Frontend Lead @ Inspectorio
+    slide_href: http://r.grokking.org/grokking-techtalk-30-graphql-and-some-common-problems
+
+  - title: 'From App to Ecosystem: Lessons Learned at Scale'
+    speaker: Kristian Randall - Frontend Engineering Manager @ Axon
+    slide_href: http://r.grokking.org/grokking-techtalk-30-from-app-to-ecosystem-lessons-learned-at-scale
+    
 - number: 29
   slug: 29-building-realtime-metrics-platform-at-linkedIn
   date: September 22, 2018
