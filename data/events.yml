@@ -1,4 +1,34 @@
 techtalks:
+
+- number: 32
+  slug: 32-asynchronous-communications-at-work
+  date: August 03, 2019
+  title: "SOLID & Design Patterns"
+  venue: KMS Technology Office, 2 Tan Vien, Tan Binh, HCMC
+  event_href: https://www.facebook.com/events/874501642921286/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup32.jpg
+
+  sessions:
+  - title: "SOLID & Design Patterns"
+    speaker: "Khoi Nguyen - Senior Software Engineer @ KMS Technology"
+    slide_href: https://www.slideshare.net/GrokkingVN/solid-design-patterns
+    
+
+- number: 31
+  slug: 31-asynchronous-communications-at-work
+  date: June 22, 2019
+  title: "Asynchronous Communications at Work"
+  venue: DEK Technologies - 121/137 Le Loi Street, Ben Thanh Ward, District 1, HCMC
+  event_href: https://www.facebook.com/events/369697856996894/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2346162838785004
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup31.jpg
+
+  sessions:
+  - title: "Asynchronous Communications at Work"
+    speaker: "Huy Nguyen - CTO @ Holistics"
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-31-asynchronous-communications
+    
 - number: 30
   slug: 30-frontend-development
   date: March 09, 2019
