@@ -1,12 +1,43 @@
 techtalks:
 
+- number: 34
+  slug: 34-zalopay-merchant-platform-on-k8s-on-premise
+  date: September 28, 2019
+  title: ZaloPay Merchant Platform on K8S on-premise
+  venue: VNG Corporation, Flemington Tower, 182 Le Đai Hanh, District 11, HCMC
+  event_href: https://www.facebook.com/events/718984301860082/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2550502288351057
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk34.png
+
+  sessions:
+  - title: ZaloPay Merchant Platform on K8S on-premise
+    speaker: "Châu Nguyễn Nhật Thanh - Head of MEP @ ZaloPay"
+    slide_href: https://www.slideshare.net/GrokkingVN/k8s-onpremise-incident-lesson-learned-zalopay-merchant-platform-mep
+
+- number: 33
+  slug: 33-highly-scalable-architecture
+  date: September 07, 2019
+  title: Highly Scalable Architecture
+  venue: TIKI Base Camp - F3, Viettel Complex Building, 285 Cach Mang Thang 8, District 10, HCMC
+  event_href: https://www.facebook.com/events/448956459298378/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2494297417304878
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/tecktalk33.png
+
+  sessions:
+  - title: High Concurrency Architecture at TIKI
+    speaker: "Nguyễn Hoàng Bách - Senior Principal Engineer @ TIKI"
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-33-high-concurrency-architecture-at-tiki
+  - title: Architecture of AI-First Systems
+    speaker: "Hervé Vũ Roussel - CEO & Co-founder @ QuodAI"
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-33-architecture-of-aifirst-systems-engineering-for-big-data-ai
+
 - number: 32
   slug: 32-solid-and-design-patterns
   date: August 03, 2019
   title: "SOLID & Design Patterns"
   venue: KMS Technology Office, 2 Tan Vien, Tan Binh, HCMC
   event_href: https://www.facebook.com/events/874501642921286/
-  photo_href: 
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2429416503792970
   image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/meetup32.jpg
 
   sessions:
