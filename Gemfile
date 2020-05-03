@@ -11,4 +11,5 @@ gem 'middleman-blog'
 gem "middleman-syntax"
 gem 'redcarpet'
 gem 'nokogiri'
+gem 'bundler', '~> 1.16.1'
 
