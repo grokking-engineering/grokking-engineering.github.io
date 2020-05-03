@@ -1,5 +1,47 @@
 techtalks:
 
+- number: 37
+  slug: 37-software-design-and-refactoring
+  date: January 04, 2020
+  title: Software Design & Refactoring
+  venue: Axon Vietnam - 8F, E.TOWN CENTRAL, 11 Doan Van Bo, Ward 12, District 4, HCMC
+  event_href: https://www.facebook.com/events/516986232357576/
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/tecktalk37.png
+
+  sessions:
+  - title: Data-intensive problem
+    speaker: "Hồ Nguyễn - Senior Software Engineer @ AXON"
+    slide_href: https://www.slideshare.net/GrokkingVN/data-intensive-problem
+  - title: Software Refactoring
+    speaker: "Thành Đinh - Cofounder & Chief Architect @ Holistics"
+    slide_href: https://www.slideshare.net/GrokkingVN/software-design-and-refactoring-215436212
+
+- number: 36
+  slug: 36-tu-viet-nam-den-silicon-valley
+  date: November 23, 2019
+  title: Từ Việt Nam đến Silicon Valley
+  venue: Online Webinar
+  event_href: https://www.facebook.com/events/566112530828877/
+  photo_href: 
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk36.png
+
+  sessions:
+  - title: Từ Việt Nam đến Silicon Valley - Làm thế nào để kỹ sư phần mềm Việt đến được những công ty công nghệ hàng đầu?
+
+- number: 35
+  slug: 35-efficient-spellchecking
+  date: November 16, 2019
+  title: Efficient Spellchecking
+  venue: TIKI Base Camp - F3, Viettel Complex Building, 285 Cach Mang Thang 8, District 10, HCMC
+  event_href: https://www.facebook.com/events/560474344720234/
+  photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2643001079101177
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk35.png
+
+  sessions:
+  - title: Efficient Spellchecking
+    speaker: "Sergey Bochenkov - Head of Search @ Tiki"
+    slide_href: https://www.slideshare.net/GrokkingVN/grokking-techtalk-35-efficient-spellchecking
+
 - number: 34
   slug: 34-zalopay-merchant-platform-on-k8s-on-premise
   date: September 28, 2019
