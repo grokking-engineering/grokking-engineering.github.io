@@ -116,6 +116,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.16.1)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-blog
