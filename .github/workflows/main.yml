@@ -27,7 +27,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         name: id_rsa # optional
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
-        config: ${{ secrets.CONFIG }} # ssh_config; optional
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
