@@ -5,5 +5,7 @@ before_install:
   - chmod 600 tmp/deploy_key
   - eval `ssh-agent -s`
   - ssh-add tmp/deploy_key
+  - gem install bundler --version '1.16.1'
 script:
   - ./travis_deploy.sh
+
