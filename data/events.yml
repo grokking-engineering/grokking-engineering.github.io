@@ -6,7 +6,7 @@ techtalks:
   title: Software Design & Refactoring
   venue: Axon Vietnam - 8F, E.TOWN CENTRAL, 11 Doan Van Bo, Ward 12, District 4, HCMC
   event_href: https://www.facebook.com/events/516986232357576/
-  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/tecktalk37.png
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/tecktalk37.jpg
 
   sessions:
   - title: Data-intensive problem
@@ -23,7 +23,7 @@ techtalks:
   venue: Online Webinar
   event_href: https://www.facebook.com/events/566112530828877/
   photo_href: 
-  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk36.png
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk36.jpg
 
   sessions:
   - title: Từ Việt Nam đến Silicon Valley - Làm thế nào để kỹ sư phần mềm Việt đến được những công ty công nghệ hàng đầu?
@@ -35,7 +35,7 @@ techtalks:
   venue: TIKI Base Camp - F3, Viettel Complex Building, 285 Cach Mang Thang 8, District 10, HCMC
   event_href: https://www.facebook.com/events/560474344720234/
   photo_href: https://www.facebook.com/pg/grokking.vietnam/photos/?tab=album&album_id=2643001079101177
-  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk35.png
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk35.jpg
 
   sessions:
   - title: Efficient Spellchecking
