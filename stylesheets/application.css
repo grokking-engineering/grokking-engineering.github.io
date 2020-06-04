@@ -83,20 +83,17 @@ h3 {
 @media (max-width: 650px) {
   body {
     font-size: 1.3rem; }
-
   section {
     padding: 20px 0; }
-
   h1 {
     font-size: 2.5rem; }
-
   h2 {
     padding: 5px 0;
     font-size: 1.8rem;
     margin: 10px 0; }
-
   h3 {
     font-size: 1.8rem; } }
+
 a {
   color: #BF1E2D; }
 
@@ -116,6 +113,7 @@ body {
   .container {
     width: 95%;
     margin: 0 auto; } }
+
 .btn-primary {
   background-color: rgba(191, 30, 45, 0.9);
   border-color: #BF1E2D; }
@@ -136,6 +134,7 @@ body {
 @media (max-width: 650px) {
   .section-header p {
     font-size: 1.3rem; } }
+
 .main-header {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -182,18 +181,17 @@ body {
   .navbar-logo img {
     max-width: 170px;
     height: auto; } }
+
 @media (max-width: 650px) {
   .masthead {
     padding: 10px 0 0 0; }
-
   .navbar-toggle {
     margin: 0 8px 8px 8px; }
-
   .navbar-logo img {
     max-width: 120px; }
-
   .navbar-default {
     margin: 0; } }
+
 .join-link a {
   position: relative;
   color: #BF1E2D !important;
@@ -216,15 +214,14 @@ body {
 @media (max-width: 767px) {
   .join-link a {
     margin-left: 0; }
-
   .join-link img {
     display: none; }
-
   .join-link a:hover {
     -webkit-transform: none;
             transform: none;
     -webkit-transition: all 0.1s ease-in;
     transition: all 0.1s ease-in; } }
+
 /*-----Slogan-----*/
 .jumbo {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0)), color-stop(rgba(33, 33, 33, 0.7)), to(rgba(33, 33, 33, 0.8))), url("/images/banner.jpg") no-repeat center/cover;
@@ -247,45 +244,39 @@ body {
 @media (max-width: 1200px) and (min-width: 650px) {
   .jumbo {
     height: 400px; }
-
   .jumbo__container {
     margin-top: 10%; }
-
   .jumbo__heading {
     padding-bottom: 20px;
     font-size: 3.5rem; }
-
   .jumbo__btn {
     margin-top: 18px;
     font-size: 1.6rem; } }
+
 @media (max-width: 650px) and (min-width: 450px) {
   .jumbo {
     height: 300px; }
-
   .jumbo__container {
     margin-top: 12%; }
-
   .jumbo__heading {
     padding-bottom: 20px;
     font-size: 2rem; }
-
   .jumbo__btn {
     margin-top: 18px;
     font-size: 1.1rem; } }
+
 @media (max-width: 450px) {
   .jumbo {
     height: 200px; }
-
   .jumbo__container {
     margin-top: 5%; }
-
   .jumbo__heading {
     padding-bottom: 0px;
     font-size: 2rem; }
-
   .jumbo__btn {
     margin-top: 18px;
     font-size: 1.1rem; } }
+
 /*-----Activities-----*/
 .about__what {
   margin-bottom: 30px; }
@@ -328,11 +319,11 @@ body {
 @media (max-width: 992px) {
   .about .quote {
     margin: 20px 0; }
-
   .about .quote p {
     font-size: 2rem;
     font-weight: 500;
     font-style: italic; } }
+
 .slide-photo {
   height: 500px;
   overflow: hidden; }
@@ -344,13 +335,14 @@ body {
 @media (max-width: 1200px) and (min-width: 992px) {
   .slide-photo {
     height: auto; }
-
   .slideshow {
     margin: 0 auto;
     width: 80%; } }
+
 @media (max-width: 992px) {
   .slide-photo {
     height: auto; } }
+
 .about__cards {
   text-align: center; }
 
@@ -385,15 +377,16 @@ body {
   .card-footer-long {
     height: auto;
     min-height: 0; }
-
   .card-footer-long .join__form {
     max-width: 360px;
     margin: 0 auto;
     margin-bottom: 20px; } }
+
 @media (max-width: 1200px) and (min-width: 992px) {
   .card-footer-long {
     height: 400px;
     min-height: 0; } }
+
 .card-footer a {
   float: right; }
 
@@ -407,19 +400,18 @@ body {
 @media (max-width: 1200px) and (min-width: 650px) {
   .card {
     width: 300px; }
-
   .card-footer {
     padding: 15px 20px 15px 20px; }
-
   .card-wide {
     width: 100%; } }
+
 @media (max-width: 650px) {
   .card {
     width: 100%; }
-
   .card-footer {
     min-height: 150px;
     padding: 15px; } }
+
 /*-----Team-----*/
 .team {
   background: url("/images/team_RT.jpg") no-repeat center/cover;
@@ -445,9 +437,9 @@ body {
 @media (max-width: 650px) {
   .team .container {
     position: static; }
-
   .team {
     min-height: 0; } }
+
 /*-----Sponsor-----*/
 .sponsor {
   min-height: 500px; }
@@ -476,18 +468,16 @@ body {
 @media (max-width: 768px) {
   .sponsor {
     min-height: 0; }
-
   .silver-sponsor img {
     max-width: 240px;
     height: auto; }
-
   .silver-sponsor__title,
   .past-sponsor__title {
     padding: 5px 0; }
-
   .past-sponsor img {
     max-width: 50px;
     height: auto; } }
+
 /*------Join------*/
 .join {
   background: url("/images/join_RT.jpg") no-repeat center/cover;
@@ -526,14 +516,15 @@ body {
 @media (max-width: 991px) and (min-width: 650px) {
   .form__button {
     padding-top: 10px; } }
+
 @media (max-width: 650px) {
   .join {
     min-height: 0;
     height: auto;
     padding-top: 20px; }
-
   .form__button {
     padding-top: 10px; } }
+
 /*------ Slackin ------ */
 .slackin-embed iframe {
   width: 100%;
@@ -622,12 +613,14 @@ body {
   .cd-top {
     right: 20px;
     bottom: 20px; } }
+
 @media only screen and (min-width: 1024px) {
   .cd-top {
     height: 60px;
     width: 60px;
     right: 30px;
     bottom: 30px; } }
+
 .panel {
   padding-bottom: 50px; }
 
