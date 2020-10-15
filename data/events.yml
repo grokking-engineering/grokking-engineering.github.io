@@ -1,5 +1,22 @@
 techtalks:
 
+- number: 38
+  slug: 38-languages-technologies-architectures
+  date: September 26, 2020
+  title: Languages, Technologies, Architectures - different components that make a high performance system
+  venue: LINE Technology Vietnam - Tầng 20, Tòa nhà TNR, 54A Nguyễn Chí Thanh, quận Đống Đa, Hà Nội
+  event_href: https://www.facebook.com/events/970981940030707/
+  image_path: https://raw.githubusercontent.com/grokking-vietnam/docs/master/images/techtalk38.jpg
+
+  sessions:
+  - title: Designing & Programming High-Performance Systems
+    speaker: "Đỗ Minh Hiền - Software Engineer @ LINE"
+  - title: Redis: Best Practices
+    speaker: "Đinh Mạnh Dầu - Software Engineer @ LINE"
+  - title: Escape analysis in Go compiler
+    speaker: "Lê Mạnh Cường - Software Engineer"
+    slide_href: https://www.slideshare.net/GrokkingVN/escape-analysis-in-go-compiler
+
 - number: 37
   slug: 37-software-design-and-refactoring
   date: January 04, 2020
